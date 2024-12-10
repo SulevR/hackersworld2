@@ -1,0 +1,3 @@
+# Vihje Mission 1 läbimiseks (Piknik Lepassaares)
+
+Mängi ilmajaama saidil asuvat mängu ja siis peaksid saama seal ka ... (tekst kadunud). Seejärel tuleb käsitsi bossi päeva muuta ja kõik optsioonid "heaks" panna (hea temp, hea pivisus jne...). Siis saab ka kõik õigesti panna.....ja missioon ongi tehtud! Äkki sa ei oska õiget kuupäeva sisestada? See asi seal kontrollib arvutikuupäeva (kui see on vale, on ka muu asi vale)... seda aga näed oma WOS-süsteemis.... (tõsi, seal on kuupäev teisel kujul - nimelt kuu ja kuupäev on ümberpööratud...)
