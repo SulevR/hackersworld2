@@ -1,0 +1,507 @@
+1234567890123456789012345678901234
+max 10 rida!
+
+[shop1]
+fc: 09
+bc: 00
+sy: 14
+sx: 43
+box: 42 13 77 24 00 10 1
+t:       Millal Sa said viimati
+t:          MAITSVAT SAIA? 
+t: 
+t:       NÅÅd vìid saada kohe!
+t:         1 sai - 10 krooni. 
+t: Osta kìik oma saiakesed ja kring-
+t:     lid pagariÑrist SOE SAI! 
+link: 25 70 76 lata http://www.shop.ee/telli/
+m: 183 0 nothing
+link: 18 15 31 lata http://www.shop.ee/telli/
+
+
+[shop2]
+sy: 14
+sx: 43
+fc: 09
+bc: 00
+box: 42 13 77 24 00 10 1
+t:  Igal inimesel on probleeme ham-
+t: mastega! Uuringutega oleme tìes-
+t: tanud, et igal 81,23% inimesel on
+t: hammastega probleeme. Aga Blend-
+t:   in-Head on nii hea et, selle
+t: mikroskoopilistesse graanulitesse
+t:   on sisse programmeeritud kÑsk
+t:  puhastada su hambad nÅÅd 203,4%
+t:          efektiivsemalt!
+link: 25 70 76 lata http://www.shop.ee/telli/
+m: 183 0 nothing
+link: 18 15 31 lata http://www.shop.ee/telli/
+
+
+[shop3]
+fc: 10
+bc: 00
+sy: 14
+sx: 43
+box: 42 13 77 24 00 10 1
+t:         Soodsad klepsud:
+t: Sul on ju tihti vaja teatada oma
+t: sìpradele oma uut aadressi? Vìi
+t: alluvatele uut tîîkohta? Meie
+t: firma teeb sulle kuldsed kleepe-
+t: kad sinu valitud tekstiga!
+t: 
+t: Tule ise kohale. Hind 78.- 300 tk
+t: NB! Lisana on vìimalik tellida ka
+t: Åmbriku kujutisega kleepse!
+link: 25 70 76 lata http://www.shop.ee/telli/
+m: 183 0 nothing
+link: 18 15 31 lata http://www.shop.ee/telli/
+
+
+[shop4]
+fc: 11
+bc: 00
+sy: 14
+sx: 43
+box: 42 13 77 24 00 11 1
+t:        Kiireim netiÅhendus.
+t: 
+t:  Firma Extarsupreconenctinowitnhet
+t:   pakub nÅÅd hÅperkiiret Åhendust.
+t: 
+t:     Pereema Malle proovis meie
+t:   toodet. "Jaa! Nende Åhendus on
+t:          tìesti kiire!"
+t: 
+t:   öhine Netiga! Ole veel kiirem!
+link: 25 70 76 lata http://www.shop.ee/telli/
+m: 183 0 nothing
+link: 18 15 31 lata http://www.shop.ee/telli/
+
+
+[shop5]
+fc: 14
+bc: 00
+sy: 14
+sx: 43
+box: 42 13 77 24 00 14 1
+t:          Suurim valik CD!
+t: 
+t:  Meje firma Narvas on nÅÅd avanud
+t:     oma putka Tartus. Otse turu
+t:              vasakult. 
+t:          Kìige odavaimad
+t:       ja kvaliteetsemad CD.
+t: 
+t:           Rutta! Loodus! 
+link: 25 70 76 lata http://www.shop.ee/telli/
+m: 183 0 nothing
+link: 18 15 31 lata http://www.shop.ee/telli/
+
+
+[shop6]
+fc: 14
+bc: 08
+sy: 14
+sx: 43
+box: 42 13 77 24 08 14 1
+1234567890123456789012345678901234
+t:   XYZ-Kingas suured saapad! ! !
+t:   XYZ-Kingas on viimast nÑdalat
+t:    kÑimas Suurte Saabaste alla-
+t:              hindlus. 
+t: 
+t:   See, kellele lÑheb jalga kìige
+t: suurem saabas, vìidab tasuta ketse
+t: 2400 krooni eest!
+t: 
+t:     MÅÅgil ka muid jalanìusid. 
+link: 25 70 76 lata http://www.shop.ee/telli/
+m: 183 0 nothing
+link: 18 15 31 lata http://www.shop.ee/telli/
+
+
+[shop7]
+fc: 13
+bc: 00
+sy: 14
+sx: 43
+box: 42 13 77 24 00 13 1
+1234567890123456789012345678901234
+t: 
+t:  Ka sul on raskusi juustega ? ? ? 
+t:     Juuksed on kui osa sinust -
+t:         ka nemad elavad.
+t:   Tee neile teene ja osta siit
+fc: 15
+t:      UUS SHAMPOON Wash&Flow.
+t: 
+fc: 13
+t:     Tunneta oma kuivi juukseid.
+t: 
+t: Wash&Flow - seda juuksed ostaksid.
+link: 25 70 76 lata http://www.shop.ee/telli/
+m: 183 0 nothing
+link: 18 15 31 lata http://www.shop.ee/telli/
+
+
+[shop8]
+fc: 11
+bc: 08
+sy: 14
+sx: 43
+box: 42 13 77 24 08 11 1
+1234567890123456789012345678901234
+t:          USA hittfilmid
+t:      nÑhtaval meie kanalil.
+t:   Kaabelkanal 2 on otse eetrisse
+t:   laskmas praegu vaid USA kinodes
+t: jooksvaid filme.Kohalik filmikanal
+t: on avatud.Vaid parimad filmid igal
+t:  ìhtul. éra unusta meid! Toeta ka
+t:    meie taotlusi muuta piraatlus
+t:   seaduslikuks! (Piketeerime 12.
+t:         selle kuu pÑeval)
+link: 25 70 76 lata http://www.shop.ee/telli/
+m: 183 0 nothing
+link: 18 15 31 lata http://www.shop.ee/telli/
+
+
+[shop9]
+fc: 04
+bc: 00
+sy: 14
+sx: 43
+box: 42 13 77 24 00 04 2
+1234567890123456789012345678901234
+t:     Killer - pisut nÑrvikìdi!
+t: 
+t:    Pisike Killeri-komm sisaldab
+t:  rohkesti oksele-ajavat nÑrvikìdi
+t: ning ta toitevÑÑrtus on samas vaid
+t:   2 kalorit. Kas sama nÑrvikìdi
+t:  saaksid sa Orbiidist? NÅÅd on sul
+t:    julgem tunne tîîle jalutada.
+t:        Rohkelt nÑrvikìdi
+t:      VAID KAHEST KALORIST!
+link: 25 70 76 lata http://www.shop.ee/telli/
+m: 183 0 nothing
+link: 18 15 31 lata http://www.shop.ee/telli/
+
+
+[shop10]
+fc: 12
+bc: 00
+sy: 14
+sx: 43
+box: 42 13 77 24 00 12 2
+1234567890123456789012345678901234
+t: Sul on samuti raskusi juustega ???
+t: 
+t:     Juuksed on kui osa sinust -
+t:   ka nemad elavad. Tee endale ja
+t:   neile pisike teene ja osta siit
+fc: 15
+t:      UUS SHAMPOON HarmInLife.
+fc: 12
+t: 
+t:   Tunneta oma vetruvaid juukseid.
+t:             HarmInLife - 
+t: odavaim vìimalus nÑidata teistele.
+link: 25 70 76 lata http://www.shop.ee/telli/
+m: 183 0 nothing
+link: 18 15 31 lata http://www.shop.ee/telli/
+
+
+[shop11]
+fc: 14
+bc: 00
+sy: 14
+sx: 43
+box: 42 13 77 24 00 14 2
+1234567890123456789012345678901234
+t: Ikka veel on raskusi juustega ????
+t:   Juuksed on kui osa sinust - ka
+t: nemad elavad. Kas tead,et kaamera
+t: leiab Åles iga pleki? Veini, pori,
+t:     nìgi, mulla - mille tahes.
+t:  Tee neile teene ja osta kiiresti
+fc: 15
+t:    UUS SHAMPOON VIBRATE SANDAL.  
+fc: 14
+t:    Tunneta oma kuivi juukseid.
+t:  Vibrate Sandal - Muuda oma elu
+t:          vÑrvikirevaks!
+link: 25 70 76 lata http://www.shop.ee/telli/
+m: 183 0 nothing
+link: 18 15 31 lata http://www.shop.ee/telli/
+
+
+[shop12]
+fc: 14
+bc: 07
+sy: 14
+sx: 43
+box: 42 13 77 24 00 07 2
+1234567890123456789012345678901234
+t: 
+t: 
+t:    Mìned hambaharjad on kuumad! 
+t: 
+t:  ölekuumenematu elektri-hambahari
+t:      firmalt ELECTRIC-SHOCK!
+t: 
+t:            a 236 EEK 
+link: 25 70 76 lata http://www.shop.ee/telli/
+m: 183 0 nothing
+link: 18 15 31 lata http://www.shop.ee/telli/
+
+
+[shop13]
+fc: 00
+bc: 14
+sy: 14
+sx: 43
+box: 42 13 77 24 14 00 2
+1234567890123456789012345678901234
+t:     SOES-akudega vìid vìita.
+t: 
+t: Akutootja SOES pakub kìigile auto-
+t:     omanikele uued variandid
+t: vìitmiseks.Iga kolmas aku sisaldab
+t: nÅÅd 100% energiat. Vaata ka korgi
+t: alla. Kogu kokku 5 Pekka Kakkoneni
+t:   pildiga korgi tihendit ja saada
+t:  need meile. Peaauhinnaks 1000 kg
+t:        puhast vÑÑvelhapet. 
+link: 25 70 76 lata http://www.shop.ee/telli/
+m: 183 0 nothing
+link: 18 15 31 lata http://www.shop.ee/telli/
+
+
+[shop14]
+fc: 00
+bc: 14
+sy: 14
+sx: 43
+box: 42 13 77 24 14 00 2
+1234567890123456789012345678901234
+t:     Uued rehvid Stayhereoililt!
+t: 
+t:  Stayhereoil-i bensiinijaamades on
+t:    nÅÅd tasuta lisateenusena teie
+t:   rehvides oleva ìhurìhu kontroll.
+t:    Te ei pea isegi autost vÑlja
+t: kobima!Me kontrollime ja vahetame.
+t: 
+t: NÅÅd Stayhereoilis:
+t:   Drive-in ja Buy-in teenindus.
+link: 25 70 76 lata http://www.shop.ee/telli/
+m: 183 0 nothing
+link: 18 15 31 lata http://www.shop.ee/telli/
+
+
+[shop15]
+fc: 12
+bc: 08
+sy: 14
+sx: 43
+box: 42 13 77 24 08 12 2
+1234567890123456789012345678901234
+t:     Kuhu on kadunud su sussid?
+t: 
+t:            Kutsu meid!
+t:    KiìkselÅemistotleriik And Co.
+t: 
+t:        Helista meie numbril
+t:           ja telli meid.
+t: 
+t:   KiìkselÅemistotleriik And Co on
+t:         nÅÅd veel kiirem!
+link: 25 70 76 lata http://www.shop.ee/telli/
+m: 183 0 nothing
+link: 18 15 31 lata http://www.shop.ee/telli/
+
+
+[shop16]
+fc: 15
+bc: 08
+sy: 14
+sx: 43
+box: 42 13 77 24 08 15 1
+1234567890123456789012345678901234
+t:     Kuhu on kadunud su arvuti? 
+t: 
+t:            Kutsu meid!
+t:    KiìkselÅemistotleriik And Co.
+t: 
+t:        Helista meie numbril
+t:           ja telli meid.
+t: 
+t:   KiìkselÅemistotleriik And Co on
+t:         nÅÅd veel kiirem!
+link: 25 70 76 lata http://www.shop.ee/telli/
+m: 183 0 nothing
+link: 18 15 31 lata http://www.shop.ee/telli/
+
+
+[shop17]
+fc: 14
+bc: 08
+sy: 14
+sx: 43
+box: 42 13 77 24 08 14 1
+1234567890123456789012345678901234
+t:     Kuhu on kadunud su prillid? 
+t: 
+t:            Kutsu meid!
+t:    KiìkselÅemistotleriik And Co.
+t: 
+t:        Helista meie numbril
+t:           ja telli meid.
+t: 
+t:   KiìkselÅemistotleriik And Co on
+t:         nÅÅd veel kiirem!
+link: 25 70 76 lata http://www.shop.ee/telli/
+m: 183 0 nothing
+link: 18 15 31 lata http://www.shop.ee/telli/
+
+
+[shop18]
+fc: 15
+bc: 04
+sy: 14
+sx: 43
+box: 42 13 77 24 04 14 1
+1234567890123456789012345678901234
+t:    LaseRìnga uus salong avatud!
+fc: 14
+t:   Kodumaine CD plaatide firma on
+t:   avanud oma uue salongi ka Åhes
+t:     vÑikelinnas, Kodu tÑnaval.
+t: 
+t:   Tule, astu sisse ja nÅÅd on sul
+t:    vìimalus koha peal kuulata oma
+t:   lemmikut. Kìik live-etendusena!
+t: 
+t: Sa ei kahetse,kui tuled. Kìik CD-d
+link: 25 70 76 lata http://www.shop.ee/telli/
+m: 183 0 nothing
+link: 18 15 31 lata http://www.shop.ee/telli/
+
+
+[shop19]
+fc: 15
+bc: 00
+sy: 14
+sx: 43
+box: 42 13 77 24 00 15 1
+1234567890123456789012345678901234
+t:   Helista 8-29-876-234-567 ! ! !
+t: 
+t: Kuula hoolega meie viite kÅsimust
+t:   ja vasta neile! Vìimalik vìita
+t:  kìiki allpool nÑhtavaid esemeid.
+t:      Kìne hind 560.43 EEK.
+t: 
+t: VÑike vihje: Teise kÅsimuse
+t: vastuse leiad ENE kolmandast
+t: kîitest.
+link: 25 70 76 lata http://www.shop.ee/telli/
+m: 183 0 nothing
+link: 18 15 31 lata http://www.shop.ee/telli/
+
+
+[shop20]
+fc: 12
+bc: 00
+sy: 14
+sx: 43
+box: 42 13 77 24 00 12 1
+   1234567890123456789012345678901234
+t:   Helista 8-29-876-234-567 ! ! !
+t: 
+t: Kuula hoolega meie viite kÅsimust
+t:  ja vasta neile! Vìimalik vìita
+t: kìikvìimalikke eluks vajalikke ja
+t: mittevajalikke esemeid. Kìne hind
+t: 560.43 EEK.NÅÅd ka AnsverFastMode!
+t: Iga vastuse jaoks on piiratud aeg,
+t: see aitab sul kokku hoida
+t: telefoniarvet.
+link: 25 70 76 lata http://www.shop.ee/telli/
+m: 183 0 nothing
+link: 18 15 31 lata http://www.shop.ee/telli/
+
+
+[shop21]
+fc: 15
+bc: 01
+sy: 14
+sx: 43
+box: 42 13 77 24 01 15 1
+   1234567890123456789012345678901234
+t:      ötle EI narkootikumidele!
+fc: 09
+t: Sul ei ole vaja vìtta kìike, mida
+t:  pakutakse. Keegi ei sunni sind. 
+t:           éra siis vìta
+t:       MINGI SUVALISE KéEST!
+t:  Sa ei tea - see pole puhas. Ole
+t:   julge, kÅsi neilt, kes teavad
+t: paremini. Salanarkootikumid ei ole
+t:               head.
+t:   öhine meie firma klientuuriga.
+link: 25 70 76 lata http://www.shop.ee/telli/
+m: 183 0 nothing
+link: 18 15 31 lata http://www.shop.ee/telli/
+
+
+[shop22]
+fc: 10
+bc: 02
+sy: 14
+sx: 43
+box: 42 13 77 24 02 10 1
+1234567890123456789012345678901234
+t:      éra maga - osta arvuti.
+t:  Peast arvutamine pole enam prob-
+t:    leem,kui sul on olemas meie
+t:    hÅperkiirusel tîîtav arvuti.
+t:   NÅÅd tÑiesti uue tehnoloogiaga.
+t:    IBF-i uus perearvuti sobib ka
+t:   kontorisse,see on lastepÑrane.
+t:      Mida veel vìid sa tahta?
+fc: 14
+t:         IBF KidNaqing 65.
+fc: 10
+t:        See on sinu tulevik.
+link: 25 70 76 lata http://www.shop.ee/telli/
+m: 183 0 nothing
+link: 18 15 31 lata http://www.shop.ee/telli/
+
+
+[shopSEEP]
+fc: 10
+bc: 00
+sy: 14
+sx: 43
+box: 42 13 77 24 00 10 1
+1234567890123456789012345678901234
+t:    Kas su televiisorist ei tule
+t:      kunagi midagi huvitavat?
+t: 
+t:  Siin on lahendus sinu hÑdadele -
+t:           telli meilt
+t: SEEBI-SERIAALI TEGEMISE PROGRAMM!
+t: 
+t:     Sinu maitsele sobiv seep!
+t:        Normaliseeritud pH!
+link: 25 70 76 lata http://www.shop.ee/telliSEEP/
+m: 183 0 nothing
+link: 18 15 31 lata http://www.shop.ee/telliSEEP/
+
+[lopp]
+ 

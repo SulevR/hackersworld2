@@ -1,0 +1,855 @@
+Sisaldab k“ik vajaminevaid meile
+from: ABC@ABC -kellelt
+close: LINK -link close all
+delete: LINK -link lata all
+run: LINK - run attachmendi alla olev link
+
+[Lastevanemate koosolek]
+from: dire@ruudkool.ee
+close: MAILBOX
+delete: Deletemail Lastevanemate koosolek
+Peab sulle vist meelde tuletama, et meie
+kool ei ole mingi selline koht, kus iga
+ks v"ib tulla, millal tahab, minna,
+millal tahab, ja "elda, mida tahab.
+
+Kui sa ka oma viimast katseaega ei
+l„bi, siis tuleb su v„ljaviskamine 
+kooli koosolekul uuesti arutlusele. Ja
+seekord ei kavatse me silma kinni pigis-
+tada.
+
+PS. Kui sa kooli serveri passwordi ka
+meile tled ja sinna enam oma tobedaid
+fotosid ei riputa, siis v"ib-olla leebume!
+
+[L6petage pull]
+from: dire@ruudkool.ee
+close: MAILBOX
+delete: Deletemail L6petage pull
+Ruudi keskkooli direktor on t„htis ameti-
+mees ja ei ole m6tet teda oma lollide 
+kirjakestega m6nitada.
+Sest, nagu on ”eldud juba varemgi, on
+tarkus t„htis teadus ja haritus meie
+rahva tulevik!
+
+[ruudi keskkoolist]
+from: dire@ruudkool.ee
+close: MAILBOX
+delete: Deletemail ruudi keskkoolist
+Kuigi mul on siin niigi palju tegemist
+olen ma alati valmis m6ne jultunud
+h„kkeriga vestlema ja n6uandeid kuulama.
+Peale selle - mul on juba pabergi valmis,
+millel sinu v„lja viskamise k„skkiri
+peal! Tule kohe kooli! Minuga ei nalja-
+tata!
+
+[Uued H„kiuudised]
+from: ManyTimes@Weekly.com
+close: MAILBOX
+delete: Deletemail Uued H„kiuudised
+As Elektrik on maha saanud uue hacksoftiga.
+Nimelt on turule tulnud uued GPS-id, mis
+annavad ka rasketes tingimustes Teie t„pse
+asukoha Kadaka turu suhtes.
+ 
+Ammuoodatud <Muuda oma hindeid internetist>
+on nd mgil! Hind on siiski veel hirmu-
+„ratav: 50000 USD.
+
+[Pikniku asjus]
+from: osvald@„ss.ee
+close: MAILBOX
+delete: Deletemail Pikniku asjus
+Oleme hetkel firma juhtkonnaga piknikul
+Lepassaares. Aga vaatame, et ilm kisub
+siin sna kehvapoolseks.
+
+Hoolitse selle eest, et ilm oleks ilus!
+Kiirusta!
+
+sinu boss
+ 
+Vaata: www.ilmajaam.com
+
+[Piknikult]
+from: osvald@„ss.ee
+continue: missioncompleted 1
+nr: 01
+
+[piknikult]
+from: osvald@„ss.ee
+close: MAILBOX
+delete: Deletemail piknikult
+nr: 01
+
+[Rikutud piknik]
+from: osvald@„ss.ee
+continue: missionfailed 1
+nr: 01
+
+[Welcome to ILMAJAAM]
+from: ilmavana@ilmajaam.ee
+close: MAILBOX
+delete: Deletemail Welcome to ILMAJAAM
+T„name Teid, et liitusite meie klubiga!
+
+šhtlasi teatame Teile, et seoses liitumisega
+olete kohustatud maksma kolme (3) p„eva jook-
+sul meie liikmemaksu.
+
+Koos selle e-mailiga peaks saabuma Teile ka
+ilmajaama uudiste-mail. Head lugemist!
+
+Ilmajaam
+
+[Ilmajaama UUDISTE-list]
+from: www@ilmajaam.ee
+close: MAILBOX
+delete: Deletemail Ilmajaama UUDISTE-list
+V„rske partii Volksvaageneid on saabunud!
+Kiirusta! 50 kr/kg!
+
+Meie ilma-ennustusv"istluses kasutatakse
+t„iesti uut ilmamasinat! Vaata j„rgi!
+
+V„rsked uudised homse ilma kohta!
+
+Juubel! 468 aastat kvaliteetset ilmateadet!
+
+
+       Puhtam, kuivem ja muretum tunne!
+              www.ilmajaam.com
+
+[ABI TULEB!]
+from: valvur@kanalisatsioon.ee
+close: MAILBOX
+delete: Deletemail ABI TULEB!
+Meie andurid n„itavad, et teil on kodus
+suur veerike! Pidage vastu! K"ik meie
+p„„steksused ja valvur on teie poole
+juba teel!
+Parandame teie veerikke kiiresti!
+
+[Ei ole tood]
+from: parandajad@torumehed.ee
+close: MAILBOX
+delete: Deletemail Ei ole t""d
+Linna torumeestel on h„da k„es -
+nimelt on kohalik kanalisatsioonifirma
+nii korralikult t""le hakand, et
+meil pole enam t""d!
+ 
+Viimases h„das p""rdumegi sinu kui
+meie linna k"ige k"vema h„kkeri poole.
+kki saaksid meid kuidagi aidata?
+Vajame t""d!
+ 
+Vaata: www.torumees.ee
+
+[Jehaaa!!]
+from: parandajad@torumehed.ee
+continue: missioncompleted 2
+HURRAA!!!
+ 
+T„name sind!
+Pumbajaama pump tles les! L"puks ometi
+on meil t""d! Hurraaa!
+
+[jehaaa!!]
+from: parandajad@torumehed.ee
+close: MAILBOX
+delete: Deletemail jehaaa!!
+HURRAA!!!
+ 
+T„name sind!
+Pumbajaama pump tles les! L"puks ometi
+on meil t""d! Hurraaa!
+
+
+[V„rsked H„kiuudised]
+from: ManyTimes@Weekly.com
+close: MAILBOX
+delete: Deletemail V„rsked H„kiuudised
+Tuntud v“rguuurijad Dr Smith ja prof. 
+Holmes kinnitavad oma hommikuses 
+avalduses, et nad on j„lil
+millelgi suurel. Millel t„pselt, sellest
+keelduvad nad r„„kimast, kuid kr„kkerid
+on nende arvuteist leitud materjalide
+p“hjal teinud juba uskumatuid j„rel-
+dusi. J„„me p“nevusega ootama.
+
+[H„kkerite Unioon]
+from: ManyTimes@Weekly.com
+close: MAILBOX
+delete: Deletemail H„kkerite Unioon
+V„ike grupp Eesti h„kkereid Kivi“list
+plaanivad luua suurte lemaailmsete
+h„kiorganisatsioonide eeskujul oma
+Uniooni.
+Et ritusest asja saaks, paluvad nad 
+k“igil, kel v“imalik, osutada mate-
+riaalset toetust.
+
+[Lyhis6num mobiiltelefonilt]
+from: 259573464@sms.sms
+close: MAILBOX
+delete: Deletemail Lhis"num mobiiltelefonilt
+Oleme Cheoppzy pramiidis l"ksu sattunud!
+P„„sta meid siit v„lja! Kardame zombisid!
+Aega 10 minutit.
+ 
+Vaata: www.pyramiid.ee
+
+[Lyhis6num mobiiltelefonilt2]
+from: 259573464@sms.sms
+continue: missionfailed 3
+Uks avanes! Aga nd rndavad meid zombid!!!!
+Siia me sureme!!!!
+
+[Lyhis6num mobiiltelefonilt3]
+from: 259573464@sms.sms
+continue: missioncompleted 3
+Oleme p„„senud! SUUR AITH SULLE!
+
+[lyhis6num mobiiltelefonilt3]
+from: 259573464@sms.sms
+close: MAILBOX
+delete: Deletemail lyhis6num mobiiltelefonilt3
+Oleme p„„senud! SUUR AITH SULLE!
+
+[Abipalve haiglast]
+from: friend@lap.top
+close: MAILBOX
+delete: Deletemail Abipalve haiglast
+Kuule, vana s"ber. Ma ei tea, kas sa mind enam
+m„letad. Kord trehvasime Nokia arvuteid lahti-
+kr„kkimas. Mul on sulle ks palve nimelt.
+Lasin end rumala peaga Smiley'i polikliinikusse
+ravile v"tta. Paraku meid siin ei ravita ega
+lasta ka minema tulla.
+Kas sa saaksid midagi ette v"tta?
+
+[Valvearst jooksis minema]
+from: friend@lap.top
+run: lata haiglaimemasin
+Siin polikliinikus on nd asjad "ige imelikeks
+l„inud. Hetk tagasi saabus valvearstile kiri, 
+mille peale ta psti kargas ja ukse juurde
+jooksis. Kuid sealt (ega hestki teisest avau-
+sest) ta v„lja ei saanud, sest kindel turva-
+ssteem hoiab meid k"iki siin kinni. Arst on
+v„ga hirmul ning pomiseb midagi kiirest 
+saatusehoobist. Olen praegu tema kabinetis. 
+šhendan oma laptopi selle masinaga, millega 
+meid aeg-ajalt piinatakse. 
+
+[Ja uksed avanesid]
+from: friend@lap.top
+continue: missioncompleted 4
+Vau! Ma ei tea, kas sina tegid seda v“i keegi 
+teine, igaljuhul k“ik uksed avanesid nagu n“ia-
+v„el. T“mban oma arvuti sellest suurest ravi-
+aparaadist v„lja ja l„hen oma teed.
+Thanx! Ma ei unusta sind ja loodan, et kui
+mul j„lle h„da k„es, siis aitad mind j„lle.
+
+[ja uksed avanesid]
+from: friend@lap.top
+delete: Deletemail ja uksed avanesid
+close: MAILBOX
+Vau! Ma ei tea, kas sina tegid seda v“i keegi 
+teine, igaljuhul k“ik uksed avanesid nagu n“ia-
+v„el. T“mban oma arvuti sellest suurest ravi-
+aparaadist v„lja ja l„hen oma teed.
+Thanx! Ma ei unusta sind ja loodan, et kui
+mul j„lle h„da k„es, siis aitad mind j„lle.
+
+
+
+[Bussipark palub abi]
+from: buss@buss.ee
+close: MAILBOX
+delete: Deletemail Bussipark palub abi
+Kohe algab Bussipargi busside tehno-
+levaatus ja selgus, et seal kontrolli-
+takse bussidel ka "AASTA 3000 PROBLEEMI"
+ 
+Selgus, et meie bussidel p“hjustab
+see aasta-arvu-viga t“siseid h„ireid!
+Aita meid!
+ 
+Vaata: www.y3k.com
+       www.buss.ee
+
+[Tehnovaatus korras!]
+from: buss@buss.ee
+continue: missioncompleted 5
+L„bisime edukalt tehnolevaatuse! T„name!
+Preemiaks saad kuni kuu l“puni meie firma
+bussides 10% odavamat s“ita!
+
+[tehnovaatus korras!]
+from: buss@buss.ee
+close: MAILBOX
+delete: Deletemail tehnovaatus korras!
+L„bisime edukalt tehnolevaatuse! T„name!
+Preemiaks saad kuni kuu l“puni meie firma
+bussides 10% odavamat s“ita!
+
+
+[Vajan uut programmi]
+from: toomas@ploom.ee
+close: MAILBOX
+delete: Deletemail Vajan uut programmi
+Mu lemus „hvardab mind lahti lasta,
+sest ma ei saa enam seriaale teha!
+Asi on selles, et mu seriaali-tegemis-
+programmi 30-days-free aeg sai t„is
+ning nd see enam ei t””ta!
+
+Ole hea s“ber - kas saad mulle uue
+programmi muretseda? Ruttu oleks vaja!
+
+kki on Interneti-Shopis midagi:
+       www.shop.ee
+
+[Sa oled mu ingel!]
+from: toomas@ploom.ee
+continue: missioncompleted 6
+Sa oled mu elup„„stja! Programm on
+suurep„rane! Juba homsest on ekraanil
+t„iesti uus seriaal <Zallmonid>, ja
+panin l“pukirjadesse ka sinu nime!
+
+[sa oled mu ingel!]
+from: toomas@ploom.ee
+close: MAILBOX
+delete: Deletemail sa oled mu ingel!
+Sa oled mu elup„„stja! Programm on
+suurep„rane! Juba homsest on ekraanil
+t„iesti uus seriaal <Zallmonid>, ja
+panin l“pukirjadesse ka sinu nime!
+
+[Suur auhind m2ngus!]
+from: vasja@ElBajon.ee
+close: MAILBOX
+delete: Deletemail Suur auhind m2ngus!
+Kuule mees, „ra maga! Just praegu on k„imas
+sinu lemmikm„ngu <PAHARET> suur v“istlus!
+Peaauhinnaks on elu l“puni kogu Internet
+ja h„kkimisprogrammid tasuta!!!!
+   Meilisin juba Koljale ja ta lubas uurida,
+kuidas oleks v“imalik v“istlust lihtsamini
+„ra v“ita!
+   ra maga! PEAV“IDUKS TASUTA INTERNET!!!!
+
+[Uus info!]
+from: kolja@gunsnroses.ee
+close: MAILBOX
+delete: Deletemail Uus info!
+Uurisin v„heke seda <PAHARET>-v“istlust
+ja selgus, et seda m„ngivad praegusel hetkel
+....98% maailma inimestest! K“ik ju tahavad
+v“ita!
+   Salajastest allikatest kuulsin aga, et
+kui m„ngu lehekljel (www.paharet.ee) kirju-
+tada nime asemel teatud KOOD, oledki sina
+kohe v“itnud!
+   Teiste andmete kohaselt olid programmeeri-
+jad sna juhmid ning kirjutasid selle koodi
+hte levelisse sisse! Selleks tuleb seda
+m„ngu m„ngida ja vaadata, kus see kood on!
+
+[MISSIOON]
+from: info@hw2.ee
+close: MAILBOX
+delete: Deletemail MISSIOON
+M„ngu PAHARET sait asub aadressil:
+   www.paharet.ee
+ 
+Seal lehekljel tuleb sul aga sisestada kood.
+Koodi saamiseks pead m„ngima m„ngu <PAHARET>,
+mis asub Hackers World II kataloogis. Salvesta
+praegune m„ng ja v„lju Hackers World II-st.
+K„ivita <paharet.exe> ning sisesta parool
+"tornado".
+   Kui oled koodi leidnud, pane HW2 uuesti
+k„ima, laadi enne salvestatud m„ng ning mine
+lehekljele www.paharet.ee. Sisesta kood.
+ 
+See teade h„vib ise 5 sek jooksul... (vabandame,
+see optsioon ajutiselt ei t””ta).
+
+[You're the WINNER!]
+from: info@paharet.ee
+continue: missioncompleted 7
+“NNITLEME! EDUKA HKKIMISEGA V“ITSITE PAHARET-
+MNGU V“ISTLUSE! TEATAME, ET AUHINNAKS SAATE
+ELUAEGSE TASUTA.... Oot oot! Selgus, et keegi
+on siin veel sohki teinud! Paistab, et ka
+m„ngu autorid ise on koodiga sisse h„kkinud ja
+ennast esikohale seadnud!
+   Kahju kll, seekord j„id siiski teiseks, kuid
+ka teise-koha-mees saab auhinna! Auhinnaks on
+ilus paharet-logoga kustutuskumm! “nnitleme!
+
+Mission completed anyway.
+
+
+[you're the WINNER!]
+from: info@paharet.ee
+close: MAILBOX
+delete: Deletemail you're the WINNER!
+“NNITLEME! EDUKA HKKIMISEGA V“ITSITE PAHARET-
+MNGU V“ISTLUSE! TEATAME, ET AUHINNAKS SAATE
+ELUAEGSE TASUTA.... Oot oot! Selgus, et keegi
+on siin veel sohki teinud! Paistab, et ka
+m„ngu autorid ise on koodiga sisse h„kkinud ja
+ennast esikohale seadnud!
+   Kahju kll, seekord j„id siiski teiseks, kuid
+ka teise-koha-mees saab auhinna! Auhinnaks on
+ilus paharet-logoga kustutuskumm! “nnitleme!
+
+Mission completed anyway.
+
+[Raske konkurents]
+from: programmer@ea.ea
+close: MAILBOX
+delete: Deletemail Raske konkurents
+Kuulsime, et sina oled k“ige osavam h„kker
+sellel poolkeral. Meie firmal oli samuti
+plaan siinset m„nguturgu vallutada, aga nd
+on mingid mehed aadressile http://www.vutt.ee/
+oma, odavama versiooni les pannud. Ole hea 
+ja vaata, kas saad meie konkurenti k“rvaldada.
+
+[Ei oleks uskunud]
+from: programmer@ea.ee
+continue: missioncompleted 8
+Oh, nii kiiresti? Sa oled t“esti osav.
+Alguses oli meil plaanis sulle m“ni
+meie uusim m„ng testimiseks kinkida, aga
+kuna sa need niikuinii juba endale oled
+kusagilt v„lja kr„kkinud, siis pole sel vist
+m“tet.
+
+[ei oleks uskunud]
+from: programmer@ea.ee
+close: MAILBOX
+delete: Deletemail ei oleks uskunud
+Oh, nii kiiresti? Sa oled t“esti osav.
+Alguses oli meil plaanis sulle m“ni
+meie uusim m„ng testimiseks kinkida, aga
+kuna sa need niikuinii juba endale oled
+kusagilt v„lja kr„kkinud, siis pole sel vist
+m“tet.
+
+
+[Saada teade!]
+from: kalle@kusta.qqq
+close: MAILBOX
+delete: Deletemail saada teade
+Ole hea, saada s“ber Teodorile teade,
+et toit on valmis ja k“ik ootavad teda
+kodus ruttu s””ma!
+
+Kahjuks ma ei tea ta mailiaadressi, kuid
+otsi see kusagilt netist v„lja! teodori
+perekonnanimi oli vist Kadakpuu.
+
+[Mis te sonite?]
+from: liina@antenn.padi
+close: MAILBOX
+delete: Deletemail Mis te sonite?
+Kas teil on mingi probleem v„?
+rge tdake mind oma meilidega.
+Mina teid ja teie ei tunne mind!
+
+[Infot Teodorist]
+from: liina@antenn.padi
+close: MAILBOX
+delete: Deletemail Infot Teodorist
+Teid huvitab Teodor Kadakpuu?
+vaadake, kui tema ise teile endast
+ei r„„gi, siis ei kavatse ka mina 
+r„„kida, sest mul pole aimugi, mis
+teil plaanis on. 
+
+[Villult meiliasjandusest]
+from: villu@padi.padi
+close: MAILBOX
+delete: Deletemail Villult meiliasjandusest
+Mis minusse puutub, siis minul
+meilidega probleeme ei ole. Samuti ei ole
+mul probleeme m“istusega ja mingit
+lolli juttu mina, erinevalt m“nest
+erandist, kohe mitte ei aja. 
+
+[Villult Teodorist]
+from: villu@padi.padi
+close: MAILBOX
+delete: Deletemail Villult Teodorist
+Teodor Kadakpuu? No miks mina
+teda siis ei tunne. Aga mis ta praegu
+teeb, seda ma ei oska ”elda. Istub
+klubis ilmselt. Saatke talle meil
+(selle saate klubi webikljelt)
+
+[padjaklubist.]
+from: tekka@padi.padi
+close: MAILBOX
+delete: Deletemail padjaklubist.
+Meil on t“esti ks Teodor
+Kadakpuu nimeline. Ja mis on siis?
+Hea et ta siingi on. Ta on ka 
+arvutimees (oma kodulehellg ja puha)
+Ta tegi meie klubi leheklje ka! 
+T„itsa tasuta. V„„rt mees.
+
+[padjaklaabist]
+from: tekka@padi.ee
+close: MAILBOX
+delete: Deletemail padjaklaabist
+See meil on saadetud Eesti Padjaklubist
+Kui te soovite astuda klubi liikmeks,
+siis peate kaasa v“tma n„idiseid oma
+varasematest t””dest ja t”itma 
+kohapeal blanketi.
+
+[faktid klubist]
+from: a@k.padi
+close: MAILBOX
+delete: Deletemail faktid klubist
+Padjaklubi on klubi k“igile
+huvilistele. Lisaks Eesti lipu 
+k“rgel hoidmisel anname me h„„d
+n“u ka lihtrahvale. Kas teate 
+n„iteks, et n“ela omadusi saab
+kergesti muuta koduste vahenditega?
+Tulge oma murega ikka meie juurde!
+
+[faktid Teodorist]
+from: a@k.padi
+close: MAILBOX
+delete: Deletemail faktid Teodorist
+Teodor Kadakpuu on tore mees, meie
+meeskonna kindel liige, kes on
+eriti osav pride alal. Tal on
+ka s“rmeosavust - ta enda webiklg
+asub aadressil 
+http://www.ceogities.com/paksmagu/
+aga ta on kujundanud ka meie
+klubi leheklje. Tulevikumees!
+
+[MAILER-DAEMON]
+from: mailer@daemon.com
+delete: Deletemail MAILER-DAEMON
+CAN'T SEND YOUR MESSAGE. I'M GIVEN UP.
+ADDRESS DOESN'T EXISTS OR SERVER NOT RESPOND
+
+[MAILER-DAEMON is reporting]
+from: mailer@daemon.com
+delete: Deletemail MAILER-DAEMON is reporting
+CAN'T SEND YOUR MESSAGE TO FOLLOWING ADDRESS:
+   teodor@kadak.padi
+ADDRESS DOESN'T EXISTS OR SERVER NOT RESPOND
+
+I'M GIVEN UP.
+
+[MAILER-DAEMON reports]
+from: mailer@daemon.com
+delete: Deletemail MAILER-DAEMON reports
+CAN'T SEND YOUR MESSAGE TO FOLLOWING ADDRESS:
+   paks@gc.ee
+ADDRESS DOESN'T EXISTS OR SERVER NOT RESPOND
+
+I'M GIVEN UP.
+
+[MAILER-DAEMON tells you the story]
+from: mailer@daemon.com
+close: MAILBOX
+delete: Deletemail MAILER-DAEMON tells you the story
+MIKS SA MIND PIINAD?!
+ 
+KAS SA EI SAA ARU, ET KA MINA OLEN ELAV OLEVUS?
+KA MINUL ON OMA V“IMETE PIIRID! AGA KEEGI MINUST
+EI HOOLI JA K“IK AINULT VIRISEVAD MINU KALLAL! :(
+MA EI J“UA K“IKI E-MAILE LIHTSALT LAIALI JAGADA,
+SEST ISTUN SIIN šKSIKUS LOSSIS JA MU V“IMEID
+AHELDAB IIDNE N“IDUS!
+
+KUI SUUDAD, SIIS AITA MIND!!!! SELLEKS TULEB SUL
+LAHENDADA MITU M“ISTATUST, MIDA KEEGI VEEL POLE
+ENNE SUUTNUD!
+
+MAILER-DAEMON
+
+[MAILER-DAEMON gives you a chance]
+from: mailer@daemon.com
+close: MAILBOX
+delete: Deletemail MAILER-DAEMON gives you a chance
+Esimene m“istatus k“lab nii:
+
+  Vahel meid ohustab, kauplemist soodustab,
+  suuremat osa me pindalast moodustab.
+  Polaarsena sgaval silmade sees
+  elab see kolme n„oga mees.
+
+Millest ma r„„kisin? Piisab hest “igest
+s“nast, mis saada minu aadressile 
+mailer@daemon.com
+
+[MAILER-DAEMONi teine m“istatus]
+from: mailer@daemon.com
+close: MAILBOX
+delete: Deletemail MAILER-DAEMONi teine m“istatus
+Esimene vastus oli t“epoolest Vesi.
+Kummaline, et sa seda teadsid. Kuid see
+pole veel k“ik. Mis see on:
+
+  Teame, et meist on ta vanem.
+  Vedelast peast on m“nele parem...
+  Taevastki paluvad k„ed
+  juurdegi teda meil iga p„ev.
+
+Vastus ikka mulle (mailer@daemon.com)
+
+[MAILER-DAEMON Kolmas]
+from: mailer@daemon.com
+close: MAILBOX
+delete: Deletemail MAILER-DAEMON Kolmas
+Paistab, et raskusi sa ei tunnista. Kuid
+on veel midagi:
+
+  Kolm venda oli neid, kolm vellekest.
+  Usk esimest leidis, ta
+   k“rvad kurdiks l“i.
+  Teist armastus kohtas ja
+   pime tast sai.
+  Kuid tema, see viimane,
+   kiirena j„i.
+
+Daemon (mailer@daemon.com)
+
+[MAILER-DAEMON Viimane]
+from: mailer@daemon.com
+close: MAILBOX
+delete: Deletemail MAILER-DAEMON Viimane
+H„sti. Paistab, et sinu intelligents
+letab paremadki protsessorid,
+mida ma n„inud olen. Kuid siin 
+sulle viimane lesanne. 
+Mida annavad kokku eelmiste m“istatuste
+vastused - Lootus, Leib ja Vesi?
+Kui tead, siis saada oma arvamus
+ikka minu aadressile mailer@daemon.com
+
+[MAILER-DAEMON seletab]
+from: mailer@daemon.com
+close: MAILBOX
+delete: Deletemail MAILER-DAEMON seletab
+Asi nii, et iga kord, kui sa mulle meilad,
+siis ma ei viitsi sulle vastu saata. See 
+t„hendab, et j„rgmine kord saadan vastu-
+meili siis, kui sinu meilis sisaldub “ige
+vastus. Nii et j„tka proovimist. Seekord 
+siis - vale!
+
+[MAILER-DAEMON imestab]
+from: mailer@daemon.com
+close: MAILBOX
+delete: Deletemail MAILER-DAEMON imestab
+T“epoolest, sinus on annet!
+“igeid vastuseid sadas nagu rahet
+ksikutel “htutundidel lossi
+r„baldunud katusel. 
+Kuid mis me minust r„„gime - saatsin 
+Teodorile sinu meilid edasi.
+
+[Olen teel...]
+from: teodor@kadak.padi
+continue: missioncompleted 9
+Sain messi k„tte. Koon veel padja
+l“puni ja hakkan tulema.
+
+
+
+
+
+
+[Vanaema synnip2ev!]
+from: ema@hw2.ee
+close: MAILBOX
+delete: Deletemail Vanaema synni2ev!
+ra siis snnip„evakaarti unusta! E-kaart
+lillede ja mererannaga oleks igati sobiv!
+Veel parem oleks, kui ka mmargune number
+oleks „ra mainitud! Vanaemal on ju juubel!
+   Pane end ilusti riidesse kah ja ole
+“igel ajal kohal!
+ 
+Ema
+
+[Uued pastakad!]
+from: ema@hw2.ee
+close: MAILBOX
+delete: Deletemail Uued pastakad!
+Uued m“nusad pastakad meilt!
+Klasta meid t””p„eviti 8:00-16:00,
+l“una 13:00-14:00. Nd uus kujundus!
+Guns'n'roses, Offspring! K“ik! Hea!
+
+[Suur probleem]
+from: leopold@halleluuja.com
+close: MAILBOX
+delete: Deletemail Suur probleem
+Aidake!
+Meisterdasin siin just ajamasina valmis, aga
+millegip„rast asi ei t""ta korralikult! :(
+Mis sa arvad, milles v“ib viga olla?
+ 
+ 
+                                Alati sinu s„ber,
+                              Petrov Ivanovtitsch
+
+[Palun abi]
+from: osvald@„ss.ee
+close: MAILBOX
+delete: Deletemail Palun abi
+T"mbasin endale netist lip"neva seiklusm„ngu
+Kriposossum, aga juba esimeses levelis j„in
+omadega j„nni ja ei oska midagi edasi teha.
+
+   Vajan su n"uandeid!
+
+Ootan 10 minutit,
+sinu s“ber
+
+[Hea film]
+from: dima@vello.ee
+close: MAILBOX
+delete: Deletemail Hea film
+Praegalt jookseb kinos hea film - Fatman -
+seal olla kasutatud eriefektide tegemiseks
+uusimat protsessoritehnikat ja h„kkerite-
+teadmisi! Tasub vaatamist igal juhul!
+
+[Uus saatesari Zallmonid!]
+from: toomas@ploom.ee
+close: MAILBOX
+delete: Deletemail Uus saatesari Zallmonid!
+Uus saatesari j“uab juba t„na ekraanidele!
+Palun sellep„rast ka sind seda kohe algusest
+peale vaatama, et osa saada sellest p“nevusest
+ja actionist! (šhtlasi aitab see suurendada
+telekanali vaatajate arvu).
+ 
+Kui soovite seriaalisisestesse reklaamipausi-
+desse oma reklaami, helistag meie telefoni-
+numbril 0!
+
+[Ilmajaama UUDISTE-list2]
+from: www@ilmajaam.ee
+close: MAILBOX
+delete: Deletemail Ilmajaama UUDISTE-list2
+V„rske partii P“rcededeseid on saabunud!
+Pehmemad istmekatted ja mugavamad nupud!
+Hind ainult meil!
+
+      V„rsked uudised homse ilma kohta!
+
+     468 aastat kvaliteetset ilmateadet!
+
+
+       Puhtam, kuivem ja muretum tunne!
+              www.ilmajaam.com
+
+[Mingi jama!]
+from: fan@hackersworld.ee
+close: MAILBOX
+delete: Deletemail Mingi jama!
+M„ngin siin juba pikemat aega seda Hackers
+World kahte, aga viimases missioonis on ju
+mingi jama sees, sest ksk“ik mis seal
+ka kogemata valesti ei teeks, kustutab
+m„ng kohe k“ik seivitud geimid ja k“ike
+tuleb t„iesti otsast alata! No on jama! ;(
+
+[Riigieksami tulemused]
+from: volja@ruudkool.ee
+close: MAILBOX
+delete: Deletemail Riigieksami tulemused
+H„kkisin siin Riigieksamikeskuse kompuutri-
+tesse sisse ja sain tulemused teada! Sinu
+punktid peaksid olema sellised:
+     Kirjand: 1 (ka huumori eest pandi punkt)
+ Matemaatika: 51.2
+Inglise keel: 90
+Arvutiteadus: 101
+
+[tantsukursused]
+from: miki@ruudkool.ee
+close: MAILBOX
+delete: Deletemail tantsukursused
+Kuule - miks sa t„na tantsukursustele ei
+tulnud?????? MA TAHAN SAADA PIISAVALT
+P“HJENDATUD VASTUST!!!!!!!!
+
+[hinded]
+from: dire@ruudkool.ee
+close: MAILBOX
+delete: Deletemail hinded
+Saadan sulle meeldetuletuseks sinu praegused
+hinded klassip„evikust:
+EMAKEEL      1
+MATEMAATIKA  3
+KIRJANDUS    -
+INGLISE KEEL 4
+ARVUTI“PETUS 5
+GEOGRAAFIA   1
+BIOLOOGIA    1
+SKULPTUUR    3
+KUNSTI“PETUS 1
+FššSIKA      1
+ 
+Meeldivat p„eva j„tku!
+
+[edetabel]
+from: miki@ruudkool.ee
+close: MAILBOX
+delete: Deletemail edetabel
+T„nane internetiv„ljaannete TOP 5:
+
+1) Disketograafia
+2) K“ikArvutiteJaoksSiit
+3) KiireltH„kkima
+4) <Oled Koba? “pi Siin!>
+5) "Minu peidzh"
+
+[khmm khmm]
+from: pol@politzei.ee
+close: MAILBOX
+delete: Deletemail khmm khmm
+Tlitame politseist. Muide, ega sina
+ei h„kkinud m“ne p„eva eest politsei-
+v“rku sisse ja ei v“tnud illegaalse
+tarkvara peidsilt oma pilti maha?
+ 
+V“iksid meile siis teada anda, kas see olid
+sina v“i ei olnud - siis teame sinu
+kahtlustamisega arvestada!
+
+
+
+[l“pp]
+“, “ - 
+ - 
+„ - „
+™ - ™
+” - "
+š - š
+ - 

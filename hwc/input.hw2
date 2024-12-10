@@ -1,0 +1,45 @@
+[NB!]
+text: BLABLABLA		-tekst, mis kasutaja tekstis peab sisalduma
+lata: BLABLABLA		-lata, mis selle teksti olemasolmisel loaditakse
+else: BLABLABLA		-lata, mis kuvatakse, kui kasutaja poolt kirjutatud
+			 tekst ei sisaldanud ühtki etteantud sõna... (pole vajalik)
+playernimi: BLABLABLA   -juhul, kui kirjutati playernimi, kuvatakse lata BLABLABLA
+
+Kõik <text:> is olevad asjad peavad olema väikesete tähtedega
+
+[password1]
+text: tere
+lata: netscaabakas
+text: he
+lata: http://www.kanalisatsioon.ee/
+else: http://www.y3k.com/
+
+[cheopzzypassword]
+text: 999
+lata: http://www.pyramiid.ee/pult/
+else: http://www.pyramiid.ee/incorrect/
+
+[smileyankeet]
+text: kokapapa
+lata: http://www.med.smiley.ee/onunimi.now/
+
+[Y3Kpath]
+text: hack\y3k
+lata: y3kstart
+text: hack/y3k
+lata: y3kstart
+else: y3knotfound
+
+[Y3Knotfound]
+text: 456345634634636346363
+lata: xxxxxxxxxxxxxxxxxxxxx
+else: y3knotfound
+
+[paharetKOOD]
+text: kiip
+lata: http://www.paharet.ee/password-OK/
+else: http://www.paharet.ee/password-WRONG/
+
+[niisama]
+text: trurgumfdcgumdrfgufdtumftmurtumft
+

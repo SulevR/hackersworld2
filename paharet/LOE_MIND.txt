@@ -1,0 +1,43 @@
+*********************************************************************
+*                              PAHARET                              *
+*                            versioon 1.0                           *
+*-------------------------------------------------------------------*
+*                          Made in Estonia                          *
+*                              © 2000                               *
+*                                                                   *
+*         Programmeerijad: Sulev Reisberg ja Urmas Reisberg         *
+*********************************************************************
+
+Selle mängu MÕTE ei pärine Sulev ega Urmas Reisbergilt. Asi on selles,
+et kunagi ammu-ammu oli olemas selletaoline DOS'i mäng, mis töötas
+hästi mustvalgel 80286-l. Kahjuks on sellest ajast möödunud palju
+päevi ja aastaid, arvutid on läinud kiiremaks ja meie mälu tuhmunud.
+   Kui meil tekkis mõte see mäng endale netist uuesti tõmmata, et
+meenutada vanu kuldseid aegu, selgus et me ei mäleta enam isegi
+selle mängu nime! :( Niisiis ei jäänudki meil üle muud, kui see
+endale ise uuesti programmeerida!
+   Niisiis vabandamegi mängu TÕELISTE AUTORITE ees, et me nende
+nimesid ei tea ja siia kirjutada ei osanud. Kui keegi neid äkki
+tunneb või teab mängu ÕIGET NIME, võiks sellest meilegi teada anda
+e-mailiga aadressidel cooler@hot.ee või nimetu@hot.ee. Igatahes
+oleme me õigetest autoritest siiras vaimustuses, et nii geniaalne
+mäng nii ammu juba valmis on tehtud!
+
+MÄNG ISE.
+<Paharet> peaks olema üsna arusaadav mäng kõigile üle 3.-4.aastastele
+ning mängitav juba alates 6.-7.eluaastast! Mingeid lisaõpetusi ei tohiks
+vaja minna, avastamisrõõm jäägu täielikult mängijale!
+
+TASANDEID on valmis tehtud vaid saja ringis, aga kui viitsime, teeme
+neid juurde - selleks tuleks aegajalt külastada Hackers Worldi
+saiti aadressil:
+   http://www.hot.ee/cooler/hacker/
+Kui vajalikke faile uuendame, paneme need sinna kindlasti üles!
+
+PROBLEEMID
+Meie arvutis mingeid probleeme ei esinenud, aga kui teil mõni tõrge
+tekib, andke sellest meile kiiresti teada, üritame vead ruttu parandada.
+Meie mailiaadress on cooler@hot.ee
+
+                                                      MÄNGU AUTORID
+                                                  13. augustil 2000

@@ -1,0 +1,4721 @@
+INTERNETI DATA
+
+ì, ì - "
+ƒ - é
+Ñ - Ñ
+ô - ô
+î - "
+ö - ö
+Å - Å
+
+
+[Abiks ikka!]
+selline asi nagu latamake.bas teeb lihtsalt valmis selle pildi, mida on vaja.
+	Seda vìiks natuke tÑiendada muidugi...
+sx: XX -mÑÑrab x-i koordinaadi, kuhu peab pîîrduma
+sy: YY -mÑÑrab y-i koordinaadi, kuhu peab pîîrduma
+fc: CC -mÑÑrab teksti vÑrvi
+bc: CC -mÑÑrab Ñra teksti tausta vÑrvi
+t: ABC -kìige lihtsam teksti vorm
+l: X1 X2 ABC -lingi lisamine eelmisele t:-ga tehtud reale.
+ct: XX YY FC BC ABC -vÑike vÑrviga kirja lisamine 
+link: YY X1 X2 LINK -lihtsaim lingi lisamine
+clearlinks -puhastab kìik lingid
+date: XX YY FC BC -kuupÑev. asukoht ja vÑrvid
+clock: XX YY CC -muutuv kellaaeg (mustal taustal)
+activedir: ABC -muudab activedir-i vastavaks
+wos -kui seda kohta loeb wos, siis teeb ta kohe omad tÑpsustused(vÑrvid jne)
+esc: ABC -link, mis tekib ESC nupu vajutamisel
+lata: X1 Y1 latanimi -teeb uue lata siia sisse
+lata: showactivedir -teeb WOS-si aktiivse lata
+loc: Sulevi tehtud. Aga vist annab <locationi> vÑÑrtuse.
+line: XX1 YY1 XX2 YY2 CC B/F/L (analoogne basicu kÑsule:B-border,F-filled border,L-line
+inkey: NR ABC -NR on selle kahekohalise inkey$-i teise tÑhe ascii vÑÑrtus. Ma pole seda
+	tegelt veel teind, sest sulevi kood on nii sassis ja mai saa sittagi enam aru
+clearnetscape -teeb Netscaabaka www-akna tÅhjaks
+pause: NR
+player: XX YY FC BC -teeb mÑngija nime vajalikku kohta. NB - see on mingi kindla suurusega.
+ussp: XX YY S -ussi pîîîrdekoht ja suund
+uss: XX YY CC S -ussi alguse koht, ussi vÑrv ja suund
+ussj: X1 Y1 X2 Y2 -koht, kust uss Ñra kaob ja kust ta uuesti ilmub
+ussend: XX YY -kui uss siia jìuab, siis ta enam kuhugi edasi ei lÑhe
+ussalarm: XX YY ABC -kui uss siit Åle lÑheb, siis kÑivitub vastav lata. kui midagi siin 
+link: YY X1 X2 inputrida YY X1 X3 CC ABCABCDSG >sdCABCS -link inputrea kÑsule.
+	NB!!!! X3 = X2 + 2. ABCABCDSG -muutuja nimi. sdCABC -muutuja ABCABCDSG vÑÑrtus.
+	Kui muutuja nimi algab "mission", siis peab sellele jÑrgenema missiooni number,
+	sest otsitakse lÑbi SUB"missionX", kus X on missiooni number.
+	nt: link: 17 35 42 inputrida 17 35 44 07 IlmajaamKP >09111999
+	vìi nÑit. link: 17 35 42 inputrida 17 35 44 07 mission2kodu >2314
+reklaam: YY XX
+checkbox: XX YY NNR 1 -vasak x ja y. 01 - muutuja, mida ta muudab. 1 - enabled. 0= disabled
+
+muutuja: NNR V -muutuja number ja siis selle vÑÑrtus (1 vìi null)
+m: NNR V LATANIMI -kui muutuja vÑÑrtus on V, siis edasi lÑheme uue lata juurde
+button: NIMI -nupp
+box: X1 Y1 X2 Y2 BC FC N -siia teeb kasti, mis on vastava suurusega.
+	Kui FC BC ja S-i asemel on ainult Åks vÑrv, siis tehakse siia
+	vastavat vÑrvi kast. N-i vÑÑrtus nÑitab, mitu joont jookseb Åmber kasti.
+	(kÑsk vìib olla ka ainult box: X1 Y1 X2 Y2 BC)
+
+
+[addressbook]
+dire@ruudkool.ee
+
+[netscaabakas1]
+sx: 01
+sy: 01
+fc: 12
+bc: 00
+t: Netscaabakas∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞
+ct: 01 01 15 12 Netscaabakas
+t: ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ
+t: 
+t: 
+t: ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ
+t:     LOCATION:_______________________________
+t: —ÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕ—
+t: ≥                                                                              ≥
+t: ≥                                                                              ≥
+t: ≥                                                                              ≥
+t: ≥                                                                              ≥
+t: ≥                                                                              ≥
+t: ≥                                                                              ≥
+t: ≥                                                                              ≥
+t: ≥                                                                              ≥
+t: ≥                                                                              ≥
+t: ≥                                                                              ≥
+t: ≥                                                                              ≥
+t: ≥                                                                              ≥
+t: ≥                                                                              ≥
+t: ≥                                                                              ≥
+t: ≥                                                                              ≥
+t: ≥                                                                              ≥
+t: ≥                                                                              ≥
+t: ≥                                                                              ≥
+t: ≥                                                                              ≥
+t: œÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕœ
+button: pressedNetscaabakas Location
+button: Netscaabakas _
+button: Netscaabakas X
+button: Netscaabakas Back
+button: Netscaabakas Reload
+button: Netscaabakas Home
+link: 06 14 64 net aadress
+clearnetscape
+
+[http://www.yehaa.com/]
+name: otsing yehaa
+clearnetscape
+box: 19 10 57 23 15 09 2
+sx: 20
+sy: 11
+fc: 09
+bc: 15
+t: ∞ ∞∞∞ ∞€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€
+t: ∞     ∞€€ Search:                  €€
+t: ∞∞∞ ∞∞∞€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€
+t: ∞∞   ∞∞€€€€€€€€YEHAA ALWAYS!€€€€€€€€€
+t:  ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ 
+t:  HARIDUS          AJALEHED           
+t:  ruudkool         Hilisìhtuleht      
+t:                                      
+t:  éRI              MUUSIKA            
+t:  talse            fÑnniklubid        
+t:                                      
+t:  VARIA            WWW-de TOP5        
+loc: http://www.yehaa.com/
+link: 12 37 54 net search
+link: 16 21 28 lata http://www.ruudkool.edu.ee/
+link: 17 21 28 lata http://www.ruudkool.edu.ee/
+link: 19 21 25 lata http://www.talse.ee/
+link: 20 21 25 lata http://www.talse.ee/
+link: 22 21 25 lata http://www.varia.ee/
+link: 16 38 51 lata http://www.hilisohtuleht.ee/
+link: 17 38 51 lata http://www.hilisohtuleht.ee/
+link: 19 38 49 lata http://www.padjaklubi.ee/
+link: 20 38 49 lata http://www.padjaklubi.ee/
+link: 22 38 49 lata http://www.wwwtop5.ee/
+'checkbox: cb1 10 10 1 0
+
+[http://www.hilisohtuleht.ee/]
+name: hilis htuleht ajaleht meedia
+clearnetscape
+m: 003 1 http://www.hilisohtuleht2.ee/
+m: 004 1 http://www.hilisohtuleht2.ee/
+loc: http://www.hilisohtuleht.ee/
+bc: 11
+fc: 0
+sx: 2
+sy: 8
+t:             
+t:  H  Â  L    
+t:             
+bc: 0
+fc: 12
+sx: 16
+sy: 9
+t: Hilisìhtuleht - kohalik kollane uudisteleht
+bc: 0
+fc: 15
+sx: 4
+sy: 12
+t:   öhinemisplaanid!!!
+t: Hilisìhtuleht plaanib vÑiksemat sorti
+t: Åhinemist Åhe suurema firmaga. See
+t: peaks kokku hoidma kulusid. Samuti 
+t: loodavad toimetuse liikmed hakata 
+t: saama suuremaid palkasid.
+t: Kìik, kes toetavad Åhinemist, aga ka 
+t: kìik, kes on pìhimìtteliselt iga-
+t: suguste Åhinemiste vastu, vìiksid
+t: tulla omale sobival ajal meie toi-
+t: metuse maja ette oma meelt avaldama.
+t: Vastutate ise!
+bc: 0
+fc: 14
+sx: 45
+sy: 12
+t:   ImepÑrane sport
+t: Iraani mees, kes varem teenis
+t: leiba kÅttimisega, on nÅÅd
+t: leidnud oma tìelise kutsumuse - 
+t: temast on saanud sprinter.
+t: Mees isegi on oma edust Ålla-
+t: tunud - pealtnÑgijate sìnul
+t: Åletas ta kìiki kÅtitavaid
+t: loomi nii kiiruse kui tarkusega.
+t: Lisaks fÅÅsisele loodab mees
+t: loorbereid lìigata oma maa
+t: traditsioonide hea tundmisega.
+
+[http://www.hilisohtuleht2.ee/]
+bc: 11
+fc: 0
+sx: 2
+sy: 8
+t:             
+t:  H  Â  L    
+t:             
+bc: 0
+fc: 12
+sx: 16
+sy: 9
+t: Hilisìhtuleht - kohalik kollane uudisteleht
+clearnetscape
+loc: http://www.hilisohtuleht.ee/
+bc: 0
+fc: 15
+sx: 4
+sy: 11
+t:    Doktor Smith ja professor Holmes
+t:      salapÑrase olendi jÑlil
+t: Smith ja Holemsmes ()edaspidi S&W) vÑidavad, et
+t: on avastanud uut liiki elu. Nad on isegi 
+t: paberile skitseerinud selle nn elu
+t: kujutise. Pilt meenutab kangesti stseeni
+t: X-failidest, kuid S&W on veendunud, et on
+t: tÑie mìistuse juures.
+t: TÑnase lehe pabervÑljaandes on S&W-ga ka
+t: pikk intervjuu, mida jÑlginud psÅhholoog
+t: arvas, et pole neil hÑda midagi, lihtsalt
+t: liiga kaua arvuti taga istunud vìi action-
+t: filme vaadanud.
+t: PsÅhholoog ise on pÑrit Tartust ning seega
+t: vìib ta sìnu tìe pÑhe vìtta.
+bc: 0
+fc: 14
+sx: 50
+sy: 11
+t:    Staadionil kummitab
+t:          jÑlle
+t: Pealinna staadionil, kus
+t: vanasti suuri vìistlusi 
+t: peeti, elavad prÑÑgusaja
+t: sportlased pidevas hirmus,
+t: sest kohalik kummitus 
+t: (nimega Dopingukoll) on
+t: neil pidevalt jÑlil.
+t: Siit ka pìhjused, miks meie
+t: sportlased enam vìistlusteks
+t: valmistuda ei saa, ega muid
+t: auhindu koju ei too.
+t: Kohalikud on pîîrdunud abi
+t: saamiseks ka raja taha.
+
+
+
+*******www top5
+[http://www.wwwtop5.ee/]
+name: top5
+clearnetscape
+loc: http://www.wwwtop5.ee/
+bc: 0
+fc: 9
+sx: 2
+sy: 8
+t:                             €€  €€€  €€ €€  €€€  €€ €€  €€€  €€   €€€€€€€€€€
+t:                              €€€€ €€€€   €€€€ €€€€   €€€€ €€€€    €€
+t:                               €€   €€     €€   €€     €€   €€     €€€€€€€€€
+t:                                                                           €€
+t:                              ±€€€€€€€€€±  ±€€€€€€€€±   ±€€€€€€€±          €€
+t:                                  ±€±     ±€€      €€±  ±€€    €€±         €€
+t:                                  ±€±     ±€€      €€±  ±€€€€€€€±         €€
+t:                                  ±€±      ±€€€€€€€€±   ±€€±       €€€€€€€€
+t:  
+fc: 15
+t:                            1.-2. www.yehaa.com
+t:                            1.-2. www.yehaa.com
+t:                               3. www.loomaaed.ee
+t:                               4. www.hilisohtuleht.ee
+t:                               5. www.wwwtop5.ee
+
+*******Proovi kÅlg
+[http://www.proov.ee/]
+name: proovi lehekylg
+clearnetscape
+loc: http://www.proov.ee/
+box: 10 10 55 23 04
+box: 15 15 60 20 01 14 2
+ct: 03 09 07 01 POWER PAGE
+ussp: 02 08 R
+ussp: 13 08 D
+ussp: 13 10 L
+ussp: 02 10 U
+ussp: 06 25 R
+ussj: 07 25 13 09
+ussp: 78 09 D
+ussj: 78 10 06 10
+uss: 06 08 14 R
+uss: 04 08 00 R
+uss: 06 10 02 D
+uss: 66 09 00 R
+
+***********Ruudi keskkooli koduleht
+[http://www.ruudkool.edu.ee/]
+clearnetscape
+loc: http://www.ruudkool.edu.ee/
+name: ruudi keskkooli veb peidz
+clear
+sx: 11
+sy: 08
+fc: 15
+bc: 00
+t: ⁄ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒø
+t: ≥                                                        ≥
+t: ≥                                                        ≥
+t: ≥                                                        ≥
+t: ≥                                                        ≥
+t: ≥                                                        ≥
+t: ≥                                                        ≥
+t: ≥                                                        ≥
+t: ≥                                                        ≥
+t: ≥                                                        ≥
+t: ≥                                                        ≥
+t: ≥                                                        ≥
+t: ≥                                                        ≥
+t: ≥                                                        ≥
+t: ¿ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒŸ
+ct: 06 26 15 00 Back
+link: 26 06 09 net back
+ct: 18 26 15 00 Huvitavat
+link: 26 18 26 lata http://www.ruudkool.edu.ee/huvitavat.html
+ct: 34 26 15 00 Ruumid
+link: 26 34 55 lata http://www.ruudkool.edu.ee/ruumid.html
+ct: 48 26 15 00 ìpetajad
+link: 26 48 55 lata http://www.ruudkool.edu.ee/6petajad.html
+ct: 62 26 15 00 Saavutused
+link: 26 62 71 lata http://www.ruudkool.edu.ee/saavutused.html
+ct: 25 09 10 00 Ruudi keskkooli oma veb peidz
+ct: 28 10 12 00 Welcome over the world
+ct: 33 11 11 00 Vaadake kìik!
+ct: 70 09 15 08 234328
+
+[http://www.ruudkool.edu.ee/6petajad.html]
+loc: http://www.ruudkool.edu.ee/6petajad.html
+sx: 12
+sy: 09
+bc: 00
+fc: 14
+t: €€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€
+t: €€€€€€€€€€≤∞ 6petajad ∞≤€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€
+t: €€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€
+t:                                                         
+t: Meil on siin mitu 6petajat, kes on tÑitsa noored ja     
+t: eluj6ulised. Muidugi, meil on teistsuguseid ka, aga neid
+t: on vÑhem. Meil on direktor, kes meeldib k6igile.        
+t: ökski meie 6petaja ei ole kÅll kirjutanud raamatut v6i  
+t: osalenud rahvusvahelistes programmides, kuid ka neil    
+t: on midagi tarka îelda.                                  
+t:         TAGASI                                          
+l: 20 25 net back
+
+[http://www.ruudkool.edu.ee/saavutused.html]
+loc: http://www.ruudkool.edu.ee/saavutused.html
+sx: 12
+sy: 09
+bc: 00
+fc: 12
+t:           Ruudi Keskkooli 6pilaste saavutusi:           
+t:                                                         
+fc: 14
+t: Koht Paik                            Aasta Nimi         
+fc: 15
+t: 5  Yleriiklik maleturniir               69 Ljukin       
+t: 11.Balti karate olympiaad               91 Taburet      
+t: 1. Baltimaade juuniorhÑkkerite v6istlus 98              
+t: 2. Baltimaade juuniorhÑkkerite v6istlus 98 Keiser       
+t: 5. Eesti Noorkloun                      98 Saiaviil     
+t: 36.Yo-yo etapp                          99 Vigur        
+t: 5. Eesti I lumememme v6istlus           99 4a           
+t:         TAGASI                                          
+l: 20 25 net back
+player: 55 14 15 00
+
+[http://www.ruudkool.edu.ee/huvitavat.html]
+loc: http://www.ruudkool.edu.ee/huvitavat.html
+sx: 12
+sy: 09
+bc: 00
+fc: 14
+t: €€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€
+t: €€€€€€€€€€≤∞ Huvitavat ∞≤€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€
+t: €€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€
+t:                                                         
+t:  Paljude arvates ei toimu meie koolis suurt midagi.     
+t: Ometi on see arvamus vale ja seda kinnitavad mitmed     
+t: asjaolud.                                               
+t:  Esiteks - kuidas meil siis oma HOME PAGE saaks olla,   
+t: kui keegi poleks seda teinud? Meil on vÑga palju oma    
+t: ala meistreid - ja see on ju ka midagi.                 
+t:         TAGASI                     LOE EDASI            
+l: 47 55 lata http://www.ruudkool.edu.ee/huvitavat2.html
+l: 20 25 net back
+
+[http://www.ruudkool.edu.ee/ruumid.html]
+loc: http://www.ruudkool.edu.ee/ruumid.html
+sx: 12
+sy: 09
+bc: 00
+fc: 14
+t: €€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€
+t: €€€€€€€€€€≤∞  Ruumid  ∞≤€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€
+t: €€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€
+t:                                                         
+t:                                                         
+t:  6petajate tuba                                         
+l: 13 25 lata http://www.ruudkool.edu.ee/tuba.html
+t:  Ruff                                                   
+l: 13 16 lata http://www.ruudkool.edu.ee/ruff.html
+t:  Kirjandusklass                                         
+l: 13 16 lata http://www.ruudkool.edu.ee/klass.html
+t:  Dire (saada meil)
+l: 13 31 addressbook dire@ruudkool.ee
+t:                                                         
+t:         TAGASI                                          
+l: 20 25 net back
+
+[http://www.ruudkool.edu.ee/klass.html]
+loc: http://www.ruudkool.edu.ee/klass.html
+sx: 12
+sy: 09
+bc: 00
+fc: 14
+t: €€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€
+t: €€€€€€€€€€≤∞ Kirjandus ∞≤€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€
+t: €€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€
+t:                                                         
+t:         Oma kool                                        
+t:         --------                                        
+t:           Milvy Kaunsus (6. g)                          
+t:                                                         
+t:    Ma sìidan merel ja sìidan,                           
+t:                                                         
+t:         TAGASI                     LOE EDASI            
+l: 20 25 net back
+l: 47 55 lata http://www.ruudkool.edu.ee/klass2.html
+
+[http://www.ruudkool.edu.ee/klass2.html]
+loc: http://www.ruudkool.edu.ee/klass.html
+sx: 12
+sy: 09
+bc: 00
+fc: 14
+t: €€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€
+t: €€€€€€€€€€≤∞ Kirjandus ∞≤€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€
+t: €€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€
+t:                                                         
+t:    Åht viit mina otsin sÑÑl.                            
+t:    Seda kaua ju otsinud olen                            
+t:    laia lageda kooli pÑÑl.                              
+t:                                                         
+t:    Mìnd viit oma mÑÑratus meres,                        
+t:                                                         
+t:         TAGASI                     LOE EDASI            
+l: 20 25 lata http://www.ruudkool.edu.ee/klass.html
+l: 47 55 lata http://www.ruudkool.edu.ee/klass3.html
+
+[http://www.ruudkool.edu.ee/klass3.html]
+loc: http://www.ruudkool.edu.ee/klass.html
+sx: 12
+sy: 09
+bc: 00
+fc: 14
+t: €€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€
+t: €€€€€€€€€€≤∞ Kirjandus ∞≤€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€
+t: €€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€
+t:                                                         
+t:    mìnd sadamat vilusat.                                
+t:    Oma viit aga mina ei leia,                           
+t:    oma unistust ilusat                                  
+t:                                                         
+t:                                                         
+t:                                                         
+t:         TAGASI                                          
+l: 20 25 lata http://www.ruudkool.edu.ee/klass2.html
+
+
+[http://www.ruudkool.edu.ee/ruff.html]
+loc: http://www.ruudkool.edu.ee/ruff.html
+sx: 12
+sy: 09
+bc: 00
+fc: 14
+t: €€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€
+t: €€€€€€€€€€≤∞ Ruff ∞≤€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€
+t: €€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€
+t:                                                         
+t:  Siin on meie kooli edetabel:                           
+t:        1> Anakonda                                      
+t:        2> Koit                                          
+t:        3> Rudikud                                       
+t:  Edetabel on mitteametlik ja ei pretendeeri millelegi.  
+t:                                                         
+t:         TAGASI                                          
+l: 20 25 net back
+
+
+[http://www.ruudkool.edu.ee/tuba.html]
+loc: http://www.ruudkool.edu.ee/tuba.html
+sx: 12
+sy: 09
+bc: 00
+fc: 14
+t: €€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€
+t: €€€€€€€€€€≤∞ 6petajate tuba ∞≤€€€€€€€€€€€€€€€€€€€€€€€€€€
+t: €€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€
+t:                                                         
+t: Meie 6petajate tuba asub esimesel korral, otse poiste   
+t: peldiku ja arvutklassi vastas. Asukoht on hea - saab    
+t: meie vÑikestel marakrattidel silma peal hoida ja saab   
+t: ka vÑlja inimeste sekka p6geneda.                       
+t:  6petajate tuba on k6ige mugavam ruum meie majas - siin 
+t: on telekas, telefon (ei tîîta) ja sohva.                
+t:         TAGASI                                          
+l: 20 25 net back
+
+
+[http://www.ruudkool.edu.ee/huvitavat2.html]
+loc: http://www.ruudkool.edu.ee/huvitavat.html
+sx: 12
+sy: 09
+bc: 00
+fc: 14
+t: €€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€
+t: €€€€€€€€€€≤∞ Huvitavat ∞≤€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€
+t: €€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€
+t:                                                         
+t:  Teiseks - meil toimub igasugu huvitavaid Åritusi.      
+t: NÑiteks korraldasime just hiljuti Tolerantsuse NÑda-    
+t: la. See oli suunatud koolivÑgivalla vastu ning nii-     
+t: sama oli ka tore. Viimase klassi hooleks on ikka        
+t: jÑetud Hullu PÑeva korraldamine. Siis valib zhÅrii      
+t: vÑlja selle, kes tema arust on mîîdunud 6ppeaasta       
+t:         TAGASI                     LOE EDASI            
+l: 20 25 lata http://www.ruudkool.edu.ee/huvitavat.html
+l: 47 55 lata http://www.ruudkool.edu.ee/huvitavat3.html
+
+[http://www.ruudkool.edu.ee/huvitavat3.html]
+loc: http://www.ruudkool.edu.ee/huvitavat.html
+sx: 12
+sy: 09
+bc: 00
+fc: 14
+t: €€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€
+t: €€€€€€€€€€≤∞ Huvitavat ∞≤€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€
+t: €€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€
+t:                                                         
+t: jooksul koolile k6ige rohkem majanduslikku kahju        
+t: teinud. Tulevad teemakohased auhinnad - kÑskkirjad,     
+t: vestlused ja muu pudi-padi.                             
+t: L6puks Åtleks veel seda, et meie koolil ei ole hÑda     
+t: midagi. Kindlasti on olemas m6ni selline, mis on veel   
+t: hullem.                                                 
+t:         TAGASI                                          
+l: 20 25 lata http://www.ruudkool.edu.ee/huvitavat2.html
+
+[http://kriposossus/]
+name: kriposossus
+clearnetscape
+sx: 19
+sy: 08
+fc: 07
+bc: 00
+t:  
+t:  
+t:  
+t:  
+t:  
+t:  
+t:       Hippopotamus Games presents:     
+t:               KRIPOSOSSUS              
+t:                                        
+t:      Ool raits risîîrvd 1914-2000     
+t:   Trademark of Hippopotamus Games Inc  
+t:         Click HERE to download!        
+t:                                        
+t:
+t:             INFO      DOWNLOAD         
+line: 155 190 445 340 10 B
+line: 157 310 443 338 02 B
+line: 227 135 255 196 10 L
+line: 258 116 277 197 10 L
+line: 238 170 275 162 10 L
+line: 275 139 286 197 10 L
+line: 272 127 275 129 10 L
+line: 283 121 293 195 10 L
+line: 282 120 296 119 10 L
+line: 295 119 303 124 10 L
+line: 308 140 308 140 10 L
+line: 289 164 304 153 10 L
+line: 303 152 307 139 10 L
+line: 307 139 307 130 10 L
+line: 314 124 317 190 10 L
+line: 313 124 326 129 10 L
+line: 325 128 334 138 10 L
+line: 315 158 329 148 10 L
+line: 326 148 332 137 10 L
+line: 355 143 367 143 10 L
+line: 354 143 338 152 10 L
+line: 337 153 338 178 10 L
+line: 353 185 374 185 10 L
+line: 374 185 383 174 10 L
+line: 381 153 383 176 10 L
+line: 381 153 366 143 10 L
+line: 337 178 353 185 10 L
+loc: http://kriposossus/
+
+
+[http://www.loomaaed.ee/]
+name: loomaaed zoo
+clearnetscape
+loc: http://www.loomaaed.ee/
+bc: 00
+fc: 04
+sx: 02
+sy: 08
+t: €€€ €    €€€   €€€  €€  €€  €€   €€  €€€€ €€€€  €€€€€€€€€€€€€€€€€€≤∞  
+t: €€€ €   €€ €€ €€ €€ € €€ € €  € €  € €    €   € €€€€€€€€€€€€€€€€€€€€€€≤∞
+t: €€€ €€€  €€€   €€€  €    € €  € €  € €€€€ €€€€  €€€€€€€€€€€€€€€€€€€€€€€±∞
+t:                                                                 ∞≤±€€€€€±
+t:                                                                   ∞€€€€€∞
+t:                                                                   ∞€€€€€∞
+t:                                                                   ∞€€€€€∞
+t:                                                                   ∞€€€€€∞
+t:                                                                   ∞€€€€€∞
+t:                                                                   ∞€€€€€∞
+t:                  UNDER CONSTRUCTION!                              ∞€€€€€∞
+t:                                                                   ∞€€€€€∞
+t:                                                                   ∞€€€€€∞
+t:                                                                   ∞€€€€€∞
+t:                                                                   ∞≤≤≤≤≤∞
+t:                                                                    ±±±±± 
+t:                                                                    ∞∞∞∞∞
+
+[http://www.talse.ee/]
+name: talse
+clearnetscape
+ct: 03 08 10 00 TÑnane talse
+loc: http://www.talse.ee/
+line: 008 279 026 156 10 L
+line: 027 155 030 163 10 L
+line: 030 163 052 149 10 L
+line: 052 149 058 159 10 L
+line: 057 159 065 232 10 L
+line: 065 232 069 217 10 L
+line: 069 217 079 226 10 L
+line: 081 226 099 196 10 L
+line: 099 196 116 349 10 L
+line: 117 349 123 308 10 L
+line: 122 307 143 320 10 L
+line: 143 320 163 262 10 L
+line: 163 261 178 274 10 L
+line: 178 274 178 229 10 L
+line: 178 229 189 248 10 L
+line: 189 248 190 255 10 L
+line: 190 255 206 255 10 L
+
+[http://not found/]
+clearnetscape
+sx: 02
+sy: 08
+fc: 15
+bc: 00
+t: 
+t:  ERROR 3729.3
+t:  PAGE NOT FOUND
+loc: http://not found/
+
+[http://www.ilmajaam.com/]
+clearnetscape
+name: ilmajaam
+loc: http://www.ilmajaam.com/
+sx: 02
+sy: 08
+fc: 09
+bc: 00
+t:              € €    €€   €€   €€    €€€€   €€     €€   €€   €€
+t:              € €    € € € €  €  €      €  €  €   €  €  € € € €
+t:              € €    €  €  € €€€€€€ €   € €€€€€€ €€€€€€ €  €  €
+t:              € €€€€ €     € €    €  €€€  €    € €    € €     €
+sx: 02
+sy: 13
+fc: 07
+bc: 00
+t:    Estonian Ilmajaam on kuulus ilmajaam, mis on
+t:  tuntud tÑnu oma eriti tÑpsetele ilmaennustustele.
+t:    Teeme ilmaennustusi ka kaugema aja peale ette
+t:  ning mììduka summa eest saate ilma mÑÑrata ette
+t:  juba oma sajandaks sÅnnipÑevaks! Kiirustage! Ilma
+t:  on vaid piiratud koguses!
+t:    Et ots-otsaga kokku tulla, tegeleme hetkel ka
+t:  mitmesuguste teiste aladega, nagu nÑiteks kasuta-
+t:  tud autode mÅÅk (otse Saksamaalt) ja koolivihiku-
+t:  te tootmine.
+t:  
+t:  
+sx: 55
+sy: 14
+fc: 15
+bc: 00
+t: TÑnane ilm        
+t: Homne ilm         
+t: Ilm mujal maailmas
+t:                   
+t: Info              
+t:                   
+t: Log in            
+link: 14 55 64 lata http://www.ilmajaam.com/ilmtana/
+link: 15 55 63 lata http://www.ilmajaam.com/ilmhomme/
+link: 16 55 72 lata http://www.ilmajaam.com/ilmmujal/
+link: 18 55 58 lata http://www.ilmajaam.com/info/
+link: 20 55 60 lata http://www.ilmajaam.com/login/
+
+[http://www.ilmajaam.com/ilmtana/]
+loc: http://www.ilmajaam.com/ilmtana/
+sx: 02
+sy: 13
+fc: 07
+bc: 00
+t:                                                   
+t:                                                   
+ct: 02 14 15 00 TéNANE ILM
+t: TÑna on Ållatavalt ilus ilm. Eile oli rÑme tuul,  
+t: aga nÅÅd on torm vaibunud ja pÑike vÑlja tulnud.  
+t: Temperatuuri on 15 soojakraadi ringis, HEA on     
+t: olla ja see on hea.                               
+t:                                                   
+t: MÑngu autorid,                                    
+t: tÑna, 27. mail 2000. aastal                       
+t:                                                   
+t:                                                   
+t:                                                   
+sx: 55
+sy: 14
+fc: 15
+bc: 00
+t: TÑnane ilm        
+t: Homne ilm         
+t: Ilm mujal maailmas
+t:                   
+t: Info              
+t:                   
+t: Log in            
+link: 14 55 64 lata http://www.ilmajaam.com/ilmtana/
+link: 15 55 63 lata http://www.ilmajaam.com/ilmhomme/
+link: 16 55 72 lata http://www.ilmajaam.com/ilmmujal/
+link: 18 55 58 lata http://www.ilmajaam.com/info/
+link: 20 55 60 lata http://www.ilmajaam.com/login/enter/
+
+[http://www.ilmajaam.com/ilmhomme/]
+loc: http://www.ilmajaam.com/ilmhomme/
+sx: 02
+sy: 13
+fc: 07
+bc: 00
+t:                                                   
+t:                                                   
+ct: 02 14 15 00 HOMNE ILM
+t: Homme on aktsiaseltsi OdavKaup ilm. Prognoos                              
+t: Åtleb, et tulemas on tohutu kuumus ja plusskraa-                          
+t: did, ent seepÑrast ongi hea end lasta jahutada                            
+t: OdavKauba ventilaatoritel. Vaid 9999.99 krooni!                           
+t:                                                   
+t: öhtlasi on homme oodata vihma, mistìttu kiirustage
+t: ruttu poodi - vihmavarjud homme 5% odavamad!      
+t:                                                   
+t:                                                   
+t:                                                   
+sx: 55
+sy: 14
+fc: 15
+bc: 00
+t: TÑnane ilm        
+t: Homne ilm         
+t: Ilm mujal maailmas
+t:                   
+t: Info              
+t:                   
+t: Log in            
+t:                   
+link: 14 55 64 lata http://www.ilmajaam.com/ilmtana/
+link: 15 55 63 lata http://www.ilmajaam.com/ilmhomme/
+link: 16 55 72 lata http://www.ilmajaam.com/ilmmujal/
+link: 18 55 58 lata http://www.ilmajaam.com/info/
+link: 20 55 60 lata http://www.ilmajaam.com/login/enter/
+
+[http://www.ilmajaam.com/ilmmujal/]
+loc: http://www.ilmajaam.com/ilmmujal/
+sx: 02
+sy: 13
+fc: 07
+bc: 00
+t:                                                   
+t:                                                   
+ct: 02 14 15 00 ILM MUJAL MAAILMAS                               
+t: Amsterdam     ilus                                
+t: Dubai         kole                                
+t: Helsingi      nagu meilgi                         
+t: Moskva        salastatud                          
+t: Pariis        (kontaktisikut ei ìnnestunud        
+t:               kÑtte saada)                        
+t: Tokyo         mìnus                               
+t: Washington    segane                              
+t:                                                   
+t:                                                   
+sx: 55
+sy: 14
+fc: 15
+bc: 00
+t: TÑnane ilm        
+t: Homne ilm         
+t: Ilm mujal maailmas
+t:                   
+t: Info              
+t:                   
+t: Log in            
+link: 14 55 64 lata http://www.ilmajaam.com/ilmtana/
+link: 15 55 63 lata http://www.ilmajaam.com/ilmhomme/
+link: 16 55 72 lata http://www.ilmajaam.com/ilmmujal/
+link: 18 55 58 lata http://www.ilmajaam.com/info/
+link: 20 55 60 lata http://www.ilmajaam.com/login/enter/
+
+[http://www.ilmajaam.com/info/]
+loc: http://www.ilmajaam.com/info/
+sx: 02
+sy: 13
+fc: 07
+bc: 00
+t:                                                   
+t:                                                   
+ct: 02 14 15 00 INFO                                              
+t: Ilmajaam on nÅÅdsest ka internetis!               
+t: Vaadake meid saidil: http://www.ilmajaam.com      
+t:                                                   
+t:      <Sinu reklaam vìiks olla siin!>              
+t:                                                   
+t: REKLAAMI TELLIMINE                                
+t:    Telefonid:  2523523-6573470347603472352        
+t:               vìi lÅhinumber 32862385632865       
+t:                                                   
+t:                                                   
+sx: 55
+sy: 14
+fc: 15
+bc: 00
+t:                   
+t: Tîîtajad          
+t: Palgad            
+t:                   
+t: Ajalugu           
+t:                   
+t: Tagasi            
+link: 15 55 62 lata http://www.ilmajaam.com/tootajad/
+link: 16 55 60 lata http://www.ilmajaam.com/palgad/
+link: 18 55 61 lata http://www.ilmajaam.com/ajalugu/
+link: 20 55 60 net back
+
+[http://www.ilmajaam.com/tootajad/]
+loc: http://www.ilmajaam.com/tootajad/
+sx: 02
+sy: 13
+fc: 07
+bc: 00
+t:                                                   
+t:                                                   
+ct: 02 14 15 00 ILMAJAAMA TôôTAJAD                               
+t:    Direktor - Suur Pilv                           
+t:        SekretÑr - Mummu Vihmapiisk                
+t:      Direktori asetÑitja - Kìue KÑrgatus          
+t:        Tema sekretÑr - Elviira Rahe               
+t:                                                   
+t:    ölejÑÑnud tîîtajad:                            
+t:        Tîîline - Ilmavana                         
+t:                                                   
+t:                                                   
+t:                                                   
+
+[http://www.ilmajaam.com/palgad/]
+loc: http://www.ilmajaam.com/palgad/
+sx: 02
+sy: 13
+fc: 07
+bc: 00
+t:                                                   
+t:                                                   
+ct: 02 14 15 00 ILMAJAAMA PALGAD                                  
+t:  (Ilmajaama direktori soovil on palkade tÑpsed    
+t:  suurused salastatud)                             
+t:                                                   
+t:  Direktor - Suur Pilv                 99########  
+t:  SekretÑr - Mummu Vihmapiisk           24#######  
+t:  Direktori asetÑitja - Kìue KÑrgatus  89########  
+t:  Tema sekretÑr - Elviira Rahe          19#######  
+t:  Tîîline - Ilmavana               4###+prii sîîk  
+t:                                                   
+t:                                                   
+
+[http://www.ilmajaam.com/ajalugu/]
+loc: http://www.ilmajaam.com/ajalugu/
+sx: 02
+sy: 13
+fc: 07
+bc: 00
+t:                                                   
+t:                                                   
+ct: 02 14 15 00 AJALUGU                                           
+t:  1532 - asutati IlmaJaam                          
+t:  1956 - Ilmajaam kinnitati Ñriregistris           
+t:  1999 - alustasime ka muude tegevusaladega        
+t:  1999 - Ilmajaam jìudis esimest korda kasumisse   
+t:  1999 - meie esimene kohtuprotsess                
+t:  2000 - vìitsime auhinna <suurim vihikutetootja>  
+t:  2000 - vìitsime auhinna <100. kohtuprotsess>     
+t:                                                   
+t:                                                   
+t:                                                   
+
+[http://www.ilmajaam.com/login/]
+m: 021 1 http://www.ilmajaam.com/login/enter/
+loc: http://www.ilmajaam.com/login/
+sx: 02
+sy: 13
+fc: 07
+bc: 00
+t:                                                      
+t:                                                      
+t:                                                      
+t:        ID: ________                                  
+t:  PASSWORD: ________                                  
+fc: 15
+t:                                                      
+t:        ENTER                                         
+t:                                                      
+t:                                                      
+t:                                                      
+t:                                                      
+t:                                                      
+button: pressedIlmajaam ID
+button: pressedIlmajaam PASSWORD
+button: pressedIlmajaam ENTER
+sx: 55
+sy: 14
+fc: 15
+bc: 00
+t: TÑnane ilm        
+t: Homne ilm         
+t: Ilm mujal maailmas
+t:                   
+t: Info              
+t:                   
+t: Log in            
+t:                   
+link: 14 55 64 lata http://www.ilmajaam.com/ilmtana/
+link: 15 55 63 lata http://www.ilmajaam.com/ilmhomme/
+link: 16 55 72 lata http://www.ilmajaam.com/ilmmujal/
+link: 18 55 58 lata http://www.ilmajaam.com/info/
+link: 20 55 60 lata http://www.ilmajaam.com/login/enter/
+
+[http://www.ilmajaam.com/login/enter/]
+m: 021 0 http://www.ilmajaam.com/login/
+loc: http://www.ilmajaam.com/login/enter/
+sx: 02
+sy: 13
+fc: 07
+bc: 00
+t:                                                      
+t:                                                      
+t:                                                      
+t:        ID: ****                                      
+t:  PASSWORD: ****                                      
+fc: 15
+t:                                                      
+t:        ENTER                                         
+t:                                                      
+t:                                                      
+t:                                                      
+t:                                                      
+t:                                                      
+button: Ilmajaam ENTER
+sx: 55
+sy: 14
+fc: 15
+bc: 00
+t: TÑnane ilm        
+t: Homne ilm         
+t: Ilm mujal maailmas
+t:                   
+t: Info              
+t:                   
+t: Log in            
+t:                   
+link: 14 55 64 lata http://www.ilmajaam.com/ilmtana/
+link: 15 55 63 lata http://www.ilmajaam.com/ilmhomme/
+link: 16 55 72 lata http://www.ilmajaam.com/ilmmujal/
+link: 18 55 58 lata http://www.ilmajaam.com/info/
+link: 20 55 60 lata http://www.ilmajaam.com/login/enter/
+
+[http://www.ilmajaam.com/login/first/]
+link: 19 09 13 lata http://www.ilmajaam.com/newuser/
+mail: Welcome to ILMAJAAM
+mail: Ilmajaama UUDISTE-list
+
+[http://www.ilmajaam.com/newuser/]
+loc: http://www.ilmajaam.com/newuser/
+sx: 02
+sy: 13
+fc: 07
+bc: 00
+fc: 15
+t: UUS KASUTAJA!                                                              
+fc: 07
+t: License Agreement                                                        
+t:    Mina, uus ilmajaama teenuste kasutaja, olen nìus, et minu             
+t:  andmeid vìidakse kasutada reklaamfirmadele edasimÅÅmiseks ja            
+t:  mahaparseldamiseks. öhtlasi olen teadlik ilmajaama-klubi 500            
+t:  kroonisest liikmemaksust.                                               
+t:    Nìustun reklaamima Ilmajaama igal pool kus kÑin vìi rÑÑgin,           
+T:  Tìotan olla aus ja ìiglane iga ilmajaama liikme suhtes.                 
+t:                                                                          
+t:       Teavita mind ikka ilmajaama uudistest                              
+t:                                                                          
+fc: 15
+t:                OLEN NìUS            EI OLE NìUS                          
+t:                                                                          
+t:                                                                          
+link: 23 17 25 lata http://www.ilmajaam.com/olduser/
+link: 23 38 48 lata http://www.ilmajaam.com/disagree/
+
+[http://www.ilmajaam.com/disagree/]
+muutuja: 021 0
+lata: 01 01 http://www.ilmajaam.com/login/
+
+[http://www.ilmajaam.com/olduser/]
+muutuja: 021 1
+loc: http://www.ilmajaam.com/olduser/
+sx: 02
+sy: 13
+fc: 07
+bc: 00
+t:                                                                               
+fc: 15
+t:                             ENNUSTUSVìISTLUS                                  
+fc: 07
+t:                          Missugune ilm on homme?                              
+t:                                                                               
+fc: 15
+t:                            ILMAJAAMA UUDISED                                  
+fc: 07
+t:                           Ilmateade, uudised jpm                              
+t:                                                                               
+fc: 15
+t:                         VANARAHVA TéHELEPANEKUD                               
+fc: 07
+t:               Kìigest sellest, mida vanarahvas ilmast teab                    
+t:                                                                               
+fc: 15
+t:                             ILMAJAAMA HöMN                                    
+t:                                                                               
+t:                                                                               
+link: 14 29 45 lata http://www.ilmajaam.com/voistlus/
+link: 17 29 45 lata http://www.ilmajaam.com/uudised/
+link: 20 26 48 lata http://www.ilmajaam.com/vanarahvas/
+link: 23 30 43 lata http://www.ilmajaam.com/hymn/
+
+[http://www.ilmajaam.com/vanarahvas/]
+loc: http://www.ilmajaam.com/vanarahvas/
+sx: 02
+sy: 13
+fc: 07
+bc: 00
+fc: 15
+t: VANARAHVA TéHELEPANEKUD                                                  
+fc: 07
+t: KÅÅndlapÑeval lÅÅakse kÅlmal Åks sarv peast Ñra.      Kui mÑrtipÑÑvÑ jÑrv
+t:                                                                  vallalì,
+t:    MadisepÑeval on pool                                    siis jÅripÑÑvÑ
+t:     lund taevas.                Kui MÑrt sulatab,                    kah.
+t:                                siis Kadri kÅlmetab.                      
+t:       MaarjapÑe tuleb karu                                 SÅgisel       
+t:                 pesast vÑlja.        on suve silmad, aga talve hambad.   
+t:   KevvÑi                                                                 
+t:   tule kullaga,       Kui hÑÑ tali,       Kui hÑÑ                Jìul    
+t:   sÅkÅs sitaga.           siis hÑÑ     tali, tuleb      kÑi Jaaniga Åtte.
+t:                        sui kah.          vilu sui.                       
+
+[http://www.ilmajaam.com/hymn/]
+loc: http://www.ilmajaam.com/hymn/
+sx: 02
+sy: 13
+fc: 07
+bc: 00
+fc: 15
+t: ILMAJAAMA HöMN                                                           
+fc: 07
+t:                                                                          
+t: Oo, ilmavana, anna meile ilma,                                           
+t: mis sobiks meile hÑsti.                                                  
+t: éra aja puru meile silma,                                                
+t: sul pÑikest anda kÑsti!                                                
+t:                                                                          
+t: Ela ilmas ìnnega, keeda putru panniga,                                   
+t: Ñra putru kìrveta!                                                       
+t: Kìrbend kiht jÑb kìhtu kinni,                                           
+t: ajab kìhunaha punni.                                                     
+t:                                                                          
+
+[http://www.ilmajaam.com/uudised/]
+loc: http://www.ilmajaam.com/uudised/
+sx: 02
+sy: 13
+fc: 07
+bc: 00
+fc: 15
+t: UUDISED                                                           
+fc: 07
+t:                                                                          
+t: Kliki SIIN: VÑrske partii Volksvaageneid on saabunud! Kiirusta! 50 kr/kg!
+t:                                                                          
+t: Kliki SIIN: Tîîle hakkas uus ennustusvìistluse ilmamasin!                
+t:                                                                          
+t: Kliki SIIN: VÑrsked uudised homse ilma kohta!                            
+t:                                                                          
+t: Kliki SIIN: 468 aastat kvaliteetset ilmateadet!                          
+t:                                                                          
+t:                                                                          
+t:                                                                          
+ct: 08 15 15 00 SIIN
+ct: 08 17 15 00 SIIN
+ct: 08 19 15 00 SIIN
+ct: 08 21 15 00 SIIN
+link: 15 08 11 lata http://www.ilmajaam.com/auto/
+link: 17 08 11 lata http://www.ilmajaam.com/voistlus/
+link: 19 08 11 lata http://www.ilmajaam.com/ilmhomme/
+link: 21 08 11 lata http://www.ilmajaam.com/ajalugu/
+
+[http://www.ilmajaam.com/auto/]
+loc: http://www.ilmajaam.com/auto/
+sx: 02
+sy: 13
+fc: 07
+bc: 00
+fc: 15
+t: UUED VOLKSVAAGENID                                                       
+fc: 07
+t: NB! Kìik autod hinnaga 5 kr/kg!                                          
+t:                                                                          
+t: Volksvaagen Ksaara                1932    3233 cm3                       
+t: Volksvaagen Nait Raider           1961   12323 cm3                       
+t: Volksvaagen Batman                1973     999 cm3                       
+t: Volksvaagen Superman              1982     999 cm3 (sama mootor)         
+t: Volksvaagen Kindral               1989  2933.5 cm3                       
+t: Volksvaagen Kadett                1990     199 cm3                       
+t:                                                                          
+t:                                                                          
+t:                                                                          
+
+[http://www.ilmajaam.com/voistlus/]
+loc: http://www.ilmajaam.com/voistlus/
+sx: 02
+sy: 13
+fc: 07
+bc: 00
+fc: 15
+t: ENNUSTUSVìISTLUS                                                             
+fc: 07
+t: TÑnane kÅsimus: Missugune ilm on 23.augustil 2394.aastal?                    
+t:                                                                              
+t:	Minu arvutuste kohaselt on ilm (mÑrgi ìiged variandid):                 
+t:         Soe                        Ilus                                      
+t:                                                                              
+t:         Vihmane                    Kole                                      
+t:                                                                              
+t:         Tuuline                    Kaunis                                    
+t:                                                                              
+t:                                                                              
+t:                                                                              
+muutuja: 026 1
+checkbox: 05 16 022 1
+checkbox: 05 18 023 1
+checkbox: 05 20 024 1
+checkbox: 32 16 025 1
+checkbox: 32 18 026 0
+checkbox: 32 20 027 1
+button: Ilmajaam Check
+
+[http://www.ilmajaam.com/voistlus/vastus/]
+sx: 02
+sy: 13
+fc: 07
+bc: 00
+fc: 15
+t:  PALUN OODAKE...                                                             
+fc: 07
+t:                                                                              
+t:                                                                              
+t:                LOADING ILMAMASIN...                                          
+t:                                                                              
+t:                                                                              
+t:                                                                              
+t:                                                                              
+t:                                                                              
+t:                                                                              
+pause: 20
+sx: 02
+sy: 16
+t:                LOADING ILMAMASIN......                                       
+pause: 7
+sx: 02
+sy: 16
+t:                LOADING ILMAMASIN.........                                    
+pause: 7
+sx: 02
+sy: 16
+t:                LOADING ILMAMASIN............                                 
+pause: 7
+sx: 02
+sy: 16
+t:                LOADING ILMAMASIN...............                              
+pause: 7
+sx: 02
+sy: 16
+t:                LOADING ILMAMASIN.....................                        
+pause: 20
+sx: 02
+sy: 16
+fc: 12
+t:                              C H E C K I N G                                 
+pause: 30
+sx: 02
+sy: 16
+t:                                                                              
+lata: 01 01 http://www.ilmajaam.com/voistlus/loaded/
+
+[http://www.ilmajaam.com/voistlus/loaded/]
+loc: http://www.ilmajaam.com/voistlus/loaded/
+sx: 02
+sy: 13
+fc: 07
+bc: 00
+fc: 15
+t:  ILMAMASIN        
+fc: 07
+t:                                                                      
+t:    ILMAMASIN TEATAB:                                                 
+t:    Ilmajaama ennustusvìistlusel on praegusel                         
+t:    sekundil 2554454 vastajat.                                        
+t:                                                                      
+fc: 14
+t:    TEIE PAKUTUD VASTUS OSUTUS VALEKS.                                
+fc: 07
+t:                                                                      
+t:    TÑname vastamast!                                                 
+button: Ilmajaam ilmamasin MANUALSET
+button: Ilmajaam ilmamasin ABOUT
+button: Ilmajaam ilmamasin EXIT
+
+[http://www.ilmajaam.com/ilmamasin/about/]
+loc: http://www.ilmajaam.com/ilmamasin/about/
+t:                                                
+sx: 02
+sy: 15
+bc: 00
+fc: 07
+t:    ILMAMASIN ABOUT:                            
+t:    Produced by Ilmajaam in 2000                
+t:    Peamehaanik: Osvald Mutter                  
+t:    Esimene piloot: Kalle Kruvikeeraja          
+t:                                                
+t:                                                
+t:                                                
+
+[http://www.ilmajaam.com/ilmamasin/manualset/]
+loc: http://www.ilmajaam.com/ilmamasin/manualset/
+sx: 02
+sy: 15
+fc: 07
+bc: 00
+t:    MUUDA KéSITSI:                              
+t:       KuupÑev             <     >              
+t:       Temperatuur         <     >              
+t:       PÑike tìuseb/loojub <     >              
+t:       Pilved              <     >              
+t:       Tuul                <     >              
+t:       Kuu faasid          <     >              
+t:    <           >                               
+t:                                                
+fc: 15
+sx: 29
+sy: 16
+t: MUUDA
+t: MUUDA
+t: MUUDA
+t: MUUDA
+t: MUUDA
+t: MUUDA
+sx: 07
+sy: 22
+t: GENEREERI
+link: 16 29 33 lata http://www.ilmajaam.com/ilmamasin/editKP.html/
+link: 17 29 33 lata http://www.ilmajaam.com/ilmamasin/editTEMP.html/
+link: 18 29 33 lata http://www.ilmajaam.com/ilmamasin/editPTL.html/
+link: 19 29 33 lata http://www.ilmajaam.com/ilmamasin/editPILV.html/
+link: 20 29 33 lata http://www.ilmajaam.com/ilmamasin/editTUUL.html/
+link: 21 29 33 lata http://www.ilmajaam.com/ilmamasin/editKUU.html/
+link: 22 07 15 mission1 generateILM
+
+[http://www.ilmajaam.com/ilmamasin/editKP.html/]
+loc: http://www.ilmajaam.com/ilmamasin/editKP.html/
+sx: 02
+sy: 15
+fc: 07
+bc: 00
+t:    MUUDA KUUPéEV                               
+t:                                                
+t:                 Sisesta kuupÑev: ________      
+t:      (NÑiteks: 09.november.1999: 09111999)     
+t:                                                
+t:                                                
+t:                                                
+t:    <    >                                      
+sx: 07
+sy: 22
+fc: 15
+t: OK
+link: 17 35 42 inputrida 17 35 44 07 IlmajaamKP >09111999
+link: 22 07 08 lata http://www.ilmajaam.com/ilmamasin/editKP.SAVING/
+
+[http://www.ilmajaam.com/ilmamasin/editKP.SAVING/]
+muutuja: 028 1
+lata: 01 01 http://www.ilmajaam.com/ilmamasin/manualset/
+
+[http://www.ilmajaam.com/ilmamasin/editPTL.html/]
+loc: http://www.ilmajaam.com/ilmamasin/editPTL.html/
+sx: 02
+sy: 15
+fc: 07
+bc: 00
+t:    MUUDA PéIKESETìUS/PéIKESELOOJANG            
+t:                                                
+t:       PéIKESETìUS     Sisesta kellaaeg: ____   
+t:       PéIKESELOOJANG  Sisesta kellaaeg: ____   
+t:                      (NÑiteks: kl 4:55: 0455)  
+t:                                                
+t:                                                
+t:    <    >                                      
+sx: 07
+sy: 22
+fc: 15
+t: OK
+link: 17 42 45 inputrida 17 42 47 07 IlmajaamPT >0455
+link: 18 42 45 inputrida 18 42 47 07 IlmajaamPL >2235
+link: 22 07 08 lata http://www.ilmajaam.com/ilmamasin/editPTL.SAVING/
+
+[http://www.ilmajaam.com/ilmamasin/editPTL.SAVING/]
+muutuja: 035 1
+muutuja: 036 1
+lata: 01 01 http://www.ilmajaam.com/ilmamasin/manualset/
+
+[http://www.ilmajaam.com/ilmamasin/editTEMP.html/]
+loc: http://www.ilmajaam.com/ilmamasin/editTEMP.html/
+sx: 02
+sy: 15
+fc: 07
+bc: 00
+t:    MUUDA TEMPERATUUR                           
+t:                                                
+t:       Sisesta temperatuur: __  kraadi.         
+t:                  (NÑiteks: 04  kraadi)         
+t:                                                
+t:                                                
+t:                                                
+t:    <    >                                      
+sx: 07
+sy: 22
+fc: 15
+t: OK
+link: 17 29 30 inputrida 17 29 32 07 IlmajaamTEMP >14
+link: 22 07 08 lata http://www.ilmajaam.com/ilmamasin/editTEMP.SAVING/
+
+[http://www.ilmajaam.com/ilmamasin/editTEMP.SAVING/]
+muutuja: 032 1
+lata: 01 01 http://www.ilmajaam.com/ilmamasin/manualset/
+
+[http://www.ilmajaam.com/ilmamasin/editTUUL.html/]
+loc: http://www.ilmajaam.com/ilmamasin/editTUUL.html/
+sx: 02
+sy: 15
+fc: 07
+bc: 00
+t:    MUUDA TUULE PARAMEETRID                     
+t:                                                
+t:       Sisesta tuule suund: __                  
+t:        (NÑiteks kirdetuul: NW)                 
+t:       Sisesta tuule kiirus: __  m/s            
+t:                  (NÑiteks : 03  m/s)           
+t:                                                
+t:    <    >                                      
+sx: 07
+sy: 22
+fc: 15
+t: OK
+link: 17 29 30 inputrida 17 29 32 07 IlmajaamTUULs >NW
+link: 19 30 33 inputrida 19 30 33 07 IlmajaamTUULt >03
+link: 22 07 08 lata http://www.ilmajaam.com/ilmamasin/editTUUL.SAVING/
+
+[http://www.ilmajaam.com/ilmamasin/editTUUL.SAVING/]
+muutuja: 033 1
+muutuja: 034 1
+lata: 01 01 http://www.ilmajaam.com/ilmamasin/manualset/
+
+[http://www.ilmajaam.com/ilmamasin/editPILV.html/]
+loc: http://www.ilmajaam.com/ilmamasin/editPILV.html/
+sx: 02
+sy: 15
+fc: 07
+bc: 00
+t:    MUUDA PILVISUS                              
+t:               TÑiesti pilves                   
+t:                                                
+t:               VÑhene pilvisus                  
+t:                                                
+t:               Pilvitu                          
+t:                                                
+t:    <    >                                      
+sx: 07
+sy: 22
+fc: 15
+t: OK
+checkbox: 11 16 029 1
+checkbox: 11 18 030 1
+checkbox: 11 20 031 1
+link: 22 07 08 lata http://www.ilmajaam.com/ilmamasin/manualset/
+
+[http://www.ilmajaam.com/ilmamasin/editKUU.html/]
+loc: http://www.ilmajaam.com/ilmamasin/editKUU.html/
+muutuja: 039 1
+sx: 02
+sy: 15
+fc: 07
+bc: 00
+t:    MUUDA KUU FAAS                              
+t:               Noorkuu                          
+t:                                                
+t:               TÑiskuu                          
+t:                                                
+t:               Vanakuu                          
+t:                                                
+t:    <    >                                      
+sx: 07
+sy: 22
+fc: 15
+t: OK
+checkbox: 11 16 037 1
+checkbox: 11 18 038 1
+checkbox: 11 20 039 1
+link: 22 07 08 lata http://www.ilmajaam.com/ilmamasin/manualset/
+
+[http://www.ilmajaam.com/ilmamasin/generate.cgi/]
+sx: 02
+sy: 15
+fc: 07
+bc: 00
+t:    GENEREERIN ILMA...                          
+t:                                                
+t:                                                
+t:                                                
+t:                                                
+t:                                                
+t:                                                
+t:                                                
+fc: 07
+pause 20
+sx: 02
+sy: 17
+t:    €€€€€∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞      
+t:                                                
+t:    Helistan ilmavanale...                      
+pause: 7
+sx: 02
+sy: 17
+t:    €€€€€€€€∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞      
+pause: 7
+sx: 02
+sy: 17
+t:    €€€€€€€€€€€∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞      
+pause: 7
+sx: 02
+sy: 17
+t:    €€€€€€€€€€€€€€∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞      
+pause: 7
+sx: 02
+sy: 17
+t:    €€€€€€€€€€€€€€€€€∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞      
+pause: 7
+sx: 02
+sy: 17
+t:    €€€€€€€€€€€€€€€€€€€€∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞      
+t:                                                
+t:    Telegrafeerin pilvedele...                  
+pause: 9
+sx: 02
+sy: 17
+t:    €€€€€€€€€€€€€€€€€€€€€€∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞      
+pause: 9
+sx: 02
+sy: 17
+t:    €€€€€€€€€€€€€€€€€€€€€€€€∞∞∞∞∞∞∞∞∞∞∞∞∞∞      
+pause: 9
+sx: 02
+sy: 17
+t:    €€€€€€€€€€€€€€€€€€€€€€€€€€∞∞∞∞∞∞∞∞∞∞∞∞      
+pause: 9
+sx: 02
+sy: 17
+t:    €€€€€€€€€€€€€€€€€€€€€€€€€€€€∞∞∞∞∞∞∞∞∞∞      
+t:                                                
+t:    Nìupidamine pÑikesega...                    
+pause: 6
+sx: 02
+sy: 17
+t:    €€€€€€€€€€€€€€€€€€€€€€€€€€€€€€∞∞∞∞∞∞∞∞      
+pause: 6
+sx: 02
+sy: 17
+t:    €€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€∞∞∞∞∞∞      
+pause: 6
+sx: 02
+sy: 17
+t:    €€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€∞∞∞∞      
+pause: 6
+sx: 02
+sy: 17
+t:    €€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€∞∞      
+pause: 6
+lata 01 01 http://www.ilmajaam.com/ilmamasin/generate/
+
+[http://www.ilmajaam.com/ilmamasin/generate/]
+sx: 02
+sy: 15
+fc: 07
+bc: 00
+t:                                                
+t:                                                
+t:    €€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€      
+t:                                                
+fc: 15
+t:            ILM EDUKALT MUUDETUD!               
+pause: 40
+
+[http://www.ilmajaam.com/ilmamasin/report/]
+loc: http://www.ilmajaam.com/ilmamasin/report/
+sx: 02
+sy: 15
+fc: 15
+bc: 00
+t:   ILMAPROGNOOS:                                                              
+fc: 07
+t:                                                                              
+t:                                                                              
+t:                                                                              
+t:                                                                              
+t:                                                                              
+t:                                                                              
+t:                                                                              
+t:                                                                              
+t:   < EXIT >                                                                   
+fc: 15
+sx: 06
+sy: 24
+t: EXIT
+link: 24 06 09 lata http://www.ilmajaam.com/olduser/
+
+[http://www.torumees.ee/]
+loc: http://www.torumees.ee/
+clearnetscape
+name: torumees
+sx: 02
+sy: 08
+fc: 14
+bc: 00
+t:                              TORUMEESTE WEB
+t:                              --------------
+t: 
+t:         Kahjuks pole meil hetkel mingit tîîd, mistìttu oleme maha
+t:         vìtnud ka oma netilehekÅlje.
+t:  
+t:         Tegeleme: torude parandamisega
+t:                   pumpade parandamisega
+t:  
+t:         Vaata ka meie konkurendi lehekÅlge:
+t:                   www.kanalisatsioon.ee
+ct: 20 18 15 00 www.kanalisatsioon.ee
+link: 18 20 40 lata http://www.kanalisatsioon.ee/
+
+[http://www.kanalisatsioon.ee/]
+m: 002 0 http://cannot_connect/
+m: 070 1 http://www.kanalisatsioon.ee/avarii/
+clearnetscape
+name: kanalisatsioon
+loc: http://www.kanalisatsioon.ee/
+sx: 02
+sy: 08
+fc: 02
+bc: 00
+t:                             €€€           €€€                         €    €€€
+t: €  €  €€  €€  €  €€  €   € €     €€  €€€ €    €  €€   €€  €€  € €    € €  €   
+t: €€€  €€€€ € € € €€€€ €   € €€€€ €€€€  €  €€€€ € €  € €  € € € € €   €   € €€€€
+t: €  € €  € €  €€ €  € €€€ €    € €  €  €     € €  €€   €€  €  €€ €   €€€€€    €
+t:                            €€€           €€€                        €   € €€€ 
+lata: 01 01 http://www.kanalisatsioon.ee/info.html/
+
+[http://www.kanalisatsioon.ee/sisu/]
+sx: 02
+sy: 13
+fc: 10
+bc: 00
+ct: 03 14 00 02    Informatsioon   
+ct: 03 16 00 02      Auhinnad      
+ct: 03 18 00 02 Kanalisatsioonivìrk
+ct: 03 20 00 02   SINU KODU SIIN!  
+link: 14 03 21 lata http://www.kanalisatsioon.ee/info.html/
+link: 16 03 21 lata http://www.kanalisatsioon.ee/auhinnad.html/
+link: 18 03 21 lata http://www.kanalisatsioon.ee/vork.html/
+link: 20 03 21 lata http://www.kanalisatsioon.ee/kodu.html/
+
+[http://www.kanalisatsioon.ee/info.html/]
+loc: http://www.kanalisatsioon.ee/info.html/
+sx: 24
+sy: 14
+fc: 10
+bc: 00
+t:   Tere tulemast Kanalisatsiooni AS-i lehekÅljele! Meie 
+t: firma on Ålikuulus kanalisatsioonide hooldaja selles   
+t: linnas. Oleme vìitnud ka palju auhindu, kuna viimasel  
+t: aastal oleme saanud kanalisatsioonisÅsteemi nii heale  
+t: tasemele, et meil pole olnud Åhtegi riket ega kaebust. 
+t:   Uuri sinagi meie lehekÅlge ja avasta, kui laitmatut  
+t: tîîd meie firma teeb!                                  
+t:   NÅÅdsest on vìimalik netist muuta ka omaenda kodu    
+t: kanalisatsioonivee sÑtteid!                            
+t:                                                        
+t:                                                        
+t:                                                        
+t:                                                        
+
+lata: 01 01 http://www.kanalisatsioon.ee/sisu/
+
+[http://www.kanalisatsioon.ee/auhinnad.html/]
+loc: http://www.kanalisatsioon.ee/auhinnad.html/
+sx: 24
+sy: 14
+fc: 10
+bc: 00
+t:  1632 I koht: Esimene kaev meie linnas                 
+t:  1960 I koht: Esimese kanalisatsioonisÅsteemi valmimine
+t:  1973 I koht: Teise kanalisatsioonisÅsteemi valmimine  
+t:  1983 Teise kanalisatsioonisÅsteemi Åmberehitamine     
+t:  1984 KanalisatsioonisÅsteem hakkas lìpuks tîîle       
+t:  1990 I koht: Esimest korda puhas vesi                 
+t:  1999 Diplom: Mitte Åhtegi kaebust 1 aasta jooksul     
+t:                                                        
+t:                                                        
+t:                                                        
+t:                                                        
+t:                                                        
+t:                                                        
+lata: 01 01 http://www.kanalisatsioon.ee/sisu/
+
+[http://www.kanalisatsioon.ee/kodu.html/]
+loc: http://www.kanalisatsioon.ee/kodu.html/
+sx: 24
+sy: 14
+fc: 10
+bc: 00
+t:                SINU KODU KANALISATSIOON                
+t:                      MUUDA SIIT!                       
+t:                                                        
+t:                     <            >                     
+t:                                                        
+t:                                                        
+t:                                                        
+t:                                                        
+t:                                                        
+t:                                                        
+t:                                                        
+t:                                                        
+t:                                                        
+sx: 46
+sy: 17
+fc: 14
+bc: 00
+t: KLIKI SIIN
+link: 17 46 55 lata http://www.kanalisatsioon.ee/kodu/muuda/
+lata: 01 01 http://www.kanalisatsioon.ee/sisu/
+
+[http://www.kanalisatsioon.ee/kodu/muuda/]
+loc: http://www.kanalisatsioon.ee/kodu/muuda/
+sx: 24
+sy: 14
+fc: 10
+bc: 00
+t:                                                        
+t:                                                        
+t:                                                        
+t:                                                        
+t:                                                        
+t:                                                        
+t:                                                        
+t:                                                        
+t:                                                        
+t:                                                        
+t:                                                        
+t:                                                        
+t:                                                        
+line: 190 353 304 353 10 L
+line: 304 353 305 331 10 L
+line: 303 331 285 331 10 L
+line: 285 331 282 326 10 L
+line: 282 326 281 326 10 L
+line: 281 319 283 326 10 L
+line: 281 319 337 319 10 L
+line: 337 319 334 330 10 L
+line: 316 330 333 330 10 L
+line: 315 330 315 353 10 L
+line: 301 319 303 308 10 L
+line: 303 308 307 308 10 L
+line: 307 308 308 318 10 L
+line: 313 319 314 308 10 L
+line: 314 308 318 308 10 L
+line: 320 319 317 308 10 L
+line: 315 353 481 353 10 L
+line: 481 353 479 342 10 L
+line: 479 342 473 336 10 L
+line: 473 336 470 330 10 L
+line: 466 329 505 329 10 L
+line: 466 329 465 324 10 L
+line: 466 324 505 324 10 L
+line: 504 324 504 353 10 L
+line: 499 296 499 314 10 L
+line: 499 314 513 314 10 L
+line: 513 314 515 337 10 L
+line: 515 337 504 339 10 L
+line: 504 343 522 339 10 L
+line: 523 339 519 315 10 L
+line: 511 314 520 314 10 L
+line: 499 294 502 294 10 L
+line: 499 293 523 295 10 L
+line: 523 295 521 315 10 L
+line: 190 359 548 359 10 L
+line: 548 359 557 363 10 L
+line: 556 363 559 368 10 L
+line: 568 369 561 357 10 L
+line: 560 357 550 350 10 L
+line: 504 352 553 352 10 L
+line: 305 246 305 307 10 L
+line: 316 307 316 246 10 L
+line: 304 245 300 241 10 L
+line: 300 241 221 241 10 L
+line: 221 241 222 249 10 L
+line: 221 249 216 251 10 L
+line: 216 251 217 227 10 L
+line: 216 226 222 229 10 L
+line: 222 229 221 234 10 L
+line: 216 226 212 230 10 L
+line: 211 231 211 235 10 L
+line: 211 235 190 235 10 L
+line: 190 241 210 241 10 L
+line: 210 241 211 247 10 L
+line: 211 247 216 250 10 L
+line: 221 235 520 235 10 L
+line: 521 235 524 238 10 L
+line: 525 239 534 300 10 L
+line: 534 300 523 303 10 L
+line: 524 297 528 294 10 L
+line: 528 294 519 244 10 L
+line: 516 241 520 246 10 L
+line: 516 242 321 242 10 L
+line: 321 242 316 246 10 L
+line: 281 321 337 321 10 L
+line: 302 309 296 310 10 L
+line: 297 309 295 307 10 L
+line: 292 309 293 311 10 L
+line: 293 311 291 313 10 L
+line: 291 313 294 314 10 L
+line: 295 314 299 312 10 L
+line: 299 312 302 312 10 L
+line: 290 309 297 306 10 L
+ct: 25 14 02 08 -> Naaber
+ct: 59 24 02 08 éravool ->
+ct: 25 17 02 08 Kraan WX-3
+ct: 25 18 02 08 S: 0.2 l/s
+ct: 25 19 02 08 V: 0.2 l/s
+ct: 25 20 02 08 Hind: 99.-
+ct: 47 18 02 08 Kemps      
+ct: 47 19 02 08 S: 0.32 l/s
+ct: 47 20 02 08 V: 2.32 l/s
+ct: 47 21 02 08 Hind: 32.- 
+link: 18 25 34 inputrida 18 28 31 02 kodu >0.2
+link: 19 25 34 inputrida 19 28 31 02 kodu >0.2
+link: 19 47 57 inputrida 19 50 54 02 kodu >0.2
+link: 20 47 57 inputrida 20 50 54 02 kodu >0.2
+
+[http://www.kanalisatsioon.ee/vork.html/]
+loc: http://www.kanalisatsioon.ee/vork.html/
+sx: 24
+sy: 14
+fc: 10
+bc: 00
+t:                  LINNA KANALISATSIOONIVìRK             
+t:                                                        
+t:                                                        
+t:                                                        
+t:                                                        
+t:                                                        
+t:                                                        
+t:                                                        
+t:                                                        
+t:                                                        
+t:                                                        
+t:                                                        
+t:               VAATA VEEJAOTUSSöSTEEMI <SIIN>
+ct: 32 16 02 00 PUMP
+link: 16 32 35 lata http://www.kanalisatsioon.ee/vork/pump/
+ct: 63 26 15 00 SIIN
+link: 26 63 66 lata http://www.kanalisatsioon.ee/vesi/
+line: 190 241 211 241 10 L
+line: 190 257 210 257 10 L
+line: 209 222 209 277 10 L
+line: 210 222 311 222 10 L
+line: 208 277 313 277 10 L
+line: 313 277 314 223 10 L
+line: 313 268 339 268 10 L
+line: 314 228 586 229 10 L
+line: 586 229 587 229 10 L
+line: 587 229 586 348 10 L
+line: 586 348 559 349 10 L
+line: 314 232 582 232 10 L
+line: 582 232 583 343 10 L
+line: 583 343 559 344 10 L
+line: 559 336 558 359 10 L
+line: 559 336 524 336 10 L
+line: 524 336 525 358 10 L
+line: 525 358 559 358 10 L
+line: 314 237 575 237 10 L
+line: 575 237 576 313 10 L
+line: 576 313 525 312 10 L
+line: 524 312 523 272 10 L
+line: 521 259 522 243 10 L
+line: 522 243 566 244 10 L
+line: 567 245 567 274 10 L
+line: 567 274 472 270 10 L
+line: 314 241 569 243 10 L
+line: 569 243 571 308 10 L
+line: 571 308 530 305 10 L
+line: 530 305 531 274 10 L
+line: 529 263 529 255 10 L
+line: 529 255 555 255 10 L
+line: 554 255 556 266 10 L
+line: 556 266 472 264 10 L
+line: 471 252 474 283 10 L
+line: 471 251 423 251 10 L
+line: 423 251 430 278 10 L
+line: 430 278 474 283 10 L
+line: 444 280 448 312 10 L
+line: 452 281 454 311 10 L
+line: 524 343 506 343 10 L
+line: 505 343 502 313 10 L
+line: 501 349 526 350 10 L
+line: 500 349 496 320 10 L
+line: 496 320 400 319 10 L
+line: 501 311 401 311 10 L
+line: 448 321 446 331 10 L
+line: 446 331 425 328 10 L
+line: 425 327 421 352 10 L
+line: 421 352 468 359 10 L
+line: 468 359 474 331 10 L
+line: 474 331 457 331 10 L
+line: 457 331 456 322 10 L
+line: 430 336 430 346 10 L
+line: 429 346 461 352 10 L
+line: 462 353 466 336 10 L
+line: 432 335 463 338 10 L
+line: 398 310 396 284 10 L
+line: 396 283 301 287 10 L
+line: 300 286 298 295 10 L
+line: 298 295 309 295 10 L
+line: 308 295 307 305 10 L
+line: 307 305 190 305 10 L
+line: 190 310 308 311 10 L
+line: 308 311 306 319 10 L
+line: 305 319 190 320 10 L
+line: 190 328 306 325 10 L
+line: 305 326 321 326 10 L
+line: 321 326 324 298 10 L
+line: 324 297 335 295 10 L
+line: 334 296 334 339 10 L
+line: 334 339 190 338 10 L
+line: 190 344 346 347 10 L
+line: 346 347 344 294 10 L
+line: 344 294 387 292 10 L
+line: 388 292 388 298 10 L
+line: 389 319 387 295 10 L
+line: 389 319 367 321 10 L
+line: 367 321 369 331 10 L
+line: 399 318 399 328 10 L
+line: 399 328 379 328 10 L
+line: 379 329 380 333 10 L
+line: 355 331 400 335 10 L
+line: 399 335 406 358 10 L
+line: 406 358 359 360 10 L
+line: 359 360 356 330 10 L
+line: 340 268 428 268 10 L
+line: 314 260 427 262 10 L
+ct: 54 17 02 00 ALAJAAM
+ct: 46 22 02 00 KODU
+link: 22 46 49 lata http://www.kanalisatsioon.ee/kodu.html/
+
+[http://www.kanalisatsioon.ee/vesi/]
+loc: http://www.kanalisatsioon.ee/vesi/
+sx: 24
+sy: 14
+fc: 10
+bc: 00
+t:                              LINNA VEEJAOTUSSöSTEEM    
+t:                   ⁄ƒ¡ƒƒƒƒø       Kliki sellel, mida    
+t: ⁄ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ¥ PUMP ≥             tahad muuta!    
+t: ≥                 ¿ƒ¬ƒƒƒƒŸ                             
+t: ≥     ⁄ƒƒƒƒƒƒƒƒƒƒƒƒƒ≈ƒƒƒƒƒƒƒƒƒƒƒƒƒø                    
+t: ≥ ⁄ƒƒƒ¡ƒƒø    ⁄ƒƒƒƒƒ¡ƒƒƒƒƒø   ⁄ƒƒƒ¡ƒƒƒƒƒƒƒƒƒƒø         
+t: ≥ ≥ BOSS ≥    ≥  ALAJAAM  ≥   ≥ Bossi peenar ≥         
+t: ≥ ¿ƒƒƒƒƒƒŸ    ¿ƒƒƒƒƒ¬ƒƒƒƒƒŸ   ¿ƒƒƒƒƒƒƒƒƒƒƒƒƒƒŸ         
+t: ≥        ⁄ƒƒƒƒƒƒƒƒƒƒ≈ƒƒƒƒƒƒƒƒƒƒø                       
+t: ≥   ⁄ƒƒƒƒ¡ƒƒƒƒø⁄ƒƒƒƒ¡ƒƒƒƒø⁄ƒƒƒƒ¡ƒƒƒƒø                  
+t: ≥   ≥ TARBIJA ≥≥ TARBIJA ≥≥ TARBIJA ≥                  
+t: ≥   ¿ƒƒƒƒ¬ƒƒƒƒŸ¿ƒƒƒƒ¬ƒƒƒƒŸ¿ƒƒƒƒ¬ƒƒƒƒŸ                  
+t: ¿ƒƒƒƒƒƒƒƒ¡ƒƒƒƒƒƒƒƒƒƒ¡ƒƒƒƒƒƒƒƒƒƒŸ                      
+ct: 44 16 14 00 PUMP
+ct: 28 20 14 00 BOSS
+ct: 41 20 02 00 ALAJAAM
+ct: 56 20 14 00 Bossi peenar
+ct: 30 24 14 00 TARBIJA
+ct: 41 24 14 00 TARBIJA
+ct: 52 24 14 00 TARBIJA
+link: 16 41 48 lata http://www.kanalisatsioon.ee/vork/pump/
+link: 20 26 33 lata http://www.kanalisatsioon.ee/vork/boss/
+link: 20 54 69 lata http://www.kanalisatsioon.ee/vork/peenar/
+link: 24 28 38 lata http://www.kanalisatsioon.ee/kodu/muuda/
+link: 24 39 49 lata http://www.kanalisatsioon.ee/kodu/muuda/
+link: 24 50 60 lata http://www.kanalisatsioon.ee/kodu/muuda/
+
+[http://www.kanalisatsioon.ee/vork/boss/]
+loc: http://www.kanalisatsioon.ee/vork/boss/
+sx: 24
+sy: 14
+fc: 10
+bc: 00
+t: MEIE BOSSI KANALISATSIOONIANDMED                       
+t:                                                        
+t: Veetarbimine: 534 liitrit/pÑevas                       
+t:    Sisse: 0.3 l/s                                      
+t:    VÑlja: 3.4 l/s                                      
+t:        Kraanid: 3xLUXkRAAN; 1xEXTRAlux                 
+t:        WC-potid: 2xWCdedes                             
+t:        Vann: MULmulMUL-318                             
+t:    Hooldustasu: 2333.222 krooni                        
+t:                                                        
+t:                                                        
+t:                                                        
+t:                                                        
+
+[http://www.kanalisatsioon.ee/vork/peenar/]
+loc: http://www.kanalisatsioon.ee/vork/peenar/
+sx: 24
+sy: 14
+fc: 10
+bc: 00
+t: MEIE BOSSI PEENRA KANALISATSIOONIANDMED                
+t:                                                        
+t: Veetarbimine: 32534 liitrit/pÑevas                     
+t:    Sisse: 5.2 l/s                                      
+t:    VÑlja: 0.0 l/s                                      
+t:        Kraanid: 1xTURBOkraan                           
+t:        WC-potid: -                                     
+t:        Vann: -                                         
+t:    Hooldustasu: 232333.9 krooni                        
+t:                                                        
+t:                                                        
+t:                                                        
+t:                                                        
+
+[http://www.kanalisatsioon.ee/vork/pump/]
+loc: http://www.kanalisatsioon.ee/vork/pump/
+sx: 24
+sy: 14
+fc: 10
+bc: 00
+t:                                                        
+t:                                                        
+t:       PUMBAJAAM                                        
+t:                                                        
+t:                                                        
+t:                                                        
+t:                                           <       >    
+t:                                                        
+t:                                           <       >    
+t:                                                        
+t:                                                        
+t:                                                        
+t:                                                        
+line: 220 370 221 332 10 L
+line: 221 332 225 327 10 L
+line: 225 327 235 326 10 L
+line: 228 369 228 337 10 L
+line: 228 337 231 333 10 L
+line: 231 333 234 333 10 L
+line: 235 321 235 340 10 L
+line: 235 340 240 340 10 L
+line: 234 321 239 321 10 L
+line: 262 290 251 294 10 L
+line: 251 294 241 307 10 L
+line: 241 307 241 352 10 L
+line: 241 352 254 365 10 L
+line: 254 366 264 369 10 L
+line: 262 289 373 289 10 L
+line: 373 289 383 294 10 L
+line: 383 294 392 307 10 L
+line: 392 307 392 352 10 L
+line: 392 352 384 366 10 L
+line: 384 366 372 370 10 L
+line: 372 370 264 370 10 L
+line: 349 289 350 273 10 L
+line: 356 288 356 273 10 L
+line: 350 254 343 263 10 L
+line: 343 263 345 270 10 L
+line: 346 270 359 273 10 L
+line: 359 273 365 266 10 L
+line: 365 266 360 256 10 L
+line: 360 256 350 254 10 L
+line: 392 317 399 317 10 L
+line: 399 317 400 343 10 L
+line: 400 343 391 343 10 L
+line: 400 326 412 326 10 L
+line: 401 334 413 334 10 L
+line: 414 370 414 294 10 L
+line: 415 294 428 294 10 L
+line: 428 294 428 369 10 L
+line: 428 369 415 369 10 L
+line: 429 294 456 294 10 L
+line: 457 294 457 369 10 L
+line: 457 326 457 326 10 L
+line: 457 326 469 326 10 L
+line: 457 335 470 335 10 L
+line: 469 259 466 362 10 L
+line: 466 362 466 362 10 L
+line: 465 361 500 361 10 L
+line: 500 361 493 257 10 L
+line: 493 257 494 356 10 L
+line: 495 356 471 356 10 L
+line: 471 356 470 260 10 L
+line: 472 361 474 364 10 L
+line: 475 364 493 364 10 L
+line: 493 364 495 361 10 L
+line: 480 365 480 365 10 L
+line: 480 365 480 375 10 L
+line: 487 364 487 376 10 L
+line: 242 313 390 313 09 L
+line: 472 326 479 327 09 L
+line: 479 327 487 333 09 L
+line: 487 333 489 339 09 L
+line: 489 339 493 339 09 L
+line: 471 339 476 339 09 L
+line: 475 338 472 336 09 L
+ct: 68 20 15 00 INFO
+ct: 68 22 15 00 MUUDA
+link: 20 66 73 lata http://www.kanalisatsioon.ee/vork/pump/info/
+link: 22 66 73 mission2 searchkodu
+
+[http://www.kanalisatsioon.ee/vork/pump/info/]
+loc: http://www.kanalisatsioon.ee/vork/pump/info/
+sx: 24
+sy: 14
+fc: 10
+bc: 00
+t:                                                        
+t:                                                        
+t:       PUMBAJAAM                                        
+t:                                                        
+t:          INFO                                          
+t:             Auhinnad: I koht: Parim pump               
+t:                       II koht: Parim pump              
+t:                       III koht: Parim pump             
+t:                       I koht: Ainus pump meie linnas   
+t:                                                        
+t:             Hind: 4532332423234239999.99 krooni        
+t:                                                        
+t:                                                        
+
+[http://www.kanalisatsioon.ee/vork/pump/muuda/]
+m: 075 0 http://www.kanalisatsioon.ee/valvur/
+loc: http://www.kanalisatsioon.ee/vork/pump/muuda/
+sx: 24
+sy: 14
+fc: 10
+bc: 00
+t:       PUMBAJAAM                                        
+t:          MUUDA SéTTEID:                                
+t:                                                        
+t:               Vìta vett jérvest                        
+t:                                                        
+t:               Vìta vett kanalisatsioonist              
+t:                                                        
+t:               Juhi reovesi jÑrve                       
+t:                                                        
+t:               Juhi reovesi kanalisatsiooni             
+t:                                                        
+t:          EDASI >                                       
+checkbox: 33 17 070 1
+checkbox: 33 19 071 1
+checkbox: 33 21 072 1
+checkbox: 33 23 073 1
+ct: 33 25 14 00 EDASI
+link: 25 33 39 lata http://www.kanalisatsioon.ee/vork/pump/check/
+
+[http://www.kanalisatsioon.ee/vork/pump/check/]
+m: 077 1 http://www.kanalisatsioon.ee/vork/pump/max/
+m: 079 1 http://www.kanalisatsioon.ee/vork/pump/min/
+lata: 01 01 http://www.kanalisatsioon.ee/vork/pump/keskmine/
+
+[http://www.kanalisatsioon.ee/vork/pump/keskmine/]
+m: 075 0 http://www.kanalisatsioon.ee/valvur/
+muutuja: 077 0
+muutuja: 078 1
+muutuja: 079 0
+loc: http://www.kanalisatsioon.ee/vork/pump/keskmine/
+sx: 24
+sy: 14
+fc: 10
+bc: 00
+t:       PUMBAJAAM                                        
+t:          MUUDA VìIMSUS:                                
+fc: 12
+t:                                           ∞∞∞∞         
+t:                                           ∞∞∞∞         
+fc: 10
+t:                                           ∞∞∞∞         
+t:                                           ∞∞∞∞         
+t:                                           ∞∞∞∞         
+t:                                           €€€€         
+t:                                           €€€€         
+t:                                           €€€€         
+t:                                           €€€€         
+t:                                                        
+t:                                                        
+button: PumpMAX
+button: pressedPumpKESKM
+button: PumpMIN
+
+[http://www.kanalisatsioon.ee/vork/pump/min/]
+m: 075 0 http://www.kanalisatsioon.ee/valvur/
+muutuja: 077 0
+muutuja: 078 0
+muutuja: 079 1
+loc: http://www.kanalisatsioon.ee/vork/pump/min/
+sx: 24
+sy: 14
+fc: 10
+bc: 00
+t:       PUMBAJAAM                                        
+t:          MUUDA VìIMSUS:                                
+fc: 12
+t:                                           ∞∞∞∞         
+t:                                           ∞∞∞∞         
+fc: 10
+t:                                           ∞∞∞∞         
+t:                                           ∞∞∞∞         
+t:                                           ∞∞∞∞         
+t:                                           €€€€         
+t:                                           €€€€         
+t:                                           €€€€         
+t:                                           €€€€         
+t:                                                        
+t:                                                        
+button: PumpMAX
+button: PumpKESKM
+button: pressedPumpMIN
+pause: 10
+ct: 66 21 10 00 ∞∞∞∞
+pause: 10
+ct: 66 22 10 00 ∞∞∞∞
+pause: 15
+ct: 66 23 10 00 ∞∞∞∞
+
+[http://www.kanalisatsioon.ee/vork/pump/max/]
+m: 075 0 http://www.kanalisatsioon.ee/valvur/
+muutuja: 077 1
+muutuja: 078 0
+muutuja: 079 0
+loc: http://www.kanalisatsioon.ee/vork/pump/max/
+sx: 24
+sy: 14
+fc: 10
+bc: 00
+t:       PUMBAJAAM                                        
+t:          MUUDA VìIMSUS:                                
+fc: 12
+t:                                           ∞∞∞∞         
+t:                                           ∞∞∞∞         
+fc: 10
+t:                                           ∞∞∞∞         
+t:                                           ∞∞∞∞         
+t:                                           ∞∞∞∞         
+t:                                           €€€€         
+t:                                           €€€€         
+t:                                           €€€€         
+t:                                           €€€€         
+t:                                                        
+t:                                                        
+button: PumpMIN
+button: PumpKESKM
+button: pressedPumpMAX
+pause: 15
+ct: 66 20 10 00 €€€€
+pause: 15
+ct: 66 19 10 00 €€€€
+pause: 20
+ct: 66 18 10 00 €€€€
+pause: 25
+ct: 66 17 12 00 €€€€
+pause: 30
+ct: 66 16 12 00 €€€€
+pause: 15
+lata: 01 01 http://www.kanalisatsioon.ee/danger/
+
+[http://www.kanalisatsioon.ee/danger/]
+m: 075 0 http://www.kanalisatsioon.ee/valvur/
+loc: http://www.kanalisatsioon.ee/danger/
+sx: 34
+sy: 17
+fc: 15
+bc: 04
+t:  DANGER! 
+pause: 10
+ct: 34 17 14 00          
+pause: 5
+ct: 34 17 14 04  DANGER! 
+pause: 5
+ct: 34 17 14 00          
+pause: 13
+ct: 34 17 14 04  DANGER! 
+pause: 5
+ct: 34 17 14 00          
+pause: 13
+ct: 34 17 14 04  DANGER! 
+pause: 5
+ct: 34 17 14 00          
+pause: 13
+ct: 30 17 14 04 PUMP LìHKEB KOHE!
+pause: 60
+ct: 30 17 14 04   PUMP LìHKES!   
+pause: 40
+line: 000 420 640 440 09 F
+pause: 5
+line: 000 400 640 420 09 F
+pause: 5
+line: 000 380 640 400 09 F
+pause: 5
+line: 000 360 640 380 09 F
+pause: 5
+line: 000 340 640 360 09 F
+pause: 5
+line: 000 320 640 340 09 F
+pause: 5
+line: 000 300 640 320 09 F
+pause: 5
+line: 000 280 640 300 09 F
+pause: 5
+line: 000 260 640 280 09 F
+pause: 5
+line: 000 240 640 260 09 F
+pause: 5
+line: 000 220 640 240 09 F
+pause: 5
+line: 000 200 640 220 09 F
+pause: 5
+line: 000 180 640 200 09 F
+pause: 5
+line: 000 160 640 180 09 F
+pause: 5
+line: 000 140 640 160 09 F
+pause: 5
+line: 000 120 640 140 09 F
+pause: 5
+muutuja: 070 1
+lata: 01 01 http://www.kanalisatsioon.ee/
+
+
+[http://www.kanalisatsioon.ee/valvur/]
+m: 075 1 http://www.kanalisatsioon.ee/valvur/free/
+loc: http://www.kanalisatsioon.ee/valvur/
+sx: 24
+sy: 14
+fc: 14
+bc: 00
+t:                                                        
+t:                                                        
+t:                                                        
+t:                                                        
+t:                                                        
+t:                                                        
+t:                                                        
+t:                                                        
+t:                                                        
+t:                                                        
+t:                                                        
+t:                                                        
+t:                                                        
+sx: 35
+sy: 15
+fc: 14
+bc: 04
+t:         VALVUR TEATAB:           
+t:                                  
+t:            OOT OOT!              
+t:     NOORMEES, KUHU MINEK???      
+t:  KAHJUKS PEAB SIIA SISENEMISEKS  
+t:   OLEMA PUMBAJAAMA TôôTAJA!      
+t:                                  
+t:           KAO VéLJA!             
+
+[http://www.kanalisatsioon.ee/valvur/free/]
+m: 075 0 http://www.kanalisatsioon.ee/valvur/
+loc: http://www.kanalisatsioon.ee/valvur/free/
+sx: 24
+sy: 14
+fc: 14
+bc: 00
+t:                                                        
+t:                                                        
+t:                                                        
+t:                                                        
+t:                                                        
+t:                                                        
+t:                                                        
+t:                                                        
+t:                                                        
+t:                                                        
+t:                                                        
+t:                                                        
+t:                                                        
+sx: 35
+sy: 16
+fc: 14
+bc: 04
+t:                      
+t:     VALVUR TEATAB:   
+t:                      
+pause: 25
+t:         ....         
+t:    (VALVUR SìITIS    
+t:  VEERIKET PARANDAMA) 
+t:                      
+t:              >       
+ct: 42 23 15 04 SISENE
+link: 23 42 47 lata http://www.kanalisatsioon.ee/vork/pump/muuda/
+
+[http://www.kanalisatsioon.ee/avarii/]
+loc: http://www.kanalisatsioon.ee/
+clearnetscape
+name: kanalisatsioon
+sx: 02
+sy: 08
+fc: 02
+bc: 00
+t:                             €€€           €€€                         €    €€€
+t: €  €  €€  €€  €  €€  €   € €     €€  €€€ €    €  €€   €€  €€  € €    € €  €   
+t: €€€  €€€€ € € € €€€€ €   € €€€€ €€€€  €  €€€€ € €  € €  € € € € €   €   € €€€€
+t: €  € €  € €  €€ €  € €€€ €    € €  €  €     € €  €€   €€  €  €€ €   €€€€€    €
+t:                            €€€           €€€                        €   € €€€ 
+sx: 24
+sy: 15
+fc: 10
+bc: 00
+t:               VABANDAME!
+t:    VEEAVARII TìTTU ON MEIE INTERNETI-
+t:       LEHEKöLG AJUTISELT SULETUD!
+t:                                                        
+t:                                                        
+t:                                                        
+t:                                                        
+mail: Jehaaa!!
+
+
+**********************************
+		AASTA 3000
+**********************************
+[http://www.y3k.com/index.html/]
+lata: 01 01 http://www.y3k.com/
+
+[http://www.y3k.com/]
+m: 005 0 http://cannot_connect/
+name: aasta 3000 y3k probleem personaalarvutitele
+clearnetscape
+loc: http://www.y3k.com/index.html/
+fc: 01
+bc: 00
+sy: 09
+sx: 3
+t: ≤€€≤
+t:     €     €€
+t:  ∞€€     €≤ €
+t:     €   €≤   €
+t:    ≤€   €∞  ≤€
+t: € ≤€     € ≤€
+t:  €€       €€
+t: 
+t:   €€      €€
+t:  €≤ €    €≤ €
+t: €≤   €  €≤   €
+t: €∞  ≤€  €∞  ≤€
+t:  € ≤€    € ≤€
+t:   €€      €€
+fc: 10
+sy: 09
+sx: 20
+t: éra karda magada, meie valvame sinu homse Åle
+fc: 15
+t:                  01  01  3000
+fc: 10
+t:             on nÅÅd meie probleem
+fc: 07
+t:  
+t: Jah, tìesti, valitsus ise on volitanud meid 
+t: tegema kìik selleks, et kellegi arvuti ei 
+t: kannataks. Eelkìige on meie sihiks muidugi
+t: Ålearuse paanika vaigistamine. Nii et Ñra 
+t: vÑrise, arvutiomanik, enne seda neetud
+t: pÑeva oleme me kohal ja vaatame su varanduse 
+t: Åle. Muretsemiseks ei ole mingit pìhjust.
+t:  
+t:          DOWNLOAD Y3K-parandaja
+l: 29 50 lata DownloadY3K
+
+lata: 01 01 http://www.y3k.com/2frame.html/
+
+[http://www.y3k.com/2frame.html/]
+fc: 01
+bc: 07
+sx: 66
+sy: 08
+t: ⁄ƒƒƒƒƒƒƒƒƒƒƒø
+t: ≥           ≥
+t: ≥ Jutud     ≥
+l: 66 79 lata http://www.y3k.com/jutud/
+t: ≥           ≥
+t: ≥ Vale      ≥
+l: 66 79 lata http://www.y3k.com/vale/
+t: ≥           ≥
+t: ≥ Must      ≥
+l: 66 79 lata http://www.y3k.com/must/
+t: ≥           ≥
+t: ≥           ≥
+t: ≥           ≥
+t: ≥           ≥
+t: ≥           ≥
+t: ≥           ≥
+t: ≥           ≥
+t: ≥           ≥
+t: ≥           ≥
+t: ≥           ≥
+t: ≥           ≥
+t: ¿ƒƒƒƒƒƒƒƒƒƒƒŸ
+
+[http://www.y3k.com/vale/]
+name: vale
+loc: http://www.y3k.com/vale/
+bc: 0
+fc: 15
+sx: 20
+sy: 9
+t: Kogu vale aastast 3000                       
+t: ======================                       
+t: Paljud inimesed arvavad, et maagiline number 
+t: 3000 toob nendele Maailmalìpu koju kÑtte.    
+t: Ometi on suuremad arvutigurud veendunud, et  
+t: mingit jama ei tule.                         
+t: <Vìtke vìi see 2000-ki,> on saanud Åheks     
+t: arvutiinimeste motoks. Ja tìesti, miks peaks 
+t: midagi juhtuma? Kuidas saaks lihtsalt arvuti-
+t: vea tìttu Åles Åtelda riikide tuumarelvad,   
+t: elektrijaamad, parlamendi sÅsteemid, medit-  
+t: siiniasutuste kallid elektroonikainstumendid 
+t: ja loomulikult inimeste PC-d? Kust Åldse     
+t: vìib keegi midagi sÑherdust mìelda? Ei! Olge 
+t: rahulikult kodus, tìmmake gaasimask pÑhe ja  
+t: sîîge pop-corni, sest Fakt on: Midagi ei     
+t: juhtu! Teie eest hoolitsetakse!              
+
+[http://www.y3k.com/must/]
+name: must
+loc: http://www.y3k.com./must/
+bc: 0
+fc: 15
+sx: 20
+sy: 8
+t: Must stsenaarium                             
+t: ================                             
+t: Aga Åtleme, et midagi siiski juhtub. Mis saab
+t: meist siis? KÅsimustele vastab valitsuse     
+t: 3000-Nìustamise peasekretÑr.                 
+t: Mis on 3000 teie jaoks?                      
+t: Teate, ma ei tohi sellest rÑÑkida. érge      
+t: pÑrige! Kìik saab korda!                     
+t: Millega tagate selle, et kellelegi sel tÑht- 
+t: sal hetkel midagi taevast pÑhe ei saja?      
+t: See on kindel.                               
+t: Nii et teie ei karda?                        
+t: Mis mul karta - ma olen ju 3000-Nìustamises  
+t: sees ja ka mind evakueeritakse.              
+t: Nii et mingit ohtu lihtinimeselgi pole?      
+t: Ei.                                          
+t: AitÑh.                                       
+t: Pole tÑnu vÑÑrt. Aga ma palvetan te kÑigi    
+t: eest! Head aega...                           
+
+
+[http://www.y3k.com/jutud/]
+name: jutud lood hirm îî
+clearnetscape
+loc: http://www.y3k.com/jutud/
+bc: 0
+fc: 9
+sx: 6
+sy: 9
+t: X X  XXX  X  X
+t: X X    X  X X
+t:  X   XXX  XX
+t:  X     X  X X
+t:  X   XXX  X  X
+t: Âuduslood
+t: -------------
+bc: 0
+fc: 15
+sx: 6
+sy: 17
+t: 3000-koll
+t: Hommikusaadanas
+t: Hirm
+link: 17 06 14 lata http://www.y3k.com/lugu1.html/
+link: 18 06 20 lata http://www.y3k.com/lugu2.html/
+link: 19 06 09 lata http://www.y3k.com/lugu3.html/
+
+[http://www.y3k.com/lugu1.html/]
+name: koll 300
+loc: http://www.y3k.com/lugu1.html/
+bc: 0
+fc: 15
+sx: 28
+sy: 8
+t: 3000-koll
+t: =========
+t: Paksus metsas, sÅgaval-sÅgaval, kuhu inimese jalg
+t: iialgi polnud astunud, elas 3000-koll. Tal oli 
+t: 3000 jalga, millega ta kiiresti-kiiresti oma
+t: ohvreile jÑrele jooksis, 3000 kÑtt, millega ta
+t: kindlalt oma ohvreist kinni haaras, 3000 keelt,
+t: millega ta oma ohvreid maitses ja nad oma ila
+t: jÑrgi haisema pani, ja 3000 paari lÑugu, millega
+t: ta kìik ettejÑÑnu halastamatult nahka pistis.
+t: Tavaliselt elas 3000-koll oma kodus lÑhedal metsas,
+t: aga millenniumi lìpuks lÑheb tal kÑht nii tÅhjaks,
+t: et ta on nÑus ka linnadesse tulema Interneti-
+t: sìltlasi nende kodudest sîîma.
+t: Ainult tuli suudab 3000-kolli eemale peletada,
+t: aga vìib-olla ei aita ka, sest need, kes on lÑi-
+t: nud temast tulega jagu saama, ei ole kunagi koju
+t: tagasi saabunud.
+
+[http://www.y3k.com/lugu2.html/]
+name: hommik saadan saa
+loc: http://www.y3k.com/lugu2.html/
+bc: 0
+fc: 15
+sx: 28
+sy: 8
+t: Hommikusaadanas
+t: ===============
+t: öhel pÑrastlìunal, kui netirahvas veel magas, 
+t: laskus taevast Maa peale vÑikene laev. Ja sellest
+t: vÑikesest laevast ronis vÑlja kole ja haisev
+t: Hommikusaadanas. Hommikusaadanas oli otsustanud
+t: aasta 3000 hakul kìik telefoniliinid Åmber lÅkata
+t: ja System Administratorid rivist vÑlja lÅÅa.
+t: Hommikusaadanasel oli kaks sarve, millega ta 
+t: juhuslikke mîîdakÑijaid suskis, et nende teravust
+t: kontrollida. SeejÑrel vìttis ta oma laeva selga
+t: ja lÑks suurde arvuti poodi, kus kÑik ilusad
+t: kompuutrid letil reas olid. Aga ei paitanud ta neid
+t: vìi katsunud nÑpuga, nagu inimestel kombeks,
+t: vaid tema ainult sÅlitas nende peale! Selline kole
+t: koll oli Hommikusaadanas.
+t: 
+t: Selle hirmsa loo jÑtk on peagi ka siin Åleval.
+
+[http://www.y3k.com/lugu3.html/]
+loc: http://www.y3k.com/lugu3.html/
+bc: 0
+fc: 15
+sx: 28
+sy: 8
+t: Hirm
+t: ====
+t: VÑike HÑku Ñrkas. Ta avas oma silmad, ega suutnud
+t: uskuda, mida enda Åmber nÑgi - arvuti oli vÑlja
+t: lÅlitunud, laelamp oli kustunud, toolgi oli Åmber
+t: lÅkatud.
+t: VÑike HÑku pesi silmad Ñra ja lÑks aknale kaema,
+t: mis imelugu see selline on. Kuid aken oli katki.
+t: Ja katki oli ka kìik muu - seda nÑgi HÑku nÅÅd
+t: selgesti. Kogu linn oli pahupidi. TÑnavanurkadel
+t: vedelesid inimeste laibad, telefonipostide otsa
+t: olid kihutanud sajad autod.
+t: VÑiksel HÑkul hakkas hirm. Ta puges tagasi voodis-
+t: se, vìttis endal pìlvede Åmbert kinni ja hakkas
+t: tasakesi vÑrisedes nutma.
+t: Ta polnud kunagi uskunud, et Åks tÅhine eksitus
+t: eelmises Millenniumis vÑib saada saatuslikuks 
+t: kìigele ilusale, mida ta tundis. Ta ei saanud
+t: endale enam toitu ega sooje riideidki downloadida!
+
+*********SMILEY POLIKLIINIK***********
+[http://www.med.smiley.ee/]
+m: 004 0 http://cannot_connect/
+name: meditsiin smiley polikliinik arstiabi
+clearnetscape
+loc: http://www.med.smiley.ee/
+bc: 0
+fc: 10
+sx: 7
+sy: 9
+t: S M I L E Y '
+bc: 8
+fc: 9
+sx: 11
+sy: 10
+t: P o l i k l i i n i k
+bc: 0
+fc: 7
+sx: 7
+sy: 8
+t: ≥
+t: 
+t: ≥
+t: ≥
+t: ≥
+t: ≥
+t: ≥
+t: ≥
+t: ≥
+t: ≥
+t: ≥
+t: ≥
+t: ≥
+t: ≥
+t: ≥
+t: ˛
+sx: 37
+sy: 13
+t: ˛ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ<             >ƒƒƒƒƒ
+sx: 59
+sy: 17
+t: ˛ƒƒƒƒƒƒƒ¬ƒƒƒƒƒƒƒƒƒƒƒ
+t:         ≥
+t:         ≥
+t:         ≥
+t: 
+t: 
+t:         ≥
+bc: 10
+fc: 6
+sx: 60
+sy: 13
+t: Praegu valves
+l: 60 72 lata http://www.med.smiley.ee/valves.html/
+sx: 5
+sy: 17
+t:  Fotod     
+l: 05 16 lata http://www.med.smiley.ee/fotod.html/
+t: 
+t:  Imemasin  
+l: 05 16 lata http://www.med.smiley.ee/imemasin.html/
+t: 
+t:  ìnnekivi  
+l: 05 16 lata http://www.med.smiley.ee/kivi.html/
+sx: 64
+sy: 21
+t:    Testamendi  
+l: 64 78 lata http://www.med.smiley.ee/testament.html/
+t:     blankett   
+l: 64 78 lata http://www.med.smiley.ee/testament.html/
+t: 
+t:      Soovin    
+l: 64 78 lata http://www.med.smiley.ee/ankeet.html/
+t:       ravi     
+l: 64 78 lata http://www.med.smiley.ee/ankeet.html/
+
+[http://www.med.smiley.ee/valves.html/]
+fc: 07
+sx: 40
+sy: 13
+t: ¬
+t: ¿ƒHetkel on tîîl ainult dr. Kokapapaƒ˛
+
+[http://www.med.smiley.ee/kivi.html/]
+name: kivi
+clearnetscape
+loc: http://www.med.smiley.ee/kivi.html/
+bc: 0
+fc: 10
+sx: 13
+sy: 10
+t: S M I L E Y '  p o l i k l i i n i k
+bc: 0
+fc: 12
+sx: 18
+sy: 11
+t: Meie ïnnekivi
+bc: 0
+fc: 7
+sx: 3
+sy: 13
+t: Jah, see on tïesti tïsi, et meie polikliinikul on vïimalus oma haigeid
+t: ravida kuulsa ïnnekiviga, mis pÑrineb TÅrgist. Sellel kivil on enne-
+t: kuulmatu vïime anda inimestele hea tuju. Kivi on uuritud ka teaduslikult,
+t: kuid tulemused ei nÑidanud midagi ebaloomulikku, mis tÑhendab, et 
+t: kivis on eriti tugev maagia. 
+t: ïnnekivil on ka teisi omadusi, nÑiteks ei nïua ta oma vïlujïu tarvitamise
+t: eest raha, mis on paljude arvates vÑga huvitav. Samuti on teda mugav 
+t: kaasa vïtta. Meie hoiame teda turvaliselt seitsme luku taga, sest paraku
+t: on palju neid, kes himustavad teda endale.
+t: Ja pidage meeles, et need kivid, mida te saate TÅrgi turult osta, on 
+t: ainult selle pÑris kivi koopiad ja tegelikult ei ole neis mingit vïlu-
+t: vÑge, sest nïndasamuti on kirjas ka kiviga kaasa antud garantiipaberil.
+bc: 1
+fc: 15
+sx: 7
+sy: 26
+t: T A G A S I
+link: 26 07 17 net back
+
+[http://www.med.smiley.ee/fotod.html/]
+loc: http://www.med.smiley.ee/fotod.html/
+bc: 0
+fc: 7
+sx: 5
+sy: 11
+t: ⁄ƒ¡ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒø
+t: ≥                                                 ≥
+t: ≥                                                 ≥
+t: ¿ƒ¬ƒƒ                                          ƒ¬ƒŸ
+t:   ≥                                             ≥  
+t:   ≥                                             ≥  
+t:  ⁄¡ƒƒƒƒƒƒ¡ƒƒ                             ƒƒƒ¬ƒƒƒŸ  
+t:  ≥                                          ≥      
+t:  ≥                                          ≥      
+t:  ¿ƒƒƒƒƒ¬ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ¬ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒŸ      
+t:        ≥                    ≥                      
+t:        ≥                    ˛                      
+t:        ≥                                           
+t:        ≥                                           
+t:        ˛                                           
+bc: 09
+fc: 00
+sx: 06
+sy: 12
+t: ∞≤∞≤≤≤
+t: ≤±∞∞≤≤
+sx: 08
+sy: 15
+t: ≤≤∞∞±±
+t: ±≤∞∞∞≤
+sx: 07
+sy: 18
+t: ∞≤±≤≤≤
+t: ≤±≤±±≤
+bc: 0
+fc: 13
+sx: 14
+sy: 12
+t:  Siin on meie direktor oma sÅnni-
+t:   pÑeval
+t: 
+t:     Siin on meie personali grupi-
+t:     pilt
+t: 
+t:  Siin on meie tîîtajad paani-
+t:   liselt tîîd rÅgamas
+link: 12 13 15 lata http://www.med.smiley.ee/pilt.jpg/
+link: 15 15 17 lata http://www.med.smiley.ee/pilt.jpg/
+link: 18 13 15 lata http://www.med.smiley.ee/pilt.jpg/
+
+[http://www.med.smiley.ee/pilt.jpg/]
+loc: http://www.med.smiley.ee/pilt.jpg/
+bc: 7
+fc: 0
+sx: 06
+sy: 22
+t:    Oota. Me ei teadnud, et keegi tahab pilte nÑha.
+t:      Kohe skÑnnime need suuremalt sisse.          
+line: 040 176 439 336 07 F
+
+[http://www.med.smiley.ee/imemasin.html/]
+name: imemasin uskumatu
+clearnetscape
+loc: http://www.med.smiley.ee/imemasin.html/
+bc: 0
+fc: 10
+sx: 9
+sy: 10
+t: S M I L E Y '  p o l i k l i i n i k
+fc: 4
+sx: 19
+sy: 11
+t: Imeravija FASTDIAGNOZER-666
+fc: 7
+sx: 4
+sy: 13
+t: Esimese raviasutusena Eestis on meie polikliinik vïtnud kasutusele
+t: digitaalselt haigusi diagnoosiva ja raviva masina - FASTDIAGNOZERi.
+t: Fastdiagnozer leiab automaatselt sobiva patsiendi, teeb temaga kïik
+t: ettemÑÑratud protseduurid ning vÑljastab rtf-failina patsiendi
+t: haigusloo ja hetkeseisundi.
+t: Eriti hea on see, et kui mïni patsient Ñra sureb, siis ei ole kedagi
+t: sÅÅdistada ja nii ei ole vïimalik mÑÑrida meie heamainelist nime.
+t: Siinkohal tahaks tÑnada neid perekondi, kes on oma haiged meie 
+t: hoolde ohverdanud ja kelle rahade eest olemegi ostnud selle kïrg-
+t: tehnoloogilise Fastdiagnozeri.
+fc: 15
+bc: 01
+sx: 8
+sy: 26
+t: T A G A S I
+link: 26  8 18 net back
+
+[http://www.med.smiley.ee/testament.html/]
+clearnetscape
+loc: http://www.med.smiley.ee/testament.html/
+muutuja: 121 1
+fc: 7
+sx: 3
+sy: 8
+t: …ÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕª
+t: ∫ Testamendi blankett «
+t: »ÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕº
+sx: 14
+sy: 12
+t: Mina,          , kinnitan, et, olles tÑie mïistuse juures:
+t: Elan nii kaua, kui jaksan, ja pÑrast oma surma
+t: 
+t:    Loovutan kogu oma vara Smiley' polikliinikule
+checkbox: 14 15 121 0
+t: 
+t:    Kïik kindlustused ja autasud saab endale Smiley'
+checkbox: 14 17 121 0
+t:    polikliinik
+t: 
+t:    Enne surma ei muuda enam kunagi oma testamenti ega nimeta
+checkbox: 14 20 121 0
+t:    Smiley' polikliinikut vales kontekstis.
+link: 12 19 28 vordleinput 12 19 28 07 niisama
+button: Smileytestament
+
+[http://www.med.smiley.ee/kinnita.now/]
+pause: 20
+fc: 00
+bc: 07
+sx: 22
+sy: 20
+t: ************************
+t: * Testament kinnitatud *
+t: ************************
+pause: 60
+lata: 01 01 http://www.med.smiley.ee/
+
+[http://www.med.smiley.ee/ankeet.html/]
+clearnetscape
+loc: http://www.med.smiley.ee/ankeet.html/
+muutuja: 122 0
+fc: 7
+sx: 3
+sy: 8
+t: …ÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕª
+t: ∫     Soovin ravi     «
+t: »ÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕº
+sx: 14
+sy: 12
+t: Mina,           , kinnitan, et, olles tÑie mïistuse juures:
+t: Loobudes kogu oma senise elu saavutustest ja sihtidest,
+t: annan end Smiley'i polikliiniku arstide hoolde.
+t: Mitte kunagi enam ei taha ma tunda valusid, nïndasamuti
+t: nagu ma mitte kunagi ei pÅÅa selle haigla seinte vahelt
+t: pïgeneda vïi soovida end pïetama saabunud inimestele muul
+t: viisil halba.
+link: 12 19 28 vordleinput 12 19 28 07 smileyankeet
+button: Smileyankeet
+
+[http://www.med.smiley.ee/onunimi.now/]
+muutuja: 122 1
+
+[http://www.med.smiley.ee/saagu.now/]
+'see on nÅÅd see koht, kus ankeedi nupp vajutatud
+m: 122 1 http://www.med.smiley.ee/terekoka.html/
+clearnetscape
+fc: 00
+bc: 07
+sx: 22
+sy: 20
+t: *******************************
+t: * Teie soov on meie seadus!   *
+t: * Oodake nÅÅd ilusti kodus,   *
+t: * kuni vastava vÑljaìppega    *
+t: * mehed teile jÑrele tulevad. *
+t: *******************************
+
+[http://www.med.smiley.ee/terekoka.html/]
+pause: 20
+m: 123 1 http://www.med.smiley.ee/kokaon.html/
+fc: 00
+bc: 07
+sx: 22
+sy: 20
+t: ************************
+t: *   Kokapapa lisatud   *
+t: * ravitavate nimekirja *
+t: ************************
+muutuja: 123 1
+pause: 60
+mail: Valvearst jooksis minema
+lata: 01 01 http://www.med.smiley.ee/
+
+[http://www.med.smiley.ee/kokaon.html/]
+pause: 20
+fc: 00
+bc: 07
+sx: 22
+sy: 15
+t: ************************
+t: * Dr. Kokapapa juba on *
+t: *   meie patsientide   *
+t: *     nimekirjas       *
+t: ************************
+pause: 60
+lata: 01 01 http://www.med.smiley.ee/
+
+
+
+
+************WWW.COOL.EE***********
+[http://www.cool.ee/]
+name: cool estonian telefon salat tasuta
+clearnetscape
+bc: 4
+fc: 15
+sx: 2
+sy: 8
+t:                 
+t:                 
+t:     Cool.ee     
+t:                 
+t:                 
+bc: 1
+fc: 15
+sx: 2
+sy: 13
+t: Registreerumine 
+t: Muu             
+t: 
+t: 
+t: 
+t: 
+t: 
+t: 
+t: 
+t: 
+t: 
+t: 
+t:                 
+t:       
+bc: 1
+fc: 15
+sx: 18
+sy: 11
+t:        Tere tulemast Salati tasuta Interneti-Åhenduse         
+t:                  registreerumislehekÅljele !        
+
+
+********************************** CHEOPPZY ********************************
+
+[http://www.pyramiid.ee/]
+m: 003 0 http://cannot_connect/
+name: cheoppzy pyramiidid pÅramiidid
+loc: http://www.pyramiid.ee/
+clearnetscape
+bc: 00
+fc: 06
+sx: 02
+sy: 08
+t: 
+t:                 €
+t:               €€€≤       €                                €
+t:             €€€€€≤≤     €€∞                              €€∞ 
+t:           €€€€€€€€≤≤≤ €€€€≤≤                           €€€€≤≤
+t:         €€€€€€€€€€€≤∞€€€€€€≤≤∞                       €€€€€€€≤≤∞
+t: €€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€≤±∞
+t: ≤≤≤≤≤≤≤≤≤≤≤ C H E O P P Z Y ≤≤≤≤≤≤≤≤≤≤≤≤≤≤≤≤≤≤≤≤≤≤≤≤≤≤≤≤≤≤≤≤≤≤≤≤≤≤≤≤≤±∞
+t: ±±±±±±±±± p Å r a m i i d i d ±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±∞
+fc: 12
+t: 
+t: < PILETITE BRONEERIMINE >               Lahtioleku ajad:
+l: 04 24 lata http://www.pyramiid.ee/piletid.html/
+t: <     INFORMATSIOON     >     E-R: 8:00-16:30 (lìuna 13:30-14:30)
+l: 08 20 lata http://www.pyramiid.ee/info.html/
+t: <       PEAARVUTI       >     L,P: 10:00-14:30
+l: 10 18 lata http://www.pyramiid.ee/peaarvuti/
+t: <         KAART         >
+l: 12 16 lata http://www.pyramiid.ee/kaart.html/
+
+[http://www.pyramiid.ee/piletid.html/]
+loc: http://www.pyramiid.ee/piletid.html/
+clearnetscape
+bc: 00
+fc: 12
+sx: 02
+sy: 08
+t: PILETITE BRONEERIMINE...
+t: ...toimub Cheoppzy pÅramiidi fuajees.
+t: 
+t:    PANE TéHELE:
+t:        Gruppidele (Åle 10 inimese) on pilet 2% odavam!
+t:        ôîbimine pÅramiidis - vaid 12212401 krooni!
+t:        Hommikusîîk - vaid 23423 krooni!
+t:        Soovilugu - hind kokkuleppel.
+t:        6 inimest + auto - vaid 24524352 krooni!
+t:
+t:
+fc: 04
+t: < Tagasi
+l: 02 09 lata http://www.pyramiid.ee/
+
+[http://www.pyramiid.ee/kaart.html/]
+loc: http://www.pyramiid.ee/kaart.html/
+clearnetscape
+bc: 00
+fc: 12
+sx: 02
+sy: 08
+t: Cheoppzy pÅramiidi kaart
+t: 
+fc: 04
+t: < Tagasi
+l: 02 09 lata http://www.pyramiid.ee/
+line: 206 278 391 332 12 L
+line: 206 277 387 242 12 L
+line: 387 243 565 278 12 L
+line: 564 278 389 333 12 L
+line: 389 332 370 155 12 L
+line: 370 155 206 277 12 L
+line: 368 154 564 279 12 L
+line: 386 242 370 155 12 L
+line: 307 308 321 275 12 L
+line: 321 275 301 270 12 L
+line: 300 270 282 299 12 L
+line: 270 275 300 269 12 L
+line: 291 281 319 276 12 L
+line: 291 281 292 311 12 L
+line: 269 275 290 281 12 L
+line: 268 275 269 303 12 L
+line: 269 303 291 310 12 L
+line: 292 310 305 308 12 L
+line: 269 303 283 300 12 L
+
+[http://www.pyramiid.ee/info.html/]
+loc: http://www.pyramiid.ee/info.html/
+clearnetscape
+bc: 00
+fc: 12
+sx: 02
+sy: 08
+t: Cheoppzy pÅramiidi tutvustus
+t: 
+t: Cheoppzy pÅramiid avastati mìne aasta eest meie firma poolt.
+t: Sellest ajast olemegi seda pÅramiidi renoveerinud ja korras
+t: hoidnud, et ka Sinul, kallis kÅlastaja, midagi vaadata oleks.
+t: 
+t:    Kuulus CHEOPZZY MìISTATUS:
+t: Cheopzzy mìistatus kujutab endast vaid Åht kolmekohalist
+t: arvu. Aga see arv pole teada! On vaid teada, et kui see arv
+t: pea peale pîîrata, nÑeme numbrit "666". Sellel saladuslikul
+t: Cheopzzy mìistatusel on muistendi jÑrgi vÑga hea enne. See-
+t: pÑrast oleme pannud selle arvu ka oma arvutisÅsteemi
+t: parooliks. Toogu see Sullegi ìnne!
+t: 
+fc: 04
+t: < Tagasi
+l: 02 09 lata http://www.pyramiid.ee/
+
+[http://www.pyramiid.ee/peaarvuti/]
+loc: http://www.pyramiid.ee/peaarvuti/
+clearnetscape
+bc: 00
+fc: 12
+sx: 02
+sy: 08
+t: Cheoppzy pÅramiidi peaarvuti
+t: 
+t: 
+t:         STATISTIKA:
+t:          ---- KÅlastatavus
+t:           - - KÅlastajaid jÑÑnud kadunuks
+t:          - -- Kasum
+t: 
+t: 
+fc: 14
+t:   <     info     >
+l: 04 16 lata http://www.pyramiid.ee/info.html/
+t:   < juhtimispult >
+l: 04 16 lata http://www.pyramiid.ee/parool/
+line: 365 132 369 122 12 L
+line: 369 122 375 132 12 L
+line: 368 123 368 298 12 L
+line: 367 298 602 298 12 L
+line: 602 298 593 295 12 L
+line: 595 303 602 299 12 L
+line: 367 213 390 174 12 L
+line: 390 174 405 214 12 L
+line: 405 214 417 250 12 L
+line: 417 250 425 212 12 L
+line: 425 212 446 250 12 L
+line: 446 250 482 227 12 L
+line: 482 227 514 266 12 L
+line: 514 266 542 247 12 L
+line: 368 297 399 293 12 L
+line: 399 293 417 280 12 L
+line: 417 280 426 285 12 L
+line: 426 285 465 278 12 L
+line: 467 279 486 264 12 L
+line: 486 264 488 253 12 L
+line: 486 252 512 276 12 L
+line: 512 276 521 273 12 L
+line: 520 273 548 166 12 L
+line: 368 266 391 259 12 L
+line: 391 259 418 265 12 L
+line: 417 265 453 263 12 L
+line: 453 263 542 275 12 L
+
+[http://www.pyramiid.ee/parool/]
+loc: http://www.pyramiid.ee/parool/
+clearnetscape
+bc: 00
+fc: 12
+sx: 24
+sy: 13
+t: €€€€€€€€€€€€€€€€€€€€€€€€€€€€€€
+t: €€€€€€€€€€€€€€€€€€€€€€€€€€€€€€
+t: €€€€€€€€€€€€     €€€€€€€€€€€€€
+t: €€€€€€€€€€€€€€€€€€€€€€€€€€€€€€
+bc: 12
+fc: 00
+sx: 31
+sy: 14
+t: Sisesta parool:
+link: 15 36 40 vordleinput 15 36 40 14 cheopzzypassword
+
+[http://www.pyramiid.ee/incorrect/]
+clearnetscape
+bc: 00
+fc: 12
+sx: 25
+sy: 13
+t: €€€€€€€€€€€€€€€€€€€€€€€€€€€€€
+t: €        VALE PAROOL       €€
+t: €€€€€€€€€€€€€€€€€€€€€€€€€€€€€
+pause: 32
+lata: 01 01 http://www.pyramiid.ee/peaarvuti/
+
+[http://www.pyramiid.ee/pult/]
+loc: http://www.pyramiid.ee/pult/
+clearnetscape
+bc: 00
+fc: 12
+sx: 26
+sy: 11
+t: J U H T I M I S P U L T
+t: =======================
+t: 
+t:     <    RADAR    >
+l: 30 44 lata http://www.pyramiid.ee/radar.html/
+t:     <   EESRUUM   >
+l: 30 44 lata http://www.pyramiid.ee/options.html/
+t:     <  RISTIKéIK  >
+l: 30 44 lata http://www.pyramiid.ee/options.html/
+t:     < HAUAKAMBER  >
+l: 30 44 lata http://www.pyramiid.ee/muumia.html/
+t:     < ELEKTROONIKA>
+l: 30 44 lata http://www.pyramiid.ee/elektroonika/
+
+[http://www.pyramiid.ee/options.html/]
+loc: http://www.pyramiid.ee/options.html/
+clearnetscape
+bc: 00
+fc: 12
+sx: 02
+sy: 08
+t: EESRUUMI JA RISTIKéIGU OPTSIOONID:
+t: 
+t:         Valgustus
+t: 
+t:         Ventilatsioon
+t: 
+t:         ìudusmuusika
+t: 
+t: < OK >
+l: 02 07 lata http://www.pyramiid.ee/pult/
+checkbox: 06 10 150 1
+checkbox: 06 12 151 1
+checkbox: 06 14 152 1
+
+[http://www.pyramiid.ee/radar.html/]
+loc: http://www.pyramiid.ee/radar.html/
+clearnetscape
+bc: 00
+fc: 12
+sx: 02
+sy: 08
+t: RADAR
+t: 
+fc: 04
+t:  < Tagasi
+l: 03 10 lata http://www.pyramiid.ee/pult/
+line: 179 392 606 392 10 L
+line: 606 392 591 149 10 L
+line: 591 149 334 156 10 L
+line: 334 156 336 261 10 L
+line: 335 261 276 258 10 L
+line: 276 258 250 170 10 L
+line: 250 170 171 161 10 L
+line: 288 259 280 144 10 L
+line: 280 144 322 146 10 L
+line: 322 146 322 259 10 L
+line: 287 230 319 231 10 L
+line: 319 231 317 390 10 L
+line: 288 230 293 391 10 L
+line: 316 391 293 391 10 L
+line: 360 258 407 265 10 L
+line: 374 260 379 247 10 L
+line: 379 247 392 248 10 L
+line: 392 248 398 262 10 L
+line: 374 261 370 270 10 L
+line: 370 270 372 272 10 L
+line: 372 272 373 279 10 L
+line: 373 279 390 281 10 L
+line: 390 281 399 276 10 L
+line: 395 263 398 274 10 L
+line: 377 265 380 266 10 L
+line: 393 280 410 304 10 L
+line: 410 304 402 324 10 L
+line: 388 289 401 305 10 L
+line: 402 305 398 319 10 L
+line: 374 278 364 290 10 L
+line: 364 290 363 306 10 L
+line: 363 306 369 317 10 L
+line: 367 317 398 318 10 L
+line: 397 320 401 328 10 L
+line: 371 318 381 382 10 L
+line: 402 327 394 384 10 L
+line: 381 383 366 387 10 L
+line: 366 387 366 391 10 L
+line: 376 354 370 346 10 L
+line: 373 337 371 338 10 L
+line: 369 347 373 339 10 L
+line: 396 368 400 383 10 L
+line: 397 387 399 388 10 L
+line: 401 391 401 387 10 L
+line: 584 390 603 377 10 L
+line: 603 377 607 366 10 L
+line: 591 338 574 364 10 L
+line: 574 364 564 361 10 L
+line: 563 361 571 320 10 L
+line: 571 320 582 318 10 L
+line: 582 318 584 330 10 L
+line: 589 329 595 329 10 L
+line: 601 335 604 344 10 L
+line: 565 341 552 340 10 L
+line: 552 340 531 379 10 L
+line: 531 379 545 388 10 L
+line: 545 387 559 371 10 L
+line: 559 371 560 387 10 L
+line: 526 381 517 384 10 L
+line: 513 386 514 390 10 L
+line: 572 313 582 302 10 L
+line: 582 302 596 304 10 L
+line: 572 315 571 318 10 L
+line: 583 302 587 310 10 L
+line: 587 310 583 318 10 L
+line: 579 357 603 375 10 L
+m: 159 0 http://www.pyramiid.ee/radar1.html/
+
+[http://www.pyramiid.ee/radar1.html/]
+m: 160 0 http://www.pyramiid.ee/radar2.html/
+
+[http://www.pyramiid.ee/radar2.html/]
+line: 136 238 141 265 10 L
+line: 141 265 162 265 10 L
+line: 162 265 162 252 10 L
+line: 162 252 164 252 10 L
+line: 164 252 161 236 10 L
+line: 161 236 136 238 10 L
+line: 155 241 159 241 10 L
+line: 161 265 203 265 10 L
+line: 205 265 204 279 10 L
+line: 205 279 166 278 10 L
+line: 166 278 170 319 10 L
+line: 141 263 137 389 10 L
+line: 137 389 169 389 10 L
+line: 169 389 168 376 10 L
+line: 168 376 154 376 10 L
+line: 154 376 158 340 10 L
+line: 158 340 214 338 10 L
+line: 214 338 212 317 10 L
+line: 198 316 213 316 10 L
+line: 195 317 197 323 10 L
+line: 197 323 168 321 10 L
+line: 203 266 221 267 10 L
+line: 221 267 224 277 10 L
+line: 206 278 224 277 10 L
+line: 215 266 213 243 10 L
+line: 205 239 210 266 10 L
+line: 205 237 212 237 10 L
+line: 212 238 213 244 10 L
+line: 212 238 217 236 10 L
+line: 217 236 223 222 10 L
+line: 223 222 229 229 10 L
+line: 229 230 232 240 10 L
+line: 232 240 232 243 10 L
+line: 228 256 231 242 10 L
+line: 227 255 219 248 10 L
+line: 219 248 213 248 10 L
+line: 212 276 211 287 10 L
+line: 211 287 216 287 10 L
+line: 217 287 217 278 10 L
+line: 293 231 298 389 10 L
+line: 313 232 310 389 10 L
+line: 153 235 150 228 10 L
+line: 150 228 120 228 10 L
+line: 120 228 114 262 10 L
+line: 114 262 139 260 10 L
+line: 117 261 123 331 10 L
+line: 123 331 138 331 10 L
+line: 175 315 185 314 10 L
+line: 185 314 187 309 10 L
+line: 193 309 192 320 10 L
+line: 127 332 120 389 10 L
+line: 120 389 137 387 10 L
+line: 166 245 188 246 10 L
+line: 188 246 190 253 10 L
+line: 189 253 168 253 10 L
+line: 192 246 203 246 10 L
+line: 203 246 204 250 10 L
+line: 192 251 204 250 10 L
+line: 193 243 185 213 10 L
+line: 185 213 191 211 10 L
+line: 191 211 197 244 10 L
+line: 191 213 200 196 10 L
+line: 200 196 214 213 10 L
+line: 214 213 212 223 10 L
+line: 212 223 195 219 10 L
+line: 195 251 195 257 10 L
+line: 197 257 201 257 10 L
+line: 199 251 201 257 10 L
+line: 128 227 123 220 10 L
+line: 123 220 105 222 10 L
+line: 105 222 103 246 10 L
+line: 113 247 094 244 10 L
+line: 091 278 096 246 10 L
+line: 094 273 116 276 10 L
+line: 117 283 139 285 10 L
+line: 117 291 136 292 10 L
+line: 116 292 115 331 10 L
+line: 115 330 107 379 10 L
+line: 109 379 117 379 10 L
+line: 092 277 090 382 10 L
+line: 091 384 115 384 10 L
+line: 086 318 114 318 10 L
+line: 172 284 171 278 10 L
+line: 161 211 162 236 10 L
+line: 163 213 165 213 10 L
+line: 169 241 166 213 10 L
+line: 166 213 172 202 10 L
+line: 172 202 180 210 10 L
+line: 180 210 182 220 10 L
+line: 182 220 177 228 10 L
+line: 168 223 177 228 10 L
+line: 075 183 080 191 10 L
+line: 080 191 090 194 10 L
+line: 090 194 096 190 10 L
+line: 095 181 094 179 10 L
+line: 087 181 093 179 10 L
+line: 088 181 074 180 10 L
+line: 079 190 070 192 10 L
+line: 069 192 069 200 10 L
+line: 069 200 061 200 10 L
+line: 059 200 069 208 10 L
+line: 069 208 045 208 10 L
+line: 045 208 039 203 10 L
+line: 038 203 030 185 10 L
+line: 030 185 046 192 10 L
+line: 046 192 049 185 10 L
+line: 052 185 056 186 10 L
+line: 056 186 058 182 10 L
+line: 060 180 068 179 10 L
+line: 068 174 071 174 10 L
+line: 075 167 074 173 10 L
+line: 075 167 068 164 10 L
+line: 068 164 084 162 10 L
+line: 085 162 099 166 10 L
+line: 099 167 104 173 10 L
+line: 104 173 094 173 10 L
+line: 093 174 084 175 10 L
+line: 082 178 082 180 10 L
+line: 021 262 036 237 10 L
+line: 036 237 041 241 10 L
+line: 041 241 018 272 10 L
+line: 037 246 055 238 10 L
+line: 055 238 054 249 10 L
+line: 054 249 048 258 10 L
+line: 045 259 034 263 10 L
+line: 034 263 030 255 10 L
+line: 031 251 026 248 10 L
+line: 026 248 030 240 10 L
+line: 030 240 039 242 10 L
+line: 014 321 033 321 10 L
+line: 033 321 034 308 10 L
+line: 034 308 042 308 10 L
+line: 043 338 040 308 10 L
+line: 042 340 012 339 10 L
+
+
+[http://www.pyramiid.ee/muumia.html/]
+loc: http://www.pyramiid.ee/muumia.html/
+clearnetscape
+bc: 00
+fc: 12
+sx: 02
+sy: 08
+t: MUUMIA (settings):
+t: 
+t:         Liiguta iga 5 minuti jÑrel
+t: 
+t:         Magades norska
+t: 
+t:         Haise
+t: 
+t: < OK >
+l: 02 07 lata http://www.pyramiid.ee/pult/
+checkbox: 06 10 153 1
+checkbox: 06 12 154 1
+checkbox: 06 14 155 1
+t: 
+t: ===============================
+m: 159 1 http://www.pyramiid.ee/muumia1.html/
+fc: 14
+t: Muumia staatus: SISSE LöLITATUD
+button: MuumiaOUT
+
+[http://www.pyramiid.ee/muumia1.html/]
+sx: 02
+sy: 19
+fc: 07
+t: Muumia staatus: VéLJA LöLITATUD
+button: MuumiaIN
+
+[http://www.pyramiid.ee/muumia2.html/]
+muutuja: 159 1
+lata: 01 01 http://www.pyramiid.ee/muumia.html/
+
+[http://www.pyramiid.ee/muumia3.html/]
+muutuja: 159 0
+lata: 01 01 http://www.pyramiid.ee/muumia.html/
+
+[http://www.pyramiid.ee/kummitused.html/]
+loc: http://www.pyramiid.ee/kummitused.html/
+clearnetscape
+bc: 00
+fc: 12
+sx: 02
+sy: 08
+t: KUMMITUSED (settings):
+t: 
+t:   Standardvarustuses:
+t:         Kirves
+t: 
+t:         Kole nÑgu
+t: 
+t:   Tegevusmoto:
+t:         Tapa kìik keda kohtad
+t: 
+t: < OK >
+l: 02 07 lata http://www.pyramiid.ee/elektroonika/
+checkbox: 06 11 156 1
+checkbox: 06 13 157 1
+checkbox: 06 16 158 1
+t: 
+t: ===============================
+m: 160 1 http://www.pyramiid.ee/kummitused1.html/
+fc: 14
+t: Kummituste staatus: SISSE LöLITATUD
+button: KummitusedOUT
+
+[http://www.pyramiid.ee/kummitused1.html/]
+sx: 02
+sy: 21
+fc: 07
+t: Kummituste staatus: VéLJA LöLITATUD
+button: KummitusedIN
+
+[http://www.pyramiid.ee/kummitused2.html/]
+muutuja: 160 1
+lata: 01 01 http://www.pyramiid.ee/kummitused.html/
+
+[http://www.pyramiid.ee/kummitused3.html/]
+muutuja: 160 0
+lata: 01 01 http://www.pyramiid.ee/kummitused.html/
+
+[http://www.pyramiid.ee/elektroonika/]
+loc: http://www.pyramiid.ee/elektroonika/
+clearnetscape
+bc: 00
+fc: 12
+sx: 02
+sy: 11
+t: CHEOPPZY ELEKTROONIKAKESKUS
+t: ===========================
+t: 
+t:  Elektrijaam >
+l: 03 15 lata http://www.pyramiid.ee/elektrijaam.html/
+t:  Lìksud      >
+l: 03 15 lata http://www.pyramiid.ee/loksud.html/
+t:  Muumia      >
+l: 03 15 lata http://www.pyramiid.ee/muumia.html/
+t:  Kummitused  >
+l: 03 15 lata http://www.pyramiid.ee/kummitused.html/
+t:  Programmid  >
+l: 03 15 lata http://www.pyramiid.ee/programmid.html/
+t:  Juhtimispult>
+l: 03 15 lata http://www.pyramiid.ee/pult/
+
+[http://www.pyramiid.ee/elektrijaam.html/]
+loc: http://www.pyramiid.ee/elektrijaam.html/
+clearnetscape
+bc: 00
+fc: 12
+sx: 02
+sy: 08
+t: ELEKTRIJAAM
+button: CheoppzyELEKTER
+
+[http://www.pyramiid.ee/shutdown/]
+esc: missionfailed 3
+clearnetscape
+clearlinks
+bc: 00
+fc: 12
+sx: 02
+sy: 08
+t: Shutting down...
+pause: 15
+t: MISSIOON: KìIKIDE PEALTNéGIJATE JA TUNNISTAJATE HéVITAMINE.
+pause: 50
+clearnetscape
+fc: 15
+sy: 08
+t: Cheoppzy pÅramiidiga puudub Åhendus.
+t: < EDASI >
+l: 02 10 missionfailed 3
+
+[http://www.pyramiid.ee/programmid.html/]
+loc: http://www.pyramiid.ee/programmid.html/
+clearnetscape
+bc: 00
+fc: 12
+sx: 02
+sy: 08
+t: CHEOPPZY PöRAMIIDI MEELELAHUTUSPROGRAMMID:
+t: 
+t:    "Lìbus muumia"
+t:    "Hoia end"
+t:    "Armu mitte kellelegi"
+t:    "PÑÑstku end kes saab"
+t:    "Rììmus Frankenstein"
+t: 
+fc: 04
+t:  < Tagasi
+l: 03 10 lata http://www.pyramiid.ee/elektroonika/
+
+[http://www.pyramiid.ee/loksud.html/]
+loc: http://www.pyramiid.ee/loksud.html/
+clearnetscape
+bc: 00
+fc: 12
+sx: 02
+sy: 08
+t: CHEOPPZY PöRAMIIDI LìKSUD:
+t: 
+t: LìKS nr 1: "Liikuv lagi"
+t: Hukkunuid 23
+t: 
+t: LìKS nr 2: "Auk p"randas"
+t: Hukkunuid 2346
+t: 
+t: LìKS nr 3: "Zombie-tuba"
+t: Hukkunuid 34
+t: 
+t: Lisaks on palju vÑiksemaid ja suuremaid lìkse.
+t: Kìikide lìksude uksed saab avada siin:
+t: 
+fc: 04
+t:  < Tagasi
+l: 03 10 lata http://www.pyramiid.ee/elektroonika/
+button: CheoppzyUKSED
+
+[http://www.pyramiid.ee/avauksed.html/]
+clearnetscape
+bc: 00
+fc: 12
+sx: 23
+sy: 13
+t: €€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€
+t: € AVAN KìIKIDE LìKSUDE UKSED... €
+t: €€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€
+pause: 40
+clearnetscape
+bc: 00
+fc: 12
+sx: 24
+sy: 13
+t: €€€€€€€€€€€€€€€€€€€€€€€€€€€€€€
+t: €        UKSED AVATUD        €
+t: €€€€€€€€€€€€€€€€€€€€€€€€€€€€€€
+pause: 32
+m: 161 1 http://www.pyramiid.ee/elektroonika/
+m: 159 0 http://www.pyramiid.ee/syya.html/
+m: 160 0 http://www.pyramiid.ee/syya.html/
+mail: Lyhis6num mobiiltelefonilt3
+lata: 01 01 http://www.pyramiid.ee/elektroonika/
+
+[http://www.pyramiid.ee/syya.html/]
+clearnetscape
+ct: 21 15 14 04 KUMMITUSED JA MUUMIA TéNAVAD SôôGI EEST!!!!
+sy: 17
+sx: 37
+fc: 04
+bc: 00
+t: < OK >
+l: 37 42 lata http://www.pyramiid.ee/elektroonika/
+muutuja: 161 1
+mail: Lyhis6num mobiiltelefonilt2
+
+
+
+ ********************** MISSION 5 *********************
+[http://www.buss.ee/]
+m: 005 0 http://cannot_connect/
+name: bussipark bussid
+loc: http://www.buss.ee/
+clearnetscape
+bc: 00
+fc: 10
+sx: 02
+sy: 08
+t: 
+t:                               B U S S I P A R K
+fc: 02
+t:                           A L A T I    K O H A L E !
+fc: 10
+t:  
+t:                      €€€€€€€€€€€€€€€€€€€€€€
+t:                      € Auhinnad       €≤∞
+l: 24 39 lata http://www.buss.ee/auhinnad.html/
+t:                      €€€€€€€€€€€€€€€€€€€€€€
+t:                      € Sìidugraafikud €≤∞
+l: 24 39 lata http://www.buss.ee/graafikud.html/
+t:                      €€€€€€€€€€€€€€€€€€€€€€
+t:                      € Bussid         €≤∞
+l: 24 39 lata http://www.buss.ee/bussid/
+t:                      €€€€€€€€€€€€€€€€€€€€€€
+t:                      € Kontrolîrid    €≤∞
+l: 24 39 lata http://www.buss.ee/kontroll/
+t:                      €€€€€€€€€€€€€€€€€€€€€€
+t:  
+fc: 02
+t:                         1965-2000 WWW BussiparkDesign
+
+[http://www.buss.ee/auhinnad.html/]
+loc: http://www.buss.ee/auhinnad.html/
+clearnetscape
+bc: 00
+fc: 10
+sx: 02
+sy: 08
+t: BUSSIPARGI AUHINNAD
+t: AastakÅmneid oleme vìtnud osa kìikvìimalikest vìistlustest nii kodu-
+t: kui ka vÑlismaal. MÑletame meie edukat brigaadi hÅÅdnimega "Trepi
+t: peal ei seista", kes aastatel 1967-72 oli Åliedukas kìigil NSV Liidu
+t: bussijuhtide olÅmpiamÑngudel. Kuid auhindu on saanud ka hilisemad
+t: kasvandikud, siinkohal vÑike Ålevaade nende saavutustest:
+t: 
+t:    253. koht  1967    Kutsemeisterlikkuse vìistlus Peruus
+t:    43. koht   1978    Kutsemeisterlikkuse vìistlus Guatemalas
+t:    IV koht    1993    Romuralli'93
+t:    II koht    1996    Kutsemeisterlikkuse vìistlus Liibanonis
+t:    I koht     1997    Linna suurim tossutaja
+t:    I koht     1996    Kutsemeisterlikkuse vìistlus Hiinas
+
+[http://www.buss.ee/kontroll/]
+loc: http://www.buss.ee/kontroll/
+clearnetscape
+bc: 00
+fc: 10
+sx: 02
+sy: 08
+t: KONTROLôRIDE LEHEKöLG
+t: Eestimaa Kontrolîride Selts seisab hea selle eest, et bussipiletite
+t: hinnad oleks madalad! Vìitle ka sina jÑneste vastu Åhistranspordis!
+t:    Meie moto: sìidupileti puudumisel trahv kuni 460 krooni!
+t: Meie tîîtajatest vÑÑrivad ÑramÑrkimist kindlasti sellised tublid
+t: kontrolîrid nagu Selma Harakas ja Heerald Bussiratas. Nad mìlemad
+t: toovad meile iga pÑev kassasse vÑhemalt mitusada krooni! AitÑh neile
+t: siinkohal!
+t:    Tule sinagi meile kontrolîriks!
+t:  
+t:    Kui tahad lugeda neid lugusid, mis piletita sìitjad meile on
+t: rÑÑkinud, siis vajuta <SIIN>!
+l: 24 29 lata http://www.buss.ee/kontroll/lugu/
+
+[http://www.buss.ee/kontroll/lugu/]
+loc: http://www.buss.ee/kontroll/lugu/
+clearnetscape
+bc: 00
+fc: 10
+sx: 02
+sy: 08
+t: PILETITA SìITJATE NALJALOOD
+t:    Esmeralda JÑnes: No mul oli pilet olemas, no AUSìNA oli! Isegi
+t: kaks piletit oli! Just ostsin juhilt kaks piletit ja laenasin
+t: teiste sìitjate kÑest juurde, et nendelegi anda, kellel piletit ei
+t: ole...
+t:    Paavo Udusulg: Unustasin pileti kogemata koju, aga muidu on mul
+t: alati pilet olemas! Ma just eelmises peatuses tulin peale ja lÑhen
+t: kohe jÑrgmises maha!
+t:    Endel Komposter: Mis pilet? Ma sìidan siin ju alati ilma piletita!
+t:    Villu Praepann: Toomas, SINA VìI? No terre, kuidas siis elad kah?
+t: pole sind enam teab mis ammu nÑinud - ja nÅÅd siis Ñkki niimoodi
+t: bussis! No kas pole tore! Mis sa siis tîîtadki kontrolîrina vìi...
+
+[http://www.buss.ee/graafikud.html/]
+loc: http://www.buss.ee/graafikud.html/
+clearnetscape
+bc: 00
+fc: 10
+sx: 02
+sy: 08
+t: BUSSIDE GRAAFIKUD
+t: 
+fc: 02
+t: Liin nr 18
+t: VIRU VƒLJAK  7:00  10:32 Lìuna 16:43                    22:00
+t:   ...        7:32  11:00       17:03                    22:10
+t:   Valdeku    7:54  11:22       17:33 (peatus 15 min)    22:43
+t:   ...        8:23  11:41       17:56                    23:12
+t:   Nurme      8:33  11:54       18:43                    23:23
+t:   Hiiu       8:42  12:06       19:00 (reisijate soovil) 23:42
+t:   Jannseni   9:00  12:12       20:44                    00:12
+t:   ...        9:33  12:55       20:56                    00:43
+t: LAAGRI       9:55  13:34       21:14                    01:31
+
+[http://www.buss.ee/bussid/]
+loc: http://www.buss.ee/bussid/
+clearnetscape
+bc: 00
+fc: 10
+sx: 02
+sy: 08
+t: BUSSID
+fc: 02
+t: AastakÅmnete jooksul oleme oma autobussiparki uuendanud. Kunagiste
+t: LAZ-busside asemele on tulnud luksuslikud Icaruzed ja Wolwod. Ka
+t: muud nÑitajad on aasta aastalt paranenud, siin on mìned nÑited:
+t: 
+fc: 10
+t: ICARUZ
+fc: 02
+t: Buss igaks olukorraks! Kiirus: suur; Mahutavus: suur; Juhtimine: hea;
+t: Pîîrderaadius: 58m; Pikkus: ...
+t:    Kliki SIIN
+ct: 11 16 10 00 SIIN
+l: 11 14 lata http://www.buss.ee/icaruz/
+t: 
+fc: 10
+t: WOLWO
+fc: 02
+t: Luks-autobuss pÅhapÑevasìitudeks! Eriti mìnus kuumadel suvepÑevadel,
+t: sest hÑstifunktsioneeriv ventilatsioonisÅsteem tagab ka salongis
+t: piisava jahutuse! ...
+t:    Kliki SIIN
+ct: 11 22 10 00 SIIN
+l: 11 14 lata http://www.buss.ee/wolwo/
+
+[http://www.buss.ee/wolwo/]
+loc: http://www.buss.ee/wolwo/
+clearnetscape
+bc: 00
+fc: 10
+sx: 02
+sy: 08
+t: WOLWO
+fc: 02
+t: Luks-autobuss pÅhapÑevasìitudeks! Eriti mìnus kuumadel suvepÑevadel,
+t: sest hÑstifunktsioneeriv ventilatsioonisÅsteem tagab ka salongis
+t: piisava jahutuse! Korralik kliimaseade soojendab aga ka kÅlmadel
+t: talveilmadel.
+t:    See buss ei jÑta hÑtta! Alati kiiresti ja mugavalt kohale!
+t:    Tîîtab mikrofon!
+t:  
+t: Tehnilised andmed:
+t:    Pikkus:          23m
+t:    Kaal:            16t
+t:    Mootori vìimsus: 120kW
+t:    Bussijuhi vanus: 69
+t:    Bussijuhi palk:  2300 krooni + preemiad
+
+[http://www.buss.ee/icaruz/]
+loc: http://www.buss.ee/icaruz/
+clearnetscape
+bc: 00
+fc: 10
+sx: 02
+sy: 08
+t: ICARUZ
+fc: 02
+t: Tekst reklaamlehelt: Unusta vÑikesed ja vaiksed LAZ-bussid!
+t: NÅÅd ruulib Icaruz! Suurem, pikem, valjem ja tossavam! Pileti
+t: saad osta otse bussijuhilt!
+t:  
+t: Tehnilised andmed:
+t:    Pikkus:          21m
+t:    Kaal:            17t
+t:    Mootori vìimsus: 100kW
+t:    Bussijuhi vanus: 76
+t:    Bussijuhi palk:  2700 krooni + preemiad
+t:    NB! Bussil on PARDAARVUTI, mida saad siit lehekÅljelt ka vaadata!
+button: BussPardaarvuti
+
+[http://www.buss.ee/icaruz/arvuti.html/]
+loc: http://www.buss.ee/icaruz/arvuti.html/
+clearnetscape
+bc: 00
+fc: 10
+sx: 02
+sy: 08
+t: ICARUZ PARDAKOMPUUTER
+fc: 02
+t: Tekst reklaamlehelt: Unusta vÑikesed ja vaiksed LAZ-bussid!
+
+
+
+********************** MISSION 6 *********************
+[http://www.shop.ee/]
+m: 006 0 http://cannot_connect/
+name: neti shop kaubamaja internet pood
+loc: http://www.shop.ee/
+muutuja: 183 0
+clearnetscape
+bc: 01
+fc: 09
+sx: 04
+sy: 14
+t:              
+t:   INTERNETI  
+t:              
+t:     SHOP     
+t:              
+t:     2000     
+t:    aastat    
+t:    EESTIS!   
+t:              
+bc: 00
+fc: 12
+sx: 04
+sy: 08
+t: € €    € €€€€€ €€€€ €€€€   €    € €€€€ €€€€€ €      €€€  €   €  €€€  €€€€
+t: € €€   €   €   €    €   €  €€   € €      €   €     €     €   € €   € €   €
+t: € € €€ €   €   €€   €€€€   € €€ € €€     €   € €€   €€€  €€€€€ €   € €€€€
+t: € €   €€   €   €    €   €  €   €€ €      €   €         € €   € €   € €
+t: € €    €   €   €€€€ €   €  €    € €€€€   €   €     €€€€  €   €  €€€  €
+bc: 08
+fc: 15
+sx: 20
+sy: 14
+t:                    
+t:  <Kìik kuulutused> 
+l: 21 37 lata http://www.shop.ee/koik/
+t:                    
+t:     <Tellimine>    
+l: 21 37 lata http://www.shop.ee/kuidastellida/
+t:                    
+t:     <Garantii>     
+l: 21 37 lata http://www.shop.ee/garantii/
+t:                    
+t:        2000        
+t:                    
+sx: 70
+sy: 25
+fc: 15
+t: TELLIN!
+l: 70 76 lata http://www.shop.ee/telli/
+mission6kuulutus
+
+[http://www.shop.ee/koik/]
+loc: http://www.shop.ee/koik/
+clearnetscape
+muutuja: 183 1
+bc: 00
+fc: 12
+sx: 04
+sy: 08
+t: € €    € €€€€€ €€€€ €€€€   €    € €€€€ €€€€€ €      €€€  €   €  €€€  €€€€
+t: € €€   €   €   €    €   €  €€   € €      €   €     €     €   € €   € €   €
+t: € € €€ €   €   €€   €€€€   € €€ € €€     €   € €€   €€€  €€€€€ €   € €€€€
+t: € €   €€   €   €    €   €  €   €€ €      €   €         € €   € €   € €
+t: € €    €   €   €€€€ €   €  €    € €€€€   €   €     €€€€  €   €  €€€  €
+box: 04 14 40 22 08 15 1
+bc: 08
+fc: 15
+sx: 13
+sy: 16
+t:   JƒRGMINE KUULUTUS >
+l: 15 31 lata http://www.shop.ee/kuulutus/
+t: 
+t: <                   >
+ct: 14 18 14 08 TELLIN SELLE TOOTE!
+l: 15 31 lata http://www.shop.ee/telli/
+t: 
+fc: 07
+t:      <- tagasi
+l: 15 31 lata http://www.shop.ee/
+lata: 01 01 http://www.shop.ee/kuulutus/
+
+[http://www.shop.ee/garantii/]
+loc: http://www.shop.ee/garantii/
+clearnetscape
+bc: 00
+fc: 12
+sx: 04
+sy: 08
+t: € €    € €€€€€ €€€€ €€€€   €    € €€€€ €€€€€ €      €€€  €   €  €€€  €€€€
+t: € €€   €   €   €    €   €  €€   € €      €   €     €     €   € €   € €   €
+t: € € €€ €   €   €€   €€€€   € €€ € €€     €   € €€   €€€  €€€€€ €   € €€€€
+t: € €   €€   €   €    €   €  €   €€ €      €   €         € €   € €   € €
+t: € €    €   €   €€€€ €   €  €    € €€€€   €   €     €€€€  €   €  €€€  €
+bc: 00
+fc: 07
+sx: 04
+sy: 14
+t: Kìik Interneti-Shopi kaubad on suure garantii all. ƒra lase end petta
+ct: 35 14 15 00 suure garantii
+t: odaval hinnal - tegemist on tipptasemel toodetega ja ameerikas on neid
+t: mÅÅdud juba Åle miljoni! Sa ei tea iial, millal sul meie kaupasid vaja
+ct: 16 16 15 00 Åle miljoni
+t: vìiks minna! Osta tipptasemel kvaliteet Interneti-shopist! Garantii!
+t: 
+t: Kui meie kaupadel on midagi viga, siis oleme nìus selle vÑlja vahetama
+ct: 43 19 15 00 oleme nìus selle vÑlja vahetama
+t: juhul, kui seda ei ole kasutatud. Patareid garantii alla ei kuulu.
+t: 
+t: Kui teil on meie kaupadega probleeme, siis vìite abi saada ka
+t: ABI-KöLJELT (kliki).
+ct: 04 23 15 00 ABI-KöLJELT
+l: 04 22 lata http://www.shop.ee/abi/
+t: 
+t: <- tagasi
+l: 04 12 lata http://www.shop.ee/
+
+[http://www.shop.ee/abi/]
+loc: http://www.shop.ee/abi/
+clearnetscape
+bc: 00
+fc: 12
+sx: 04
+sy: 08
+t: € €    € €€€€€ €€€€ €€€€   €    € €€€€ €€€€€ €      €€€  €   €  €€€  €€€€
+t: € €€   €   €   €    €   €  €€   € €      €   €     €     €   € €   € €   €
+t: € € €€ €   €   €€   €€€€   € €€ € €€     €   € €€   €€€  €€€€€ €   € €€€€
+t: € €   €€   €   €    €   €  €   €€ €      €   €         € €   € €   € €
+t: € €    €   €   €€€€ €   €  €    € €€€€   €   €     €€€€  €   €  €€€  €
+bc: 00
+fc: 07
+sx: 04
+sy: 14
+t: * Mìnede meie kaupadega pole tehniliste viperuste tìttu kaasas kasutus-
+t: juhendit! Vabandame!
+ct: 14 15 15 00 Vabandame
+t: * Vastu tulles tuhandetele klientidele avaldame siinkohal paljukÅsitud
+t: jalgpalli-pesemis-masina leiutaja nime: W.E. von Lauffenschauerbergenson
+ct: 44 17 15 00 W.E. von Lauffenschauerbergenson
+t: Torontost. Aadress: Footballwashingmachine Street 12B-4.
+ct: 24 18 15 00 Footballwashingmachine Street 12B-4.
+t: * Kìik meie arvutiprogrammid tîîtavad paremini, kui kasutada krÑkk-
+t: programmi, mille saad downloadida SIIN.
+ct: 38 20 15 00 SIIN
+l: 38 41 lata DownloadSEEPCRACK
+t: * Meie jÑrgmise-saja-aasta-kalendri 21323.lehekÅljel on tekkinud kahetsus-
+ct: 11 21 15 00 jÑrgmise-saja-aasta-kalendri
+t: vÑÑrne trÅkiviga - tÑiskuu asemel peab olema poolkuu! Vea avastas proua
+t: Salme, kes elab Tallinnas - aitÑh talle!
+ct: 04 23 15 00 Salme
+t: 
+t: <- tagasi
+l: 04 12 lata http://www.shop.ee/garantii/
+
+[http://www.shop.ee/kuidastellida/]
+loc: http://www.shop.ee/kuidastellida/
+clearnetscape
+bc: 00
+fc: 12
+sx: 04
+sy: 08
+t: € €    € €€€€€ €€€€ €€€€   €    € €€€€ €€€€€ €      €€€  €   €  €€€  €€€€
+t: € €€   €   €   €    €   €  €€   € €      €   €     €     €   € €   € €   €
+t: € € €€ €   €   €€   €€€€   € €€ € €€     €   € €€   €€€  €€€€€ €   € €€€€
+t: € €   €€   €   €    €   €  €   €€ €      €   €         € €   € €   € €
+t: € €    €   €   €€€€ €   €  €    € €€€€   €   €     €€€€  €   €  €€€  €
+bc: 00
+fc: 07
+sx: 04
+sy: 14
+t: KUIDAS TELLIDA?
+t: 
+t: Uuri meie kuulutusi ning sobiva superpakkumise juures klikka hiirega
+t: "TELLIN SELLE TOOTE"-lingil! Kui olete juba vana klient, teeb arvuti
+t: teie eest kìik rahaÅlekanded! Kui olete uus, tuleb teil enne maksta
+t: 10000-kroonine sÅmboolne liitumistasu.
+t: 
+t: Varsti tÑieneb meie interneti-sait ning saab hakata ostma Ållatus-
+t: paketiga "Kogu raha eest".
+t: 
+t: <- tagasi
+l: 04 12 lata http://www.shop.ee/
+
+
+[http://www.shop.ee/kuulutus/]
+sx: 70
+sy: 25
+fc: 15
+t: TELLIN!
+l: 70 76 lata http://www.shop.ee/telli/
+mission6kuulutus
+
+[http://www.shop.ee/telli/]
+muutuja: 180 1
+loc: http://www.shop.ee/telli/
+clearnetscape
+box: 02 08 42 26 08
+bc: 08
+fc: 15
+sx: 03
+sy: 08
+t: TELLIN SELLE TOOTE!
+fc: 07
+t: 
+t: Tellin: toode nr 214332432322
+t: 
+t: Mina, ostja, olen teadlik kìikidest
+t: ohtudest, mis mind seoses Interneti-
+t: Shopist ostmisega vìivad kaasneda.
+t:  
+t: Nimi: 
+player: 09 16 15 08
+t: Kuidas maksan: kaardiga
+t: Kaardi PIN: 6666
+t:  
+t:     Tellin selle ka sìbrale kingituseks
+checkbox: 03 20 180 1
+button: shopTELLI
+
+[http://www.shop.ee/telliSEEP/]
+muutuja: 183 0
+loc: http://www.shop.ee/telliSEEP/
+clearnetscape
+box: 02 08 42 26 08
+bc: 08
+fc: 15
+sx: 03
+sy: 08
+t: TELLIN SELLE TOOTE!
+fc: 07
+t: 
+t: Tellin: seriaali tegemise programm
+t: 
+t: Mina, ostja, olen teadlik kìikidest
+t: ohtudest, mis mind seoses Interneti-
+t: Shopist ostmisega vìivad kaasneda.
+t:  
+t: Nimi: 
+player: 09 16 15 08
+t: Kuidas maksan: kaardiga
+t: Kaardi PIN: 6666
+t:  
+t:     Tellin selle ka sìbrale kingituseks
+checkbox: 03 20 180 1
+button: shopTELLISEEP
+
+[http://www.shop.ee/error/]
+loc: http://www.shop.ee/error/
+clearnetscape
+box: 17 13 54 21 04 14 1
+sx: 21
+sy: 14
+fc: 14
+bc: 04
+t: ERROR!
+t: 
+t: Sa pead meilt enne ikka midagi
+t: tellima kah, kus seda krÑkki
+t: kasutada saab!
+t: 
+t: < OK >
+l: 21 26 lata http://www.shop.ee/abi/
+
+[http://www.shop.ee/tellitud/]
+box: 30 13 50 15 07 15 1
+ct: 33 14 15 07    TƒNAME!
+pause: 40
+lata: 01 01 http://www.shop.ee/
+
+****************************************** MISSION 7 (PAHARET)
+[http://www.paharet.ee/]
+name: paharet mang
+m: 007 0 http://cannot_connect/
+clearnetscape
+loc: http://www.paharet.ee/
+bc: 00
+fc: 09
+sx: 04
+sy: 08
+t:                    ≤€€€€€€€€€€€€€€€≤
+t:                    €    PAHARET    €
+t:                    ≤€€€€€€€€€€€€€€€≤
+t:                            
+t:                                        ≤€€€€€€€€€€€€€€€€€€€€€€€€≤
+t:                                        €                        €
+t:                                        €                        €
+t:     ≤€€€€€€€€€€≤                       €                        €
+t:     €          €                       €                        €
+t:     €          €                       €                        €
+t:     ≤€€€€€€€€€€≤                       €                        €
+t:           €                            €                        €
+t:     ≤€€€€€€€€€€≤                       €                        €
+t:     €          €                       €                        €
+t:     €€€€€€€€€€€€                       €                        €
+t:     €          €                       ≤€€€€€€€€€€€€€€€€€€€€€€€€≤
+t:     ≤€€€€€€€€€€≤
+ct: 24 09 15 09     PAHARET    
+ct: 09 16 15 09  Sisesta   
+ct: 09 17 15 09   KOOD:    
+bc: 00
+fc: 04
+sx: 20
+sy: 11
+t:           €
+t:           €
+t:           €
+t:           €
+t:           €
+t:      ≤€€€€€
+t:      €    €
+t:      €    ≤€€€€€€€€€€€€
+t:      €
+t:      €
+t:      €
+t: €€€€€≤ 
+sx: 44
+sy: 13
+fc: 15
+bc: 00
+t:     VìISTLUSTE TABEL:
+t: 
+t:    NIMI          PUNKTID
+t: ------------------------
+t: 1. Toomas Puupea   23242
+t: 2. Elmar Vares     14323
+t: 3. Villu Pleier    14322
+t: 4. Kaarel Telefon  14319
+t: 5. Osvald Kompuuter 7767
+t: 6. Endel Pendel     4344
+button: paharetKOODerror
+m: 007 0 nothing
+button: paharetKOODwrong
+link: 21 09 18 vordleinput 21 09 18 15 paharetKOOD
+
+[http://www.paharet.ee/password-OK/]
+button: paharetKOODok
+
+[http://www.paharet.ee/password-WRONG/]
+button: paharetKOODwrong
+
+[http://www.paharet.ee/error/]
+clearnetscape
+loc: http://www.paharet.ee/error/
+bc: 00
+fc: 15
+sx: 04
+sy: 08
+t: VìISTLUS POLE JU VEEL ALANUDKI!
+t: SEE ALGAB ALLES KUUENDAS MISSIOONIS!
+t: 
+t: MÑngi kuuenda missioonini vìi laadi salvestatud mÑng!
+
+[http://www.paharet.ee/wrong/]
+clearnetscape
+loc: http://www.paharet.ee/wrong/
+bc: 00
+fc: 15
+sx: 04
+sy: 08
+t: MIS??? PROOVID SIIN MEIE KOODI HƒKKIDA???
+t: PLAY OR FAIL!!!!
+
+
+[http://www.paharet.ee/winner/]
+sx: 44
+sy: 13
+fc: 15
+bc: 00
+t:     VìISTLUSTE TABEL:
+t: 
+t:    NIMI          PUNKTID
+t: ------------------------
+fc: 14
+t: 1.                 99999
+fc: 15
+t: 2. Toomas Puupea   23242
+t: 3. Elmar Vares     14323
+t: 4. Villu Pleier    14322
+t: 5. Kaarel Telefon  14319
+t: 6. Osvald Kompuuter 7767
+player: 47 17 14 00
+m: 175 0 http://www.paharet.ee/MAIL/
+
+[http://www.paharet.ee/MAIL/]
+mail: You're the WINNER!
+muutuja: 175 1
+
+
+************************************************ VUTT 2002
+[http://www.vutt.ee/]
+m: 008 0 http://cannot_connect/
+name: vutt mÑng eesti 2002
+clearnetscape
+loc: http://www.vutt.ee/
+bc: 0
+fc: 11
+sx: 35
+sy: 9
+t: VUTT  2002
+bc: 14
+fc: 0
+sx: 28
+sy: 10
+t: !! Under construction !!
+bc: 7
+fc: 1
+sx: 7
+sy: 16
+t:  INTRO        
+t: 
+t:  EXTRAS       
+t: 
+t:  !!DOWNLOAD!! 
+bc: 7
+fc: 4
+sx: 61
+sy: 17
+t:  Sponsors     
+t: 
+t:  Top scores   
+t: 
+t:  Watch        
+ussp: 05 15 R
+ussp: 22 15 D
+ussp: 22 21 L
+ussp: 05 21 U
+uss: 07 15 11 R
+uss: 05 20 00 U
+ussp: 59 16 D
+ussp: 76 16 L
+ussp: 76 22 U
+ussp: 59 22 R
+uss: 70 22 13 R
+uss: 59 17 00 D
+'ussp: XX YY S -ussi pîîîrdekoht ja suund
+'uss: XX YY CC S -ussi alguse koht, ussi vÑrv ja suund
+'ussj: X1 Y1 X2 Y2 -koht, kust uss Ñra kaob ja kust ta uuesti ilmub
+'ussend: XX YY -kui uss siia jìuab, siis ta enam kuhugi edasi ei lÑhe
+'ussalarm: XX YY ABC -kui uss siit Åle lÑheb, siis kÑivitub vastav lata. kui 
+link: 19 61 74 lata http://www.vutt.ee/scores.html/
+link: 17 61 74 lata http://www.vutt.ee/sponsors/index.html/
+link: 21 61 74 lata http://www.vutt.ee/watch.run/
+link: 16 07 20 lata http://www.vutt.ee/intro/intro.html/
+bc: 0
+fc: 0
+sx: 22
+sy: 18
+link: 18 07 20 lata http://www.vutt.ee/extras/extras.html/
+link: 20 07 20 lata downloadVUTT
+
+[http://www.vutt.ee/scores.html/]
+m: 191 1 http://www.vutt.ee/error/
+name: skoorid vutt
+loc: http://www.vutt.ee/scores.html
+bc: 0
+fc: 6
+sx: 13
+sy: 10
+t: Pos  Name             Score     Date    Time 
+t: -------------------------------------------- 
+bc: 0
+fc: 12
+sx: 13
+sy: 12
+t:  1   Keisedr          8:1       31:07   15:15
+t:  2   Aivar            7:0       07:12   01:51
+t:  3   Dima             7:2       03:12   04:33
+t:  4   Dima             7:2       04:12   13:48
+t:  5   Screamer         7:3       10:05   16:55
+t:  6   Aivar            7:4       25:09   08:32
+t:  7   Nyman            6:0       03:12   11:49
+t:  8   Dima             6:0       02:12   22:17
+t:  9   Maniaca OZ       6:0       22:05   16:20
+t: 10   64 Probemasta    6:1       15:03   18:03
+bc: 0
+fc: 6
+sx: 13
+sy: 22
+t: ---------- < Back to main page --------------
+link: 22 23 43 lata http://www.vutt.ee/
+
+[http://www.vutt.ee/extras/extras.html/]
+m: 191 1 http://www.vutt.ee/error/
+name: vutt reklaamid
+clearnetscape
+loc: http://www.vutt.ee/extras/extras.html/
+bc: 0
+fc: 10
+sx: 3
+sy: 9
+t: -------------------------
+t:  Varsti Internetis:
+t:    KOSS 3765
+t: 
+t:  Sinu (ja sinu sÑprade) 
+t:  unelmad saavad teoks!
+t:  Enam ei pea sa minema
+t:  Ñue, et nautida ehedat
+t:  korvpallimÑngu!
+t: -------------------------
+bc: 0
+fc: 6
+sx: 3
+sy: 25
+t: -----------------------<Back to main page--------------------
+link: 25 26 43 lata http://www.vutt.ee/
+bc: 0
+fc: 11
+sx: 29
+sy: 9
+t: ⁄ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒø
+t: ≥ Kiirem Åhendus!         ≥
+t: ≥  Meie poolt on uus      ≥
+t: ≥ pakkumine - mÑngi VUTTi ≥
+t: ≥ 36 tundi jÑrjest ja me  ≥
+t: ≥ arvutame vÑlja, milline ≥
+t: ≥ on sinu ja sinu serveri ≥
+t: ≥ vaheline signaali kii-  ≥
+t: ≥ rus. Lisainfo tulekul.  ≥
+t: ¿ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒŸ
+bc: 0
+fc: 10
+sx: 57
+sy: 9
+t: ----------------------
+t:  Varsti saavad VUTi  
+t:  kohtunikud endale
+t:  uue nÑo - neid hak-
+t:  kab sponsoreerima
+t:  uus firma. Sellega
+t:  kaasnevad ka mÑned 
+t:  muudatused mÑngus
+t: 
+t: ----------------------
+
+[http://www.vutt.ee/intro/intro.html/]
+name: introduction
+clearnetscape
+loc: http://www.vutt.ee/intro/intro.html/
+bc: 0
+fc: 11
+sx: 6
+sy: 8
+t: VUTT 2002-e Introduction
+t: System Requirements: Computer, modem, monitor, mouse,
+t: How to play: go to our office and pay 100$. Then you'll
+t:              get a CD. Now you have only to install the 
+t:              game into your PC. You can also download 
+t:              a test-game from this page.
+t: Then: Just run the game and enjoy. The connection with
+t: Internet is needed!
+t: Have fun!
+t:
+fc: 06
+t: -----------------------<Back to main page--------------------
+l: 26 43 lata http://www.vutt.ee/
+
+
+[http://www.vutt.ee/sponsors/index.html/]
+m: 191 1 http://www.vutt.ee/error/
+name: vutt
+clearnetscape
+loc: http://www.vutt.ee/sponsors/index.html
+bc: 0
+fc: 12
+sx: 3
+sy: 8
+t: This page is sponsored by:
+t:                      Some hardware
+t: 
+t:                      Free Internet
+t: 
+t:                      Candies and patties
+t: 
+t:                      Gymnasium's inventory
+t: 
+t:                      Some other stuff
+t: 
+t:                      Referee's AI
+t: 
+t:                      Free propaganda
+bc: 0
+fc: 10
+sx: 5
+sy: 9
+t: Makers Market
+t:  
+t: Hip-hop 
+t:  dial-ups
+t: Hans
+t:  confectioner
+t: A-sports inc
+t: 
+t: Penicitia
+t: 
+t: Happy barker
+t:  restourant
+t: HilisÑhtuleht
+bc: 0
+fc: 6
+sx: 3
+sy: 25
+t: -----------------------<Back to main page--------------------
+link: 25 26 43 lata http://www.vutt.ee/
+
+[http://www.vutt.ee/watch.run/]
+m: 191 1 http://www.vutt.ee/watch.run2/
+clearnetscape
+loc: http://www.vutt.ee/
+bc: 0
+fc: 15
+sx: 3
+sy: 9
+t: Requested file was not found in server
+fc: 11
+sx: 3
+sy: 11
+t: index.html
+t: vutt1.jpg
+t: vutt2.jpg
+t: vutt3.jpg
+t: score.tab
+t: .forward
+t: .htaccess
+t: spon.htt
+t: salajane.txt
+t: intro.jav
+t: sponsors
+t: uus.exe
+link: 11  3 12 lata http://www.vutt.ee/
+link: 15  3 11 lata http://www.vutt.ee/scores.html/
+link: 20  3 11 lata http://www.vutt.ee/intro/intro.html/
+link: 21  3  9 lata http://www.vutt.ee/sponsors/index.html/
+link: 22  3  9 lata UusSponsor
+
+[http://www.vutt.ee/watch.run2/]
+clearnetscape
+loc: http://www.vutt.ee/
+bc: 0
+fc: 15
+sx: 3
+sy: 9
+t: Requested file was not found in server
+fc: 11
+sx: 3
+sy: 11
+t: index.html
+t: vutt1.jpg
+t: vutt2.jpg
+t: vutt3.jpg
+t: score.tab
+t: .forward
+t: .htaccess
+t: spon.htt
+t: salajane.txt
+t: intro.jav
+t: uus.exe
+link: 11  3 12 lata http://www.vutt.ee/
+link: 15  3 11 lata http://www.vutt.ee/scores.html/
+link: 20  3 11 lata http://www.vutt.ee/intro/intro.html/
+link: 21  3  9 lata UusSponsor
+
+[http://www.vutt.ee/error/]
+name: 
+clearnetscape
+loc: http://www.vutt.ee/
+bc: 14
+fc: 0
+sx: 23
+sy: 10
+t: VUTT 2002
+bc: 13
+fc: 0
+sx: 18
+sy: 12
+t:  LehekÅlg ajutiselt suletud ootamatute 
+t:  sponsorlepingute mittetÑitmiste pÑrast
+t:                                        
+t:        (PS. Vajame teie toetust!)      
+
+
+
+******************************* MISSION 9 **************************
+[http://www.padjaklubi.ee/]
+m: 009 0 http://cannot_connect/
+name: padjaklubi padja klubi teodor kadakpuu
+clearnetscape
+loc: http://www.padjaklubi.ee/
+bc: 00
+fc: 11
+sx: 14
+sy: 10
+t: PADJAKLUBI
+ct: 14 10 12 00 PADJAKLUBI
+t: Asutatud 1923.aastal
+t: Made in Estonia
+t: 
+t: Tere lugupeetud vaataja, sa oled jìudnud
+t: ametlikule padjaklubi uuele wvweb-lehekÅljele
+t: ja meil on selle Åle HEA meel!
+t: 
+t: Siit saidilit leiad kÑik vajaliku ja nÑed,
+t: kes padjaklubisse kuuluvad ning millega meie
+t: asutus tegeleb!
+t: 
+t: JÑrgnege meile, vajutades SIIN
+ct: 40 22 12 00 SIIN
+link: 22 40 43 lata http://www.padjaklubi.ee/nimekiri/
+
+[http://www.padjaklubi.ee/nimekiri/]
+clearnetscape
+loc: http://www.padjaklubi.ee/nimekiri/
+bc: 00
+fc: 11
+sx: 14
+sy: 09
+t: Padjaklubi sai Ålemaailmselt tuntuks juba
+t: paarkÅmmend aastat tagasi, kui vìitsime
+t: Zkayacuta hìimu korraldatud padjakudumise
+t: olÅmpiamÑngud!
+t: 
+t: Meie suurepÑrasesse vìistkonda kuuluvad
+t: tÑnaseni: Liina Antenn, Teodor Kadakpea,
+t: Villu Eestilipp, Merczedez Jubelìust ja
+t: vìistkonna kapten Aleksander Kudumisvarras.
+t: 
+t: Kìik liikmed jagavad tasuta padjakudumisnìu
+t: ka kìikidele internetisurfajatele! TÑpsem
+t: info nende inimeste kohta asub SIIN
+ct: 45 21 12 00 SIIN
+link: 21 45 48 lata http://www.padjaklubi.ee/email/
+
+[http://www.padjaklubi.ee/email/]
+clearnetscape
+loc: http://www.padjaklubi.ee/email/
+bc: 00
+fc: 11
+sx: 14
+sy: 09
+t: Padjaklubi vìistkonna liikmed:
+t: (klìpsates e-mailil lisatakse see su addressbooki)
+t: 
+t: Liina Antenn:       liina@antenn.padi (aka liinake)
+l: 34 50 addressbook liina@antenn.padi
+t: Teodor Kadakpuu:    teodor@kadak.padi (aka paksmagu)
+l: 34 50 addressbook teodor@kadak.padi
+t: Villu Eestilipp:    villu@padi.padi   (aka villu)
+l: 34 48 addressbook villu@padi.padi
+t: Merzedez Jubelìust: tekka@padi.padi
+l: 34 48 addressbook tekka@padi.padi
+t: Aleksander Kudumisvarras: a@k.padi    (aka aleks)
+l: 40 47 addressbook a@k.padi
+t: 
+t: Vaata kindlasti ka meie uute mustrite lehekÅlge,
+t: mis asub SIIN
+ct: 23 19 12 00 SIIN
+link: 19 23 26 lata http://www.padjaklubi.ee/mustrid/
+
+[http://www.padjaklubi.ee/mustrid/]
+clearnetscape
+loc: http://www.padjaklubi.ee/mustrid/
+bc: 00
+fc: 11
+sx: 11
+sy: 08
+t: €≥ì€€wí~ntπ€
+t: ∞€±≤€€6"È¨˜±
+t: ≥€±≤€√Å≤€ãÅÅ
+t: €±Å€Ò€€Å€⁄Ÿ  Villu patendeeritud muster "ƒge"
+t: 
+t: €±€±∞≥€±€±€±
+t: €∞–∞∞∞±≤€≤
+t: ∞±≤€≤±∞ ±€± 
+t: €€±±€€±±€€±±  Linna muster "lihtne hÅpikmuster"
+t: 
+t: €€        €€
+t:   €€    €€
+t:     €€€€
+t:   €€    €€    Aleksanderi defineeritud muster "ristid"
+t: 
+t: TAGASI ESILEHELE
+bc: 0
+fc: 12
+sx: 18
+sy: 23
+t: ESILEHELE
+link: 23 18 26 lata http://www.padjaklubi.ee/
+
+[http://www.ceogities.com/paksmagu/]
+name: paksmagu
+clearnetscape
+loc: http://www.ceogities.com/paksmagu/
+bc: 00
+fc: 14
+sx: 02
+sy: 08
+t: WELCOME TO MY WEB SITE!!!!
+t: 
+t: My name is Teodor, but my nickname is PAKSMAGU and all my friends know
+t: me selle nime jÑrgi...okei, kuulan loomulikult rÑppi ja muud sellist
+t: kvaliteetset musa! Telekast vaatan kah ainult hÑid filme (Monkey Island,
+t: Vaprad & ilusad etc.). Mulle meeldivad kiired autod ja palju raha.
+bc: 00
+fc: 10
+sx: 02
+sy: 15
+t: BEST LINKS KOGU INTERNETIS PEAKS OLEMA;
+t:    www.ilmajaam.com
+t:    www.buss.ee
+t:    www.ceogities.com/paksmagu
+t: 
+bc: 0
+fc: 12
+sx: 2
+sy: 20
+t: Mulle saate ka e-maili saata, ootan huviga! Mul on pÑris mitu meili-
+t: aadressi, aga tîîtama peaks neist kÑige paremini see (klìpsates
+t: sellel hiirega lÑheb see su addressbooki!): paks@gc.ee
+l: 46 55 addressbook paks@gc.ee
+
+
+[http://cannot_connect/]
+clearnetscape
+loc: http://cannot_connect/
+bc: 00
+fc: 14
+sx: 02
+sy: 08
+t: Can't connect server.
+
+
+[http://programmeerimine/]
+lata: 01 01 http://www.paharet.ee/
+
+[http://www.input.ee/]
+ct: 02 10 15 04 12345678901234567788
+link: 10 02 22 vordleinput 10 02 24 14 password1
+
+
+[lìpp]
+ì, ì - "
+ƒ - é
+Ñ - Ñ
+ô - ô
+î - "
+ö - ö
+Å - Å
+kastid - €≤∞ 

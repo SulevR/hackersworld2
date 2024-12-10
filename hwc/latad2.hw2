@@ -1,0 +1,2080 @@
+[Abiks ikka!]
+selline asi nagu latamake.bas teeb lihtsalt valmis selle pildi, mida on vaja.
+	Seda v“iks natuke t„iendada muidugi...
+sx: XX -m„„rab x-i koordinaadi, kuhu peab p””rduma
+sy: YY -m„„rab y-i koordinaadi, kuhu peab p””rduma
+fc: CC -m„„rab teksti v„rvi
+bc: CC -m„„rab „ra teksti tausta v„rvi
+t: ABC -k“ige lihtsam teksti vorm
+l: X1 X2 ABC -lingi lisamine eelmisele t:-ga tehtud reale.
+ct: XX YY FC BC ABC -v„ike v„rviga kirja lisamine 
+link: YY X1 X2 LINK -lihtsaim lingi lisamine
+clearlinks -puhastab k“ik lingid
+date: XX YY FC BC -kuup„ev. asukoht ja v„rvid
+antudaeg: 324   -missiooni l„bimiseks antud aeg sekundites
+clock: XX YY CC -muutuv kellaaeg (mustal taustal)
+activedir: ABC -muudab activedir-i vastavaks
+wos -kui seda kohta loeb wos, siis teeb ta kohe omad t„psustused(v„rvid jne)
+esc: ABC -link, mis tekib ESC nupu vajutamisel
+lata: X1 Y1 latanimi -teeb uue lata siia sisse
+lata: showactivedir -teeb WOS-si aktiivse lata
+loc: Sulevi tehtud. Aga vist annab <locationi> v„„rtuse.
+line: XX1 YY1 XX2 YY2 CC B/F/L (analoogne basicu k„sule) B-border, F-filled border, L-line
+inkey: NR ABC -NR on selle kahekohalise inkey$-i teise t„he ascii v„„rtus. Ma pole seda
+	tegelt veel teind, sest sulevi kood on nii sassis ja mai saa sittagi enam aru
+clearnetscape -teeb Netscaabaka www-akna thjaks
+pause: NR
+player: XX YY FC BC -teeb m„ngija nime vajalikku kohta. NB - see on mingi kindla suurusega.
+ussp: XX YY S -ussi p”””rdekoht ja suund
+uss: XX YY CC S -ussi alguse koht, ussi v„rv ja suund
+ussj: X1 Y1 X2 Y2 -koht, kust uss „ra kaob ja kust ta uuesti ilmub
+ussend: XX YY -kui uss siia j“uab, siis ta enam kuhugi edasi ei l„he
+ussalarm: XX YY ABC -kui uss siit le l„heb, siis k„ivitub vastav lata. kui midagi siin 
+link: YY X1 X2 inputrida YY X1 X3 CC ABCABCDSG >sdCABCS -link inputrea k„sule.
+	NB!!!! X3 = X2 + 2. ABCABCDSG -muutuja nimi. sdCABC -muutuja ABCABCDSG v„„rtus.
+	nt: link: 17 35 42 inputrida 17 35 44 07 IlmajaamKP >09111999
+link: YY X1 X2 vordleinput YY X1 X3 CC NIMI -link v“rdleva inputrea k„sule.
+	NB!!!! X3 = X2 + 2. NIMI-tundmatu v„„rtus failis <inputrida.txt>.
+	nt: link: 17 35 42 vordleinput 17 35 44 07 password1
+reklaam: YY XX
+checkbox: XX YY NRR 1 -vasak x ja y. 01 - muutuja, mida ta muudab. 1 - enabled. 0= disabled
+
+muutuja: NRR V -muutuja number ja siis selle v„„rtus (1 v“i null)
+m: NRR V LATANIMI -kui muutuja v„„rtus on V, siis edasi l„heme uue lata juurde
+box: X1 Y1 X2 Y2 BC FC N -siia teeb kasti, mis on vastava suurusega.
+	Kui FC BC ja S-i asemel on ainult ks v„rv, siis tehakse siia
+	vastavat v„rvi kast. N-i v„„rtus n„itab, mitu joont jookseb mber kasti.
+	(k„sk v“ib olla ka ainult box: X1 Y1 X2 Y2 BC)
+pressanykey  -ootab nupuvajutuseni
+
+
+“, “ - “
+Ä - 
+„ - „
+™ - ™
+” - ”
+š - š
+ - 
+
+[1]
+name: esileht
+esc: lata exitlata
+link: 19 72 77 Continue
+link: 21 70 77 lata mission
+link: 22 64 77 lata RestartMissionLata
+link: 24 68 77 LoadSaveGame loadfiles
+link: 25 65 77 LoadSaveGame savefiles
+link: 26 69 77 lata ?NewGame
+link: 28 62 77 lata exitlata
+link: 26 04 07 Intro
+link: 27 04 10 punktitabel
+link: 28 04 08 lata credits
+m: 099 1 showmissiontext
+
+[showmissiontext]
+NB! Siin on pandud praegu k„suks <Continue>, aga p„rast on siin k“ik showmissionXtext
+m: 001 1 showmission1text
+m: 002 1 showmission2text
+m: 003 1 showmission3text
+m: 004 1 showmission4text
+m: 005 1 showmission5text
+m: 006 1 showmission6text
+m: 007 1 showmission7text
+m: 008 1 showmission8text
+m: 009 1 showmission9text
+
+[showmission1text]
+link: 19 72 77 missiontext 1
+link: 26 69 77 missiontext 1
+antudaeg: 600
+_cheopzzy jaoks_
+muutuja: 152 1
+muutuja: 153 1
+muutuja: 155 1
+muutuja: 156 1
+muutuja: 158 1
+_mission 5_
+muutuja: 166 1
+muutuja: 167 1
+muutuja: 168 1
+muutuja: 169 1
+
+muutuja: 170 0
+
+
+[showmission2text]
+link: 19 72 77 missiontext 2
+antudaeg: 600
+mail: Ei ole tood
+
+[showmission3text]
+link: 19 72 77 missiontext 3
+antudaeg: 600
+mail: V„rsked H„kiuudised
+mail: Lyhis6num mobiiltelefonilt
+muutuja: 152 1
+muutuja: 153 1
+muutuja: 155 1
+muutuja: 156 1
+muutuja: 158 1
+
+
+[showmission4text]
+link: 19 72 77 missiontext 4
+antudaeg: 600
+mail: Abipalve haiglast
+
+[showmission5text]
+link: 19 72 77 missiontext 5
+antudaeg: 600
+mail: H„kkerite Unioon
+mail: Bussipark palub abi
+muutuja: 166 1
+muutuja: 167 1
+muutuja: 168 1
+muutuja: 169 1
+
+[showmission6text]
+link: 19 72 77 missiontext 6
+antudaeg: 600
+mail: Vajan uut programmi
+muutuja: 181 0
+muutuja: 182 0
+muutuja: 183 0
+muutuja: 184 0
+
+[showmission7text]
+link: 19 72 77 missiontext 7
+antudaeg: 600
+mail: Suur auhind m2ngus!
+mail: Uus info!
+mail: MISSIOON
+
+[showmission8text]
+link: 19 72 77 missiontext 8
+antudaeg: 400
+mail: Raske konkurents
+
+[showmission9text]
+link: 19 72 77 missiontext 9
+antudaeg: 7200
+mail: Saada teade!
+
+[mission1]
+
+[mission]
+m: 001 1 mission1MISSIOON
+m: 002 1 mission2MISSIOON
+m: 003 1 mission3MISSIOON
+m: 004 1 mission4MISSIOON
+m: 005 1 mission5MISSIOON
+m: 006 1 mission6MISSIOON
+m: 007 1 mission7MISSIOON
+m: 008 1 mission8MISSIOON
+m: 009 1 mission9MISSIOON
+
+[RestartMissionLata]
+esc: lata 1
+clearlinks
+sx: 29
+sy: 15
+fc: 15
+bc: 01
+t: ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
+t: º  Restart mission?   º
+t: º      JAH   EI       º
+t: ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+esc: lata 1
+link: 17 36 38 RestartMission
+link: 17 42 43 lata 1
+
+[SaveGameLata]
+esc: lata 1
+clearlinks
+sx: 28
+sy: 13
+fc: 12
+bc: 00
+t: ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
+t: º       SAVE GAME       º
+t: º ÚÄÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄ¿ º
+t: º ³ NIMI      ³MISSION³ º
+t: º ÃÄÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄ´ º
+t: º ³           ³       ³ º
+t: º ³           ³       ³ º
+t: º ³           ³       ³ º
+t: º ÀÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÙ º
+t: º         CANCEL        º
+t: ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+sx: 38
+sy: 22
+fc: 15
+t: CANCEL
+link: 18 31 41 LoadSaveGame savegame?1
+link: 19 31 41 LoadSaveGame savegame?2
+link: 20 31 41 LoadSaveGame savegame?3
+link: 22 38 43 lata 1
+
+[savegame?x]
+esc: lata 1
+clearlinks
+sx: 28
+sy: 15
+fc: 12
+bc: 00
+t: º ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿ º
+t: º ³      SAVE AS      ³ º
+t: º ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´ º
+t: º ³      _______      ³ º
+t: º ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ º
+t: º                       º
+t: º                       º
+link: 22 41 46 LoadSaveGame savefiles
+
+[savegame]
+clearlinks
+sx: 28
+sy: 15
+fc: 12
+bc: 00
+t: º                       º
+t: º   ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿   º
+t: º   ³   GAME SAVED  ³   º
+t: º   ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ   º
+t: º                       º
+t: º                       º
+pause: 30
+lata: 01 01 1
+
+[LoadGameLata]
+esc: lata 1
+clearlinks
+sx: 28
+sy: 13
+fc: 12
+bc: 00
+t: ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
+t: º       LOAD GAME       º
+t: º ÚÄÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄ¿ º
+t: º ³ NIMI      ³MISSION³ º
+t: º ÃÄÄÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄ´ º
+t: º ³           ³       ³ º
+t: º ³           ³       ³ º
+t: º ³           ³       ³ º
+t: º ÀÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÙ º
+t: º         CANCEL        º
+t: ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+sx: 38
+sy: 22
+fc: 15
+t: CANCEL
+link: 18 31 41 LoadSaveGame loadgame?1
+link: 19 31 41 LoadSaveGame loadgame?2
+link: 20 31 41 LoadSaveGame loadgame?3
+link: 22 38 43 lata 1
+
+[loadgame]
+clearlinks
+sx: 28
+sy: 15
+fc: 12
+bc: 00
+t:                          
+t:     ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿    
+t:     ³  GAME LOADED  ³    
+t:     ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ    
+t:                          
+t:                          
+pause: 30
+lata: 01 01 1
+
+[?NewGame]
+esc: lata 1
+clearlinks
+sx: 29
+sy: 13
+fc: 15
+bc: 01
+t: ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
+t: ºKaotada praegune m„ngº
+t: º    ja alustada      º
+t: º k“ike otsast peale? º
+t: º      JAH   EI       º
+t: ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+esc: lata 1
+link: 17 36 38 NewGame
+link: 17 42 43 lata 1
+
+[credits]
+box: 06 06 74 24 00
+bc: 00
+fc: 15
+sx: 7
+sy: 9
+t:                           HACKERS WOLRD II
+t:                            Alea iacta est
+t: 
+t:           Idee, programmeerimine,
+t:           vaev, kujundus jms       Sulev ja Urmas Reisberg
+t: 
+t:                               AD 2000
+t: 
+t: 
+pressanykey
+lata: 01 01 1
+
+
+[exitlata]
+esc: lata 1
+clearlinks
+sx: 29
+sy: 15
+fc: 15
+bc: 1
+t: ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
+t: º Kas tahad l“petada? º
+t: º      JAH   EI       º
+t: ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+link: 17 36 38 exitprogram
+link: 17 42 43 lata 1
+
+
+[mission1MISSIOON]
+clearlinks
+box: 01 01 80 28 00 07 1
+sx: 03
+sy: 03
+fc: 07
+bc: 00
+t: MISSIOON 1
+t: 
+t: Noh, mis kobatsed? Sinu boss tahab ilusat ilma! Eks siis
+t: luura Internetis ja proovi kohta kus sa saad seda ilusaks
+t: teha ja ilusana ka hoida!
+t:  
+t: Vihjeks nii palju, et ks lahe koht on www.ilmajaam.com.
+t: Pole just v„he ”eldud v“i mis?
+t: 
+t: Press any key
+pressanykey
+lata: 01 01 1
+
+[mission2MISSIOON]
+clearlinks
+box: 01 01 80 28 00 07 1
+sx: 03
+sy: 03
+fc: 07
+bc: 00
+t: MISSIOON 2
+t: 
+t: Raske juhus. Torumeestel pole enam t””d - kas ei k“la
+t: v“rratuna? Siiski-siiski - sinu lesanne ongi neile t””
+t: hankida ja selleks on aega vaid kmme minutit!
+t:    Arvestades muidugi sinu kesiseid h„kkerlus-teadmisi
+t: on see p„ris raske ettev“tmine, kuid ehk aitab see, kui
+t: tleme, et m“ned inimesed t“esti usuvad sinusse!
+t:  
+t: T””vajajate sait asub sellises kohas: www.torumees.ee
+t: 
+t: Press any key
+pressanykey
+lata: 01 01 1
+
+[mission3MISSIOON]
+clearlinks
+box: 01 01 80 28 00 07 1
+sx: 03
+sy: 03
+fc: 07
+bc: 00
+t: MISSIOON 3
+t: 
+t: Aita s“pru - kui mitu korda sa seda juba teinud oled?
+t: T„psed arvutused n„itavad, et ilma omakasuta mitte htki.
+t: Nd pole sul valikut, sest romantilises l“unamaises
+t: Cheoppzy pramiidis on hinge heitmas Ivan, Sass ja
+t: Dmitri! AEGA ON VAID 10 MINUTIT!
+t: 
+t: Aadressiks www.pyramiid.com
+t: 
+t: Press any key
+pressanykey
+lata: 01 01 1
+
+[mission4MISSIOON]
+clearlinks
+box: 01 01 80 28 00 07 1
+sx: 03
+sy: 03
+fc: 07
+bc: 00
+t: MISSIOON 4
+t: 
+t: S“ber on h„das Smiley polikliinikus! Nimelt teda seal ei
+t: ravita, ega lasta ka v„lja! Midagi annab kindlasti ette
+t: v“tta!
+t: 
+t: Mingit aadressi polegi anda. Pead otsima otsingussteemidest.
+t: Parim variant oleks www.yehaa.com
+t: 
+t: Press any key
+pressanykey
+lata: 01 01 1
+
+[mission5MISSIOON]
+clearlinks
+box: 01 01 80 28 00 07 1
+sx: 03
+sy: 03
+fc: 07
+bc: 00
+t: MISSIOON 5
+t: 
+t: Nd on aasta-3000-probleem j“udnud ka sinuni! Kui bussid
+t: tuhande aasta p„rast les tlevad, ei saa sa enam j„nest
+t: s“ita! Aita bussiparki ning pa seal aasta-3000-probleem
+t: tehnolevaatuse ajaks k“rvaldada! 10 minutit on aega j„„nud.
+t: 
+t: Otsingussteem www.yehaa.com on abiks.
+t: 
+t: Press any key
+pressanykey
+lata: 01 01 1
+
+[mission6MISSIOON]
+clearlinks
+box: 01 01 80 28 00 07 1
+sx: 03
+sy: 03
+fc: 07
+bc: 00
+t: MISSIOON 6
+t: 
+t: Toomas Ploom vajab uut programmi seebi-seriaalide
+t: tegemiseks! Kuna sul pole aimugi, mida selles missioonis
+t: tegema pead, tleme sulle ette, et hiljuti avati netis
+t: uus pood nimega www.shop.ee. Punkte saad muidugi selle
+t: v“rra v„hem!
+t: 
+t: Press any key
+pressanykey
+lata: 01 01 1
+
+[mission7MISSIOON]
+clearlinks
+box: 01 01 80 28 00 07 1
+sx: 03
+sy: 03
+fc: 07
+bc: 00
+t: MISSIOON 7
+t: 
+t: Miks vahid seda teksti siin,
+t: mida tegema sa peaks?
+t: Selleks, et ei l“peks riim
+t: hva n“u sa teadma peaks:
+t: 
+t: Seiva m„ng ja kl“psa EXIT,
+t: t„pseks sea sa oma vaade!
+t: Kl“psa failil PAHARET.EXE,
+t: koodi kindlalt tead - "tornado".
+t: 
+t: M„ngi kuni „kki taipad -
+t: nd parooli teada sain!
+t: Hackers World sa j„lle ava,
+t: laadi enne seivit' game!
+t: 
+t: Edasise leiad aadressilt: www.paharet.ee
+t: 
+t: Press any key
+pressanykey
+lata: 01 01 1
+
+[mission8MISSIOON]
+clearlinks
+box: 01 01 80 28 00 07 1
+sx: 03
+sy: 03
+fc: 07
+bc: 00
+t: MISSIOON 8
+t: 
+t: Sind on tunnustanud kohalikud arvutim„ngutootjad!
+t: Aita neil oma konkurent k“rvaldada!
+t: 
+t: Aega seekord vaid 400 sekundit!
+t: 
+t: www.vutt.ee
+t: 
+t: Press any key
+pressanykey
+lata: 01 01 1
+
+[mission9MISSIOON]
+clearlinks
+box: 01 01 80 28 00 07 1
+sx: 03
+sy: 03
+fc: 07
+bc: 00
+t: MISSIOON 9
+t: 
+t: Saada e-mail s“ber Teodor Kadakpuule ja teata,
+t: et toit on valmis ja k“ik ootavad teda kodus ruttu
+t: s””ma!
+t: 
+t: Press any key
+pressanykey
+lata: 01 01 1
+
+[WOS]
+name: Wonderful operating system
+sx: 01
+sy: 01
+fc: 11
+bc: 00
+t: ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
+t: º   Wonderful operating system                                                 º
+t: ÌÍÍÍÍÍÍÍÍÍÍÍÍ**:**:**ÍÍÍ**:**:****ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÑÍÑÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹
+t: º                                                            ³ ³               º
+t: º  <Current directory>                                       ³ ³               º
+t: º Name            Size       Date         Time               ³ ³               º
+t: º                                                     ï      ³ ³               º
+t: º                                                     °      ³ ³               º
+t: º                                                     °      ³ ³               º
+t: º                                                     °      ³ ³               º
+t: º                                                     °      ³ ³               º
+t: º                                                     °      ³ ³               º
+t: º                                                     °      ³ ³               º
+t: º                                                     °      ³ ³               º
+t: º                                                     °      ³ ³               º
+t: º                                                     °      ³ ³               º
+t: º                                                     °      ³ ³               º
+t: º                                                     °      ³ ³               º
+t: º                                                     °      ³ ³               º
+t: º                                                     °      ³ ³               º
+t: º                                                     °      ³ ³               º
+t: º                                                     °      ³ ³               º
+t: º                                                     °      ³ ³               º
+t: º                                                     °      ³ ³               º
+t: º                                                     U      ³ ³               º
+t: ÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÏÍÏÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹
+t: º No problemos detected                                                        º
+t: ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+clock: 14 03 11
+date: 25 03 11 00
+esc: lata 1
+button: 1
+button: 2
+button: 3
+lata: showactivedir
+
+
+[wos C:\]
+t: GAMES     DIR   2,2 GB     04-12-1997   15:33:21
+l: 03 11 wos C:\GAMES\
+t: HACK      DIR   1,8 GB     11-28-1996   23:01:32
+l: 03 11 wos C:\HACK\
+m: 181 0 nothing
+t: SEEPMAKER DIR   2,7 MB     10-08-2000   02:43:04
+l: 03 11 wos C:\SEEPMAKER\
+
+[wos C:\GAMES\]
+t: ..
+l: 03 11 wos C:\
+t: USS       DIR   2,2 GB     04-12-1997   15:33:21
+t: WIN       DIR   989 MB     13-07-1997   01:14:52
+l: 03 11 wos C:\GAMES\WIN\
+m: 190 0 nothing
+t: VUTT      DIR   0,4 MB     00-00-2000   00:00:00
+l: 03 11 wos C:\GAMES\VUTT\
+
+[wos C:\GAMES\WIN\]
+t: ..
+l: 03 11 wos C:\GAMES\
+t: sick      tmp   0,2 GB     13-07-1997   01:14:52
+t: larger    tmp   900 kB     13-07-1997   01:14:52
+t: backup    bck   0,5 GB     13-07-1997   01:14:52
+t: buttons   hlp   0,1 MB     13-07-1997   01:14:52
+t: mouse     hlp   0,1 MB     13-07-1997   01:14:52
+t: faq       txt   300 kb     13-07-1997   01:14:52
+t: win       exe   300 MB     13-07-1997   01:14:52
+l: 03 11 lata Win
+t: win       bat   1 kb       13-07-1997   01:14:52
+l: 03 11 lata Win
+t: readme    txt   200 kB     13-07-1997   01:14:52
+l: 03 11 lata WinReadme
+t: defragm   dll   452 MB     13-07-1997   01:14:52
+t: newvirus  dll   202 MB     13-07-1997   01:14:52
+t: slower    tmp   100 MB     13-07-1997   01:14:52
+
+
+
+[wos C:\GAMES\VUTT\]
+t: ..
+l: 03 11 wos C:\GAMES\
+t: vutt      shc   1,0 byt    00-00-2002   00:00:00
+l: 03 11 netscaabakas
+t: vutt2002  exe   0,3 MB     00-00-2002   00:00:00
+l: 03 11 lata VUTT2002Start
+t: data1     dat   2,3 kB     00-00-2002   00:00:00
+t: data2     dat   1,3 kB     00-00-2002   00:00:00
+t: data3     dat   6,3 kB     00-00-2002   00:00:00
+
+
+[wos C:\HACK\]
+t: ..
+l: 03 11 wos C:\
+t: MAXDEL    DIR   400 kB     05-17-1999   21:36:55
+l: 03 11 wos C:\HACK\MAXDEL\
+m: 170 0 nothing
+t: Y3K       DIR    15 kB     06-08-2000   00:21:32
+l: 03 11 wos C:\HACK\Y3K\
+
+[wos C:\SEEPMAKER\]
+t: ..
+l: 03 11 wos C:\
+t: seepmaker exe   2,7 MB     10-08-2000   01:43:04
+l: 03 11 lata seebimasin
+m: 182 0 nothing
+t: crack     com    33 kB     10-08-2000   02:01:00
+l: 03 11 lata seebicrack
+
+[nothing]
+
+[wos C:\HACK\MAXDEL\]
+t: ..
+l: 03 11 wos C:\HACK\
+t: crxlat32  dll   39 kB      05-17-1999   21:36:58
+t: delwin    dat   51 kB      05-17-1999   21:36:58
+t: delwos    dat   45 kB      05-17-1999   21:36:58
+t: fire16    dll   12 kB      05-17-1999   21:36:58
+t: maxdel    exe   81 kB      05-17-1999   21:36:58
+l: 03 11 lata maxdelwarning
+t: qk        dll   60 kB      05-17-1999   21:36:58
+t: whack     dll   112 kB     05-17-1999   21:36:58
+
+[wos C:\HACK\Y3K\]
+t: ..
+l: 03 11 wos C:\HACK\
+t: y3k       exe   15 kB      06-08-2000   00:21:32
+l: 03 11 lata C:\HACK\Y3K\y3k.exe
+t: info      nfo    1 kB      06-08-2000   00:21:37
+l: 03 11 lata C:\HACK\Y3K\info.nfo
+
+[C:\HACK\Y3K\info.nfo]
+box: 03 06 53 18 07 15 1
+sx: 04
+sy: 07
+fc: 15
+bc: 07
+fc: 14
+C:\HACK\Y3K\info.nfo
+fc: 15
+t: Y3K-parandaja info
+t: ====================
+t: Y3K-aitajate produkt
+t:  
+t: T„name: vanaema ja vanaisa heade n„pun„idete eest
+t: Samuti koera Tukit, kassi Miisut ja lehma Mirrit.
+t:  
+t: Alati teie,
+t: AS Y3K-aitajad
+t: 
+fc: 14
+t: CLOSE DOCUMENT
+l: 04 17 lata WOS
+
+[C:\HACK\Y3K\y3k.exe]
+box: 29 14 50 16 04 15 1
+sx: 30
+sy: 15
+fc: 15
+bc: 04
+t: Y3K.EXE JUBA T™™TAB!
+pause: 40
+lata: 01 01 WOS
+
+[maxdelwarning]
+sx: 29
+sy: 15
+fc: 12
+bc: 11
+t: ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
+t: º                   º
+t: º  ACCESS DENIED!!  º
+t: º                   º
+t: º        OK         º
+t: ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+esc: WOS
+link: 19 30 40 WOS
+
+[WinReadme]
+box: 03 03 76 26 00 07 2
+fc: 15
+bc: 00
+sx: 04
+sy: 04
+t: ------Read-me-fail--ebaseaduslikule-programmile----
+t: 1) M„ngu omanik ei ole sdi.
+t: 2) M„ngu levitajad ei ole sdi.
+t: ---------------------------------------------------
+t: WiN on raske m„ng, kus ainult v„hesed saavad v“ita ehk Winnida.
+t: M„ngija lesanne on hoida oma arvutit t””korras mingi kindel
+t: ajavahemik, kuid see kipub igal v„himalgi p“hjusel kinni
+t: jooksma. Saab valida raskusastmeid! N“rgemad saavad oma pead
+t: murda lihtsamate lollustega, kuid kes “pib see leiab - varsti
+t: tuleb hakata kasutama Defragmentoreid, Antiviiruseid, mitte-
+t: monopolide tooteid, et v„hegi vastu pidada!
+t: K“ige raskem tase on k“ige raskem, sest siis on arvuti tervenisti
+t: sinu vastu, t„pselt nagu p„ris Akendes. šks kerge t“uge hiirele 
+t: ja k“ike tuleb otsast alata!
+t: ---------------------------------------------------
+t: <Over
+l: 04 10 lata WOS
+
+[Win]
+box: 08 08 72 20 11 14 1
+fc: 01
+bc: 11
+sx: 09
+sy: 08
+t: Win
+t: 
+t: See m„ng on v“itnud mitmeid auhindu ja seda tohivad
+t: m„ngida ainult need, kes omavad litsentsi!
+t: 
+t:
+t:             Sisesta paroll: ********
+button: WinOut
+
+[WinWrong]
+fc: 01
+bc: 11
+sx: 25
+sy: 15
+t:        *********************
+t:             Wrong paroll!   
+t:        *********************
+pressanykey
+lata: 01 01 WOS
+
+[MAILBOX]
+name: MAILBOX-i alus
+sx: 09
+sy: 06
+fc: 13
+bc: 00
+t: ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
+t: º Mailbox vs 8.6.1                             º
+t: ÌÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹
+t: º                                              º
+t: º                                              º
+t: ÌÍÍStatusÍÍSubjectÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¹
+t: º                                              º
+t: º                                              º
+t: º                                              º
+t: º                                              º
+t: º                                              º
+t: º                                              º
+t: º                                              º
+t: º                                              º
+t: º                                              º
+t: º                                              º
+t: ÇÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¶
+t: º                                              º
+t: ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+ct: 54 07 01 07 X
+link: 07 54 54 WOS
+esc: WOS
+showmailid
+button: pressed1
+button: 2
+button: Mailbox Get
+button: Mailbox New
+button: pressedMailbox Delete
+muutuja: 210 0
+
+[createnewmail]
+name: create new mail
+sx: 35
+sy: 02
+fc: 07
+bc: 00
+t: ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÑÍÍÍ»
+t: ºNEW MAIL                           ³ x º
+t: º       To:________________________ ÀÄÄÄ¶
+t: º  Subject:________________________     º
+t: ÇÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¶
+t: º                                       º
+t: º                                       º
+t: º                                       º
+t: º                                       º
+t: º                                       º
+t: º                                       º
+t: º                                       º
+t: º                                       º
+t: º                                       º
+t: º                                       º
+t: º                                       º
+t: º                                       º
+t: º                                       º
+t: º                                       º
+t: º                                       º
+t: º                                       º
+t: º                                       º
+t: º                                ÚÄÄÄÄÄÄ¶
+t: º                                ³ SEND º
+t: ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÏÍÍÍÍÍÍ¼
+link: 02 71 75 lata MAILBOX
+link: 03 71 75 lata MAILBOX
+link: 04 71 75 lata MAILBOX
+link: 24 71 75 SEND lata MAILBOX
+link: 25 68 75 SEND lata MAILBOX
+link: 26 68 75 SEND lata MAILBOX
+link: 04 46 69 addressbook
+link: 05 46 69 subject
+
+[sendingmail]
+box: 30 13 50 17 07 15 1
+ct: 34 14 15 07 Connecting...
+pause: 13
+ct: 31 16 15 07 ÛÛÛ
+pause: 13
+ct: 31 16 15 07 ÛÛÛÛÛÛ
+pause: 13
+ct: 34 14 15 07 Sending mail...
+ct: 31 16 15 07 ÛÛÛÛÛÛÛÛÛ
+pause: 13
+ct: 31 16 15 07 ÛÛÛÛÛÛÛÛÛÛÛÛ
+pause: 13
+ct: 31 16 15 07 ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ
+pause: 13
+ct: 31 16 15 07 ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ
+pause: 13
+ct: 34 14 15 07 Mail sent!      
+
+[DireTemplate]
+mail: L6petage pull
+
+[DireKool]
+mail: ruudi keskkoolist
+
+[netscaabakas1]
+name: netscaabakas
+sx: 01
+sy: 01
+fc: 12
+bc: 00
+t: Netscaabakas°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°
+ct: 01 01 15 12 Netscaabakas
+t: ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+t: 
+t: 
+t: ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+t:     LOCATION:_______________________________
+t: ÑÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÑ
+t: ³                                                                              ³
+t: ³                                                                              ³
+t: ³                                                                              ³
+t: ³                                                                              ³
+t: ³                                                                              ³
+t: ³                                                                              ³
+t: ³                                                                              ³
+t: ³                                                                              ³
+t: ³                                                                              ³
+t: ³                                                                              ³
+t: ³                                                                              ³
+t: ³                                                                              ³
+t: ³                                                                              ³
+t: ³                                                                              ³
+t: ³                                                                              ³
+t: ³                                                                              ³
+t: ³                                                                              ³
+t: ³                                                                              ³
+t: ³                                                                              ³
+t: ÏÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÏ
+button: pressedNetscaabakas Location
+button: Netscaabakas _
+button: Netscaabakas X
+button: Netscaabakas Back
+button: Netscaabakas Reload
+button: Netscaabakas Home
+link: 06 14 45 net aadress
+line: 270 025 558 068 02 B
+reklaam: 03 35
+esc: WOS
+
+[http://www.yehaa.com/]
+name: net algus
+sx: 19
+sy: 08
+fc: 09
+bc: 15
+t: 
+t: 
+t: ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+t: ³° °°° °ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ³
+t: ³°     °ÛÛ Search:                  ÛÛ³
+t: ³°°° °°°ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ³
+t: ³°°   °°ÛÛÛÛÛÛÛÛYEHAA ALWAYS!ÛÛÛÛÛÛÛÛÛ³
+t: ³ ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ ³
+t: ³ HARIDUS          AJALEHED           ³
+t: ³ ruudkool         Hilis“htuleht      ³
+t: ³                                     ³
+t: ³ RI              MUUSIKA            ³
+t: ³ talse            f„nniklubid        ³
+t: ³                                     ³
+t: ³ VARIA            WWW-de TOP5        ³
+t: ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+loc: http://www.yehaa.com/
+link: 12 37 54 net search
+
+***********Ruudi keskkooli koduleht
+[http://www.ruudkool.edu.ee/]
+loc: http://www.ruudkool.edu.ee/
+clear
+ct: 06 26 15 00 Back
+ct: 18 26 15 00 Huvitavat
+ct: 34 26 15 00 Ruumid
+ct: 48 26 15 00 “petajad
+ct: 62 26 15 00 Saavutused
+ct: 25 09 10 00 Ruudi keskkooli oma veb peidz
+ct: 28 10 12 00 Welcome over the world
+ct: 23 11 11 00 Vaadake k“ik!
+ct: 70 09 15 08 234328
+
+[http://kriposossus/]
+sx: 19
+sy: 08
+fc: 07
+bc: 00
+t:  
+t:  
+t:  
+t:  
+t:  
+t:  
+t:       Hippopotamus Games presents:     
+t:               KRIPOSOSSUS              
+t:                                        
+t:      Ool raits ris””rvd ©1914-2000     
+t:   Trademark of Hippopotamus Games Inc  
+t:         Click HERE to download!        
+t:                                        
+t:
+t:             INFO      DOWNLOAD         
+line: 155 190 445 340 10 B
+line: 157 310 443 338 02 B
+line: 227 135 255 196 10 L
+line: 258 116 277 197 10 L
+line: 238 170 275 162 10 L
+line: 275 139 286 197 10 L
+line: 272 127 275 129 10 L
+line: 283 121 293 195 10 L
+line: 282 120 296 119 10 L
+line: 295 119 303 124 10 L
+line: 308 140 308 140 10 L
+line: 289 164 304 153 10 L
+line: 303 152 307 139 10 L
+line: 307 139 307 130 10 L
+line: 314 124 317 190 10 L
+line: 313 124 326 129 10 L
+line: 325 128 334 138 10 L
+line: 315 158 329 148 10 L
+line: 326 148 332 137 10 L
+line: 355 143 372 143 10 L
+line: 354 143 338 152 10 L
+line: 337 153 338 178 10 L
+line: 353 185 377 185 10 L
+line: 374 185 383 174 10 L
+line: 381 153 383 176 10 L
+line: 381 153 366 143 10 L
+line: 337 178 353 185 10 L
+loc: http://kriposossus/
+
+[Smileynimisees]
+m: NRR V LATANIMI
+
+[haiglaimemasin]
+clearlinks
+box: 10 08 61 19 12 15 2
+bc: 15
+fc: 12
+sx: 14
+sy: 08
+t: FASTDIAGNOZER 666
+bc: 12
+fc: 15
+sx: 10
+sy: 9
+t: ÇÄÄproduced in Allahabad
+t: 
+t: 
+t: ÇÄÄ®Options¯
+l: 14 20 lata haiglaoptions
+t: 
+t: ÇÄÄ®Procedurs¯
+l: 14 22 lata haiglavalik
+t: º                              ®System status¯ÄÄÄÄÄ¶
+l: 42 54 lata haiglastatus
+t: º
+t: º                                      ®About¯ÄÄÄÄÄ¶
+l: 50 54 lata haiglaabout
+
+[haiglaabout]
+box: 57 09 78 22 09 15 1
+fc: 15
+bc: 09
+sx: 58
+sy: 10
+t: Fastdiagnozer 666
+t: was made years ago
+t: Somewhere far away.
+t: But it still works!
+t: 
+t: (c) Digidiag 1988
+t:  Allahabad
+
+[haiglastatus]
+box: 57 09 78 22 09 15 1
+fc: 15
+bc: 09
+sx: 58
+sy: 10
+t: Status
+t: Waste of power:
+t:        40 kWh
+t: Parts with defects:
+t:        10
+t: Guarantee:
+t:       14 03 89
+
+[haiglaoptions]
+box: 06 16 45 26 09 15 1
+sx: 07
+sy: 17
+fc: 15
+bc: 09
+t: Fastdiagnozer's options
+t: 
+t:    Keep FD-666 working
+muutuja: 121 1
+checkbox: 07 19 121 0
+t: 
+t:    Keep power on
+checkbox: 07 21 121 0
+t: 
+t:    Exclude all changes
+checkbox: 07 23 121 0
+
+[haiglavalik]
+box: 06 16 45 26 09 15 1
+sx: 07
+sy: 17
+fc: 15
+bc: 09
+t: Choose patient
+t: 
+t:  ® Kiiksp„„   ¯
+l: 09 20 lata haiglaprocedure
+t:  ® Riisiline  ¯
+l: 09 20 lata haiglaprocedure
+t:  ® Viltsilm   ¯
+l: 09 20 lata haiglaprocedure
+t:  ® Lootus     ¯
+l: 09 20 lata haiglaprocedure
+t:  ® Kokapapa   ¯
+l: 09 20 lata haiglaprocedure
+t: 
+t:  ® Cancel     ¯
+l: 09 20 lata haiglaimemasin
+
+[haiglaprocedure]
+box: 06 16 45 26 09 15 1
+sx: 07
+sy: 17
+fc: 15
+bc: 09
+t: Choose procedure
+t: 
+t:  ® Analysis   ¯
+l: 09 20 lata haiglaanalyys1
+t:  ® Injection  ¯
+l: 09 20 lata haiglasyst1
+t:  ® Operation  ¯
+l: 09 20 lata haiglaoperation
+t:  ® Testament  ¯
+l: 09 20 lata haiglatestament
+t: 
+t:  ® Release    ¯
+l: 09 20 lata haiglaimemasin
+
+[haiglatestament]
+pause: 40
+box: 57 09 78 22 09 15 1
+fc: 15
+bc: 09
+sx: 58
+sy: 10
+t: No errors were found
+t: in testament
+t: This patient is 
+t: prepared for 
+t: everything
+
+[haiglasyst1]
+box: 57 09 78 22 09 15 1
+fc: 15
+bc: 09
+sx: 58
+sy: 10
+t: Injection
+m: 127 1 haiglasyst4
+m: 126 1 haiglasyst3
+m: 125 1 haiglasyst2
+muutuja: 125 1
+t: 
+t: Ammo> 3
+lata: 01 01 haiglamakesyst
+
+[haiglasyst2]
+fc: 15
+bc: 09
+sx: 58
+sy: 12
+t: Ammo> 2
+muutuja: 126 1
+lata: 01 01 haiglamakesyst
+
+[haiglasyst3]
+fc: 15
+bc: 09
+sx: 58
+sy: 12
+t: Ammo> 1
+muutuja: 127 1
+lata: 01 01 haiglamakesyst
+
+[haiglasyst4]
+clearlinks
+fc: 15
+bc: 09
+sx: 58
+sy: 12
+t: Ammo> 0
+fc: 11
+t: Error found!
+fc: 15
+t: Can't make injection
+pause: 13
+t: 
+t: Buying ammo from
+t: Internetmarket
+pause: 15
+mail: Ja uksed avanesid
+delmail: Valvearst jooksis minema
+t: 
+t: Opening doors for
+t: salesmen
+t:   ® OK ¯
+l: 62 65 MAILBOX
+
+[haiglamakesyst]
+sx: 59
+sy: 14
+fc: 15
+bc: 09
+pause: 5
+t: CC            o
+sx: 59
+sy: 14
+pause: 10
+t: CCI--*        o
+sx: 59
+sy: 14
+pause: 3
+t: CC ------*    o
+sx: 59
+sy: 14
+pause: 3
+t: CC      -----*O
+sx: 59
+sy: 14
+pause: 3
+t: CC          --0
+sx: 59
+sy: 14
+pause: 3
+t: CC            z
+pause: 10
+t: 
+t:   ® Done ¯
+l: 62 67 lata haiglaprocedure
+
+[haiglaanalyys1]
+m: 126 1 haiglaanalyys3
+m: 125 1 haiglaanalyys2
+box: 57 09 78 22 09 15 1
+fc: 15
+bc: 09
+sx: 58
+sy: 10
+t: Analysis
+t: 
+t: Looks normal
+m: 129 1 lata haiglanalyys6
+t: A little nervous
+t: Needs injection
+t: 
+t: 140 80 70 12
+t: 
+t:   ® Done ¯
+l: 62 67 lata haiglaprocedure
+
+[haiglaanalyys2]
+box: 57 09 78 22 09 15 1
+fc: 15
+bc: 09
+sx: 58
+sy: 10
+t: Analysis
+t: 
+t: Quite peaceful
+m: 128 1 lata haiglaanalyys5
+t:
+t: 100 60 58 18
+t:
+t:   ® Done ¯
+l: 62 67 lata haiglaprocedure
+
+[haiglaanalyys3]
+box: 57 09 78 22 09 15 1
+fc: 15
+bc: 09
+sx: 58
+sy: 10
+t: Analysis
+t: 
+t: No action(!)
+t: (Maybe dead)
+t: Needs immediate  
+t: medical help
+t: 
+t: 20 00 00 62
+t: 
+t:   ® Done ¯
+l: 62 67 lata haiglaprocedure
+
+[haiglaanalyys5]
+fc: 15
+bc: 09
+sx: 61
+sy: 10
+t: Bleeding...
+t:
+t: 110 73 65 17
+t:
+t:   ® Done ¯
+l: 62 67 lata haiglaprocedure
+
+[haiglaanalyys6]
+fc: 15
+bc: 09
+sx: 62
+sy: 10
+t: Bleeding and 
+t:   jerking
+t: May need new 
+t: operation
+t: 113 78 71 10
+t:
+t:   ® Done ¯
+l: 62 67 lata haiglaprocedure
+
+[haiglaoperation]
+box: 06 16 45 26 09 15 1
+sx: 07
+sy: 17
+fc: 15
+bc: 09
+t: Choose target
+t: 
+t:  ® Heart      ¯
+l: 09 20 lata haiglaravi
+t:  ® Intestines ¯
+l: 09 20 lata haiglaravi
+t:  ® Leg        ¯
+l: 09 20 lata haiglaravi
+t:  ® Brain      ¯
+l: 09 20 lata haiglaaju
+t: 
+t:  ® Cancel     ¯
+l: 09 20 lata haiglaprocedure
+
+[haiglaravi]
+clearlinks
+box: 57 09 78 22 09 15 1
+fc: 15
+bc: 09
+sx: 58
+sy: 10
+t: Operation
+t: 
+t:   NOT TO
+t: DISTURB!!!
+t: We're having an 
+t: operation here!
+t: 
+t:   ® Cancel ¯
+muutuja: 128 1
+l: 62 69 lata haiglaoperation
+
+[haiglaaju]
+m: 129 1 lata haiglaravi
+clearlinks
+box: 57 09 78 22 09 15 1
+fc: 15
+bc: 09
+sx: 58
+sy: 10
+t: Operation
+t: 
+t:   NOT TO
+t: DISTURB!!!
+muutuja: 129 1
+pause: 40
+t: 
+t: Shit...
+pause: 20
+t: 
+t: Who made noise?
+t: 
+pause: 5
+t:   ® Stop ¯
+muutuja: 129 1
+l: 62 68 lata haiglaoperation
+
+
+***************************** MISSION 5 ******************************
+[BUSSpardaarvuti]
+box: 23 10 59 23 02 10 1
+sx: 24
+sy: 11
+fc: 15
+bc: 02
+t: ICARUZ 280T PARDAKOMPUUTER ONLINE
+fc: 10
+t: 
+t:    Bussi hetkestaatus: katki
+t:     Asukoht: Valdeku peatus
+t:  
+t: Bussijuhi t„nased vead:
+t:    1) Graafikust etteruttamine
+t:    2) Peatusenime mittetlemine
+t:  
+t: Vajuta siia:
+ct: 37 20 15 02 < BUSSI MOOTOR >
+l: 37 52 lata BUSSpardaarvuti2
+
+[BUSSpardaarvuti2]
+box: 23 10 59 23 02 10 1
+sx: 24
+sy: 11
+fc: 15
+bc: 02
+t: ICARUZ 280T PARDAKOMPUUTER ONLINE
+fc: 10
+t: 
+t: Siin saad hendada pardakompuutri
+t: m“ne teise programmiga (tarkvara
+t: uuendamiseks, liinide sisestami-
+t: seks jne)! PROOVI KOHE!
+button: BUSSprogramm
+button: BUSSmootor
+button: BUSSback1
+
+[BUSSpardaarvuti3]
+box: 23 10 65 24 02 10 1
+sx: 24
+sy: 11
+fc: 15
+bc: 02
+t: ICARUZ 280T PARDAKOMPUUTER ONLINE
+fc: 10
+t: 
+t:      T””ta h„sti
+t:  
+t:      Aastast 3000 tossa poole rohkem
+t: 
+t:      Aastast 3000 tee palju k“vemat mra
+t:  
+t:      Aastast 3000 eira k“iki n“udeid
+t: 
+t:      Aastast 3000 v“ta juhtimine bussi-
+t:      juhilt le
+m: 171 1 BUSSpardaarvuti4
+checkbox: 25 13 165 0
+checkbox: 25 15 166 0
+checkbox: 25 17 167 0
+checkbox: 25 19 168 0
+checkbox: 25 21 169 0
+button: BUSSback2
+
+[BUSSpardaarvuti4]
+checkbox: 25 13 165 1
+checkbox: 25 15 166 1
+checkbox: 25 17 167 1
+checkbox: 25 19 168 1
+checkbox: 25 21 169 1
+button: BUSSback2
+
+[BUSSpardaarvutiProgramm]
+box: 30 09 63 16 01 15 1
+sx: 32
+sy: 10
+fc: 15
+bc: 01
+t: Sisesta programmi aadress:
+t: C:\..
+link: 11 32 58 vordleinput 11 32 60 15 Y3Kpath
+m: 170 1 nothing
+link: 11 32 58 vordleinput 11 32 60 15 Y3Knotfound
+
+[y3knotfound]
+sx: 32
+sy: 13
+fc: 15
+bc: 01
+t:  VALE AADRESS V“I PROGRAMM!
+t:      Faili ei leitud.
+pause: 50
+lata: 01 01 BUSSpardaarvuti2
+
+[y3kstart]
+sx: 32
+sy: 13
+fc: 15
+bc: 01
+t:   STARTING Y3K-parandaja...
+pause: 30
+box: 31 12 60 20 04 15 1
+sx: 32
+sy: 13
+fc: 15
+bc: 04
+t:  Y3K-parandaja loaded
+t: 
+t: CHECKING YOUR SYSTEM...
+pause: 30
+ct: 32 15 15 04    Y3K-bug found and   
+ct: 32 16 15 04   repaired 9434 times  
+pause: 40
+sx: 32
+sy: 13
+t: CHECKING ICARUZ        
+t: PARDAKOMPUUTER...      
+t:                          
+t:                          
+pause: 30
+ct: 32 16 15 04    Y3K-bug found and   
+ct: 32 17 15 04    repaired 4 times.   
+pause: 40
+muutuja: 171 1
+mail: Tehnovaatus korras!
+lata: 01 01 BUSSpardaarvuti2
+
+
+[DownloadY3K]
+box: 30 13 50 16 07 15 1
+ct: 34 14 15 07 DOWNLOADING:
+pause: 13
+ct: 31 15 15 07 ÛÛÛ
+pause: 13
+ct: 31 15 15 07 ÛÛÛÛÛÛ
+pause: 13
+ct: 31 15 15 07 ÛÛÛÛÛÛÛÛÛ
+pause: 13
+ct: 31 15 15 07 ÛÛÛÛÛÛÛÛÛÛÛÛ
+pause: 13
+ct: 31 15 15 07 ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ
+pause: 13
+ct: 31 15 15 07 ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ
+pause: 13
+ct: 31 15 15 07 Download complete!
+pause: 23
+box: 30 13 50 17 07 15 1
+ct: 34 14 15 07 INSTALLING To:
+ct: 34 15 15 07 C:\HACK\Y3K\
+pause: 13
+ct: 31 16 15 07 ÛÛÛ
+pause: 13
+ct: 31 16 15 07 ÛÛÛÛÛÛ
+pause: 13
+ct: 31 16 15 07 ÛÛÛÛÛÛÛÛÛ
+pause: 13
+ct: 31 16 15 07 ÛÛÛÛÛÛÛÛÛÛÛÛ
+pause: 13
+ct: 31 16 15 07 ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ
+pause: 13
+ct: 31 16 15 07 ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ
+pause: 13
+ct: 31 16 15 07    	 Installed!    
+pause: 23
+muutuja: 170 1
+lata: 01 01 http://www.y3k.com/
+
+[DownloadSEEPCRACK]
+m: 181 0 http://www.shop.ee/error/
+box: 30 13 50 16 07 15 1
+ct: 34 14 15 07 DOWNLOADING:
+pause: 13
+ct: 31 15 15 07 ÛÛÛ
+pause: 13
+ct: 31 15 15 07 ÛÛÛÛÛÛ
+pause: 13
+ct: 31 15 15 07 ÛÛÛÛÛÛÛÛÛ
+pause: 13
+ct: 31 15 15 07 ÛÛÛÛÛÛÛÛÛÛÛÛ
+pause: 13
+ct: 31 15 15 07 ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ
+pause: 13
+ct: 31 15 15 07 ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ
+pause: 13
+ct: 31 15 15 07 Download complete!
+pause: 23
+box: 30 13 50 17 07 15 1
+ct: 31 14 15 07 Crack INSTALLED To:
+ct: 31 15 15 07   C:\SEEPMAKER\
+pause: 60
+muutuja: 182 1
+lata: 01 01 http://www.shop.ee/abi/
+
+[DownloadSEEPMAKER]
+box: 30 13 50 16 07 15 1
+ct: 34 14 15 07 DOWNLOADING:
+pause: 13
+ct: 31 15 15 07 ÛÛÛ
+pause: 13
+ct: 31 15 15 07 ÛÛÛÛÛÛ
+pause: 13
+ct: 31 15 15 07 ÛÛÛÛÛÛÛÛÛ
+pause: 13
+ct: 31 15 15 07 ÛÛÛÛÛÛÛÛÛÛÛÛ
+pause: 13
+ct: 31 15 15 07 ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ
+pause: 13
+ct: 31 15 15 07 ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ
+pause: 13
+ct: 31 15 15 07 Download complete!
+pause: 23
+box: 30 13 50 17 07 15 1
+ct: 34 14 15 07 INSTALLING To:
+ct: 34 15 15 07 C:\SEEPMAKER\
+pause: 13
+ct: 31 16 15 07 ÛÛÛ
+pause: 13
+ct: 31 16 15 07 ÛÛÛÛÛÛ
+pause: 13
+ct: 31 16 15 07 ÛÛÛÛÛÛÛÛÛ
+pause: 13
+ct: 31 16 15 07 ÛÛÛÛÛÛÛÛÛÛÛÛ
+pause: 13
+ct: 31 16 15 07 ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ
+pause: 13
+ct: 31 16 15 07 ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ
+pause: 13
+ct: 31 16 15 07     Installed!    
+pause: 23
+muutuja: 181 1
+lata: 01 01 http://www.shop.ee/
+
+[downloadVUTT]
+m: 190 1 lata downloadedVUTT
+box: 30 13 50 16 07 15 1
+ct: 34 14 15 07 DOWNLOADING:
+pause: 13
+ct: 31 15 15 07 ÛÛÛ
+pause: 13
+ct: 31 15 15 07 ÛÛÛÛÛÛ
+pause: 13
+ct: 31 15 15 07 ÛÛÛÛÛÛÛÛÛ
+pause: 13
+ct: 31 15 15 07 ÛÛÛÛÛÛÛÛÛÛÛÛ
+pause: 13
+ct: 31 15 15 07 ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ
+pause: 13
+ct: 31 15 15 07 ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ
+pause: 13
+ct: 31 15 15 07 Download complete!
+pause: 23
+box: 30 13 50 17 07 15 1
+ct: 34 14 15 07 INSTALLING To:
+ct: 34 15 15 07 C:\GAMES\VUTT\
+pause: 13
+ct: 31 16 15 07 ÛÛÛ
+pause: 13
+ct: 31 16 15 07 ÛÛÛÛÛÛ
+pause: 13
+ct: 31 16 15 07 ÛÛÛÛÛÛÛÛÛ
+pause: 13
+ct: 31 16 15 07 ÛÛÛÛÛÛÛÛÛÛÛÛ
+pause: 13
+ct: 31 16 15 07 ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ
+pause: 13
+ct: 31 16 15 07 ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ
+pause: 13
+ct: 31 16 15 07    	 Installed!    
+pause: 23
+muutuja: 190 1
+lata: 01 01 http://www.vutt.ee/
+
+[downloadedVUTT]
+box: 30 13 50 16 07 15 1
+ct: 34 14 15 07    DOWNLOAD    
+ct: 35 14 15 07 ALREADY COMLETE
+ct: 36 14 15 07     < OK >
+pause: 13
+link: 36 18 23 netscaabakas
+
+[seebimasin]
+box: 15 09 65 22 07
+box: 15 09 65 09 04
+box: 16 11 64 21 15
+ct: 16 09 15 04 Seebi-seriaali maker
+ct: 16 10 00 07 File   Edit   Help
+link: 10 16 33 lata SeepMenyy
+m: 184 0 SeepNotCracked
+sx: 16
+sy: 11
+fc: 08
+bc: 15
+t: Seebi-seriaali tegemise programm laaditud.
+t: Avasta enda jaoks uus ja p“nev seebimaailm!
+t: 
+t: T„nane seriaalimudel:
+t:    Tegelasi: 132
+t:    Osasid: alates 10000
+t:    Sihtgrupp: IQ < 43
+t: 
+t: Saada see suurep„rane programm ka oma
+t: s“brale! Selleks kliki SIIN!
+ct: 39 20 12 15 SIIN
+l: 39 42 lata SaadaSobrale
+
+[SeepMenyy]
+box: 15 11 30 11 07
+ct: 16 11 00 07 Saada s“brale
+link: 11 15 30 lata SaadaSobrale
+
+[seebicrack]
+clearlinks
+pause: 15
+box: 01 01 80 28 00 07 1
+sx: 03
+sy: 03
+fc: 07
+bc: 00
+pause: 20
+t: Seebi-seriaali tegemise masin leitud...
+pause: 35
+t: Cracking...
+pause: 30
+t: Program is successfully cracked!
+muutuja: 184 1
+pause: 10
+t: 
+t: Run SEEPMAKER.EXE and joy!
+t: <Press any key>
+pressanykey
+lata: 01 01 WOS
+
+[SeepNotCracked]
+box: 25 12 55 21 04 14 1
+sx: 28
+sy: 13
+fc: 14
+bc: 04
+t:     See on programmi
+t:  SEEPMAKER illegaalne
+t:         koopia.
+t: 
+t:    Programm ei t””ta.
+t: Kustuta see oma arvutist!
+t: 
+t:         < OK >
+l: 36 41 wos C:\SEEPMAKER\
+
+[SaadaSobrale]
+m: 185 1 nothing
+box: 30 13 50 17 07 15 1
+ct: 34 14 15 07 Connecting...
+pause: 13
+ct: 31 16 15 07 ÛÛÛ
+pause: 13
+ct: 31 16 15 07 ÛÛÛÛÛÛ
+pause: 13
+ct: 34 14 15 07 Sending mail...
+ct: 31 16 15 07 ÛÛÛÛÛÛÛÛÛ
+pause: 13
+ct: 31 16 15 07 ÛÛÛÛÛÛÛÛÛÛÛÛ
+pause: 13
+ct: 31 16 15 07 ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ
+pause: 13
+ct: 31 16 15 07 ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ
+pause: 13
+ct: 34 14 15 07 Mail sent!      
+pause: 20
+mail: Sa oled mu ingel!
+muutuja: 185 1
+lata: 01 01 MAILBOX
+
+[UusSponsor]
+box: 24 10 56 25 01 15 2
+ct: 26 10 15 01 Uue-Sponsori-lisamise-programm
+m: 191 1 SponsorCantfind
+ct: 33 15 12 01 Sisesta oma nimi
+box: 35 17 45 19 01 15 1
+link: 18 36 44 vordleinput 18 36 44 15 niisama
+button: SponsorCancel
+button: SponsorNimiOk
+
+[SponsorCantfind]
+ct: 27 15 12 01 Ei leia vajalikku faili!
+button: SponsorOut
+
+[UusSponsorLisa]
+ct: 31 15 12 01 Sisesta sponsori nimi  
+box: 35 17 45 19 01 15 1
+link: 18 36 44 vordleinput 18 36 44 15 niisama
+button: SponsorCancel
+button: SponsorOk
+
+[UusSponsorError]
+box: 25 11 55 24 01
+ct: 26 15 12 01 Kahjuks pole m„lus enam ruumi!
+button: SponsorCancel
+button: SponsorDelete
+
+[UusSponsorDelete]
+box: 25 11 55 24 01
+ct: 26 15 12 01  Oled sa kindel, et tahad
+ct: 26 16 12 01 kustutada vanad sponsorid?
+button: SponsorEnd
+button: SponsorUltraCancel
+
+[SponsorEnd]
+muutuja: 191 1
+mail: Ei oleks uskunud
+lata: 01 01 http://www.vutt.ee/
+
+[VUTT2002Start]
+box: 01 01 80 28 00
+ct: 35 15 15 00 VUTT  2002
+pause: 50
+ct: 29 17 07 00 Connecting server...
+ct: 31 18 15 07 ÛÛÛÛÛÛ
+pause: 07
+ct: 31 18 15 07 ÛÛÛÛÛÛÛÛÛ
+pause: 18
+ct: 31 18 15 07 ÛÛÛÛÛÛÛÛÛÛÛÛ
+pause: 18
+ct: 31 18 15 07 ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ
+pause: 23
+ct: 31 18 15 07 ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ
+pause: 43
+ct: 31 18 15 07 ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ
+pause: 50
+ct: 31 18 15 07 ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ
+pause: 50
+ct: 29 19 07 00 Connected!
+pause: 10
+ct: 29 20 13 00 Press any key!
+pressanykey
+lata: 01 01 VUTTTasumine
+
+[VUTTTasumine]
+muutuja: 192 1
+box: 01 01 80 28 00
+checkbox: 10 10 192 1
+ct: 14 10 15 00 Jah, tasun meeleldi 100$, saamaks Vutt'i Klubi
+ct: 14 11 15 00 liimeks ja osalemaks vastavatel v“istlustel.
+button: VUTTGamema
+
+[VUTTGame]
+box: 01 01 80 28 00
+sx: 20
+sy: 05
+bc: 00
+fc: 07
+t: This game is sponsored by:
+pause: 17
+fc: 15
+t: Makers Market
+t:  
+pause: 17
+t: Hip-hop dial-ups
+t:
+pause: 27
+t: Hans
+t:  confectioner
+pause: 20
+t: And
+t: A-sports inc, Penicitia etc
+pause: 10
+pressanykey
+box: 01 01 80 27 00
+ct: 20 10 15 00 Are you sure you want to continue?
+button: VUTTOut
+button: VUTTYes1
+
+[VUTTTeam]
+box: 01 01 80 27 00
+fc: 15
+bc: 00
+sx: 10
+sy: 10
+t: Choose your team...
+t:
+fc: 13
+t: <Not available>
+t: <Not available>
+t: Maardu
+l: 10 24 lata VUTTOpponent
+t: <Not available>
+t: <Not available>
+t: Viljandi
+l: 10 24 lata VUTTOpponent
+t: <Not available>
+t: <Not available>
+t: <Not available>
+t: P„rnu
+l: 10 24 lata VUTTOpponent
+t:
+fc: 15
+t:  Cancel
+l: 10 24 WOS
+
+[VUTTOpponent]
+box: 01 01 80 28 00
+ct: 30 17 07 00 Choosing opponent
+ct: 31 18 15 07 ÛÛÛÛ
+pause: 07
+ct: 31 18 15 07 ÛÛÛÛÛÛÛÛÛ
+pause: 18
+ct: 31 18 15 07 ÛÛÛÛÛÛÛÛÛÛÛÛ
+pause: 18
+ct: 31 18 15 07 ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ
+pause: 23
+ct: 20 19 15 00 your opponent will be JamAira with Milano
+pressanykey
+lata: 01 01 VUTTMatch
+
+[VUTTMatch]
+muutuja: 193 1
+muutuja: 194 1
+muutuja: 197 0
+muutuja: 198 0
+muutuja: 199 0
+box: 01 01 80 28 00
+button: VUTTSing
+button: VUTTEncourage
+button: VUTTScream
+button: VUTTSilence
+button: VUTTExit
+ct: 10 05 15 00 0   :   0
+
+[VUTTSilence]
+kommentaar
+button: VUTTSing
+muutuja: 194 1
+muutuja: 196 0
+m: 193 1 VUTTSilence2
+m: 193 0 VUTTSilence3
+
+[VUTTSilence2]
+muutuja: 193 0
+box: 10 08 40 09 00
+ct: 10 08 12 00 Isegi publikule ei 
+ct: 11 09 12 00 pakuta midagi.
+
+[VUTTSilence3]
+muutuja: 193 1
+
+[VUTTScream]
+kommentaar
+muutuja: 196 1
+muutuja: 195 1
+muutuja: 194 1
+m: 197 0 nothing
+muutuja: 196 0
+m: 198 0 nothing
+muutuja: 195 0
+
+[VUTTEncourage]
+kommentaar
+muutuja: 195 1
+m: 193 1 VUTTCheckGoal2
+muutuja: 193 0
+m: 197 0 nothing
+muutuja: 195 1
+muutuja: 194 1
+m: 196 0 VUTTEncourage2
+
+[VUTTEncourage2]
+m: 193 1 VUTTGameEnd
+
+[VUTTSing]
+kommentaar
+button: VUTTStopSing
+muutuja: 194 0
+m: 193 1 VUTTSing2
+m: 197 0 nothing
+muutuja: 196 1
+
+[VUTTSing2]
+m: 195 1 VUTTGameEnd
+muutuja: 196 1
+
+[VUTTStopSing]
+kommentaar
+button: VUTTSing
+m: 197 1 VUTTStopSing2
+muutuja: 196 1
+muutuja: 195 1
+
+[VUTTStopSing2]
+kommentaar
+muutuja: 193 1
+muutuja: 194 1
+m: 196 1 nothing
+muutuja: 193 0
+muutuja: 195 1
+
+[VUTTCheckGoal1]
+m: 194 1 VUTTCheckGoal2
+muutuja: 194 1
+
+[VUTTCheckGoal2]
+m: 195 1 VUTTCheckGoal3
+muutuja: 196 1
+
+[VUTTCheckGoal3]
+m: 196 1 VUTTGoal
+muutuja: 196 1
+
+[VUTTGoal]
+m: 198 1 VUTTGoal3
+m: 197 1 VUTTGoal2
+muutuja: 197 1
+ct: 10 05 15 00 0   :   1
+ct: 10 06 14 00 Loooooooser!
+box: 10 08 40 09 00
+ct: 10 08 12 00 N„ete, ka heast kaitsest
+ct: 11 09 12 00 pole teinekord kasu.
+muutuja: 193 0
+muutuja: 194 0
+muutuja: 195 0
+
+[VUTTGoal2]
+muutuja: 198 1
+ct: 10 05 15 00 0   :   2
+ct: 10 06 14 00 Run for draw!
+box: 10 08 40 09 00
+ct: 10 08 12 00 J„lle v„rav??? Kurat!
+muutuja: 194 0
+muutuja: 195 0
+muutuja: 196 0
+
+[VUTTGoal3]
+muutuja: 199 1
+ct: 10 05 15 00 0   :   3
+ct: 10 06 14 00 Goaaaaal!
+box: 10 08 40 09 00
+ct: 10 08 12 00 Kes oleks osanud seda
+ct: 10 09 12 00 ette ennustada?
+
+
+[VUTTGameEnd]
+box: 01 01 80 29 00
+ct: 20 08 15 00 Game over...
+m: 197 1 VUTTLooser
+ct: 20 10 07 00 It was a draw
+pressanykey
+lata: 01 01 WOS
+
+[VUTTLooser]
+ct: 20 10 07 00 you are the looser!
+pressanykey
+lata: 01 01 WOS
+
+[DAEMONmessage]
+mail: MAILER-DAEMON
+
+[sendDAEMON1]
+mail: MAILER-DAEMON is reporting
+
+[sendDAEMON2]
+mail: MAILER-DAEMON reports
+mail: MAILER-DAEMON tells you the story
+mail: MAILER-DAEMON gives you a chance
+adddaemon
+
+[DAEMON1]
+mail: MAILER-DAEMONi teine m“istatus
+
+[DAEMON2]
+mail: MAILER-DAEMON Kolmas
+
+[DAEMON3]
+mail: MAILER-DAEMON Viimane
+
+[DAEMON4]
+mail: MAILER-DAEMON imestab
+mail: Olen teel...
+
+[DAEMONvale]
+m: 201 1 nothing
+muutuja: 201 1
+mail: MAILER-DAEMON seletab
+
+[Liina1]
+mail: Mis te sonite?
+
+[Liina2]
+mail: Infot Teodorist
+
+[Villu1]
+mail: Villult meiliasjandusest
+
+[Villu2]
+mail: Villult Teodorist
+
+[Tekka2]
+mail: padjaklubist.
+
+[Tekka1]
+mail: padjaklaabist
+
+[Aleks2]
+mail: faktid Teodorist
+
+[Aleks1]
+mail: faktid klubist
+
+[http://not found/]
+sx: 02
+sy: 08
+fc: 15
+bc: 00
+t: 
+t:  ERROR 3729.3
+t:  PAGE NOT FOUND
+loc: http://not found/
+
+ c: http://not found/
+
+ found/
+
+ 

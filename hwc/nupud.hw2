@@ -1,0 +1,591 @@
+[ABC] -nupu nimi
+fc: CC -kirja värv
+bc: CC -nupu värv
+y1: YY -ülemine y
+y2: YY -alumine y
+x1: XX -vasakpoolne x
+x2: XX -parempoolne x
+text: ABC -tekst
+link: ABC -link, kui siia vajutatakse
+plink: ABC -link siis, kui see nupp on sissevajutatud olekus.
+		(selle puudumisel sama mis link)
+
+[1]
+fc: 15
+bc: 09
+y1: 24
+y2: 24
+x1: 58
+x2: 78
+text: Mailbox
+link: MAILBOX
+plink: WOS
+
+[2]
+fc: 15
+bc: 04
+y1: 22
+y2: 22
+x1: 58
+x2: 78
+text: Netscaabakas
+link: netscaabakas
+plink: WOS
+
+[3]
+fc: 15
+bc: 00
+y1: 27
+y2: 27
+x1: 58
+x2: 78
+text: Peamen
+link: lata 1
+
+[WinOut]
+y1: 15
+y2: 15
+x1: 37
+x2: 43
+text: OK
+link: lata WinWrong
+
+[Mailbox Get]
+fc: 07
+bc: 04
+y1: 09
+y2: 10
+x1: 11
+x2: 17
+text: Get Msg
+link: GetMsg
+
+[Mailbox New]
+fc: 07
+bc: 04
+y1: 09
+y2: 10
+x1: 19
+x2: 25
+text: New Msg
+link: createnewmail
+
+[Mailbox Delete]
+fc: 07
+bc: 04
+y1: 09
+y2: 10
+x1: 27
+x2: 33
+text: Delete
+link:  
+
+[Netscaabakas Back]
+fc: 15
+bc: 07
+y1: 02
+y2: 04
+x1: 05
+x2: 12
+text:  Back
+link: net back
+
+[Netscaabakas Reload]
+fc: 15
+bc: 07
+y1: 02
+y2: 04
+x1: 13
+x2: 20
+text:  Reload
+link: net reload
+
+[Netscaabakas Home]
+fc: 15
+bc: 07
+y1: 02
+y2: 04
+x1: 21
+x2: 28
+text:  Home
+link: net home
+
+[Netscaabakas Mail]
+fc: 15
+bc: 09
+y1: 28
+y2: 28
+x1: 69
+x2: 79
+text: Mailbox
+link: MAILBOX
+
+[Netscaabakas _]
+fc: 15
+bc: 08
+y1: 01
+y2: 02
+x1: 73
+x2: 76
+text: _
+link: lata WOS
+
+[Netscaabakas X]
+fc: 15
+bc: 08
+y1: 01
+y2: 02
+x1: 77
+x2: 80
+text: X
+link: lata WOS
+
+[Netscaabakas Location]
+fc: 15
+bc: 08
+y1: 06
+y2: 06
+x1: 14
+x2: 50
+text: 
+link: 
+
+[Ilmajaam ID]
+fc: 15
+bc: 08
+y1: 16
+y2: 16
+x1: 13
+x2: 20
+text: 
+plink: mission1 ilmajaamID
+
+[Ilmajaam PASSWORD]
+fc: 15
+bc: 08
+y1: 17
+y2: 17
+x1: 13
+x2: 20
+text: 
+plink: mission1 ilmajaamPASSWORD
+
+[Ilmajaam ENTER]
+fc: 15
+bc: 07
+y1: 19
+y2: 19
+x1: 09
+x2: 13
+text: ENTER
+link: lata http://www.ilmajaam.com/olduser/
+
+[Ilmajaam Check]
+fc: 15
+bc: 07
+y1: 22
+y2: 22
+x1: 05
+x2: 43
+text: Vajuta siia ja vaata, kas oled v“itnud!
+link: lata http://www.ilmajaam.com/voistlus/vastus/
+
+[Ilmajaam ilmamasin MANUALSET]
+fc: 15
+bc: 07
+y1: 17
+y2: 17
+x1: 53
+x2: 78
+text: ILMAMASIN: Muuda k„sitsi
+link: lata http://www.ilmajaam.com/ilmamasin/manualset/
+
+[Ilmajaam ilmamasin ABOUT]
+fc: 15
+bc: 07
+y1: 19
+y2: 19
+x1: 53
+x2: 78
+text: ILMAMASIN: About
+link: lata http://www.ilmajaam.com/ilmamasin/about/
+
+[Ilmajaam ilmamasin EXIT]
+fc: 15
+bc: 07
+y1: 21
+y2: 21
+x1: 53
+x2: 78
+text: Exit
+link: lata http://www.ilmajaam.com/olduser/
+
+[PumpMAX]
+fc: 15
+bc: 07
+y1: 18
+y2: 18
+x1: 33
+x2: 55
+text: Max v“imsus
+link: lata http://www.kanalisatsioon.ee/vork/pump/max/
+
+[PumpKESKM]
+fc: 15
+bc: 07
+y1: 20
+y2: 20
+x1: 33
+x2: 55
+text: Keskmine v“imsus
+link: lata http://www.kanalisatsioon.ee/vork/pump/keskmine/
+
+[PumpMIN]
+fc: 15
+bc: 07
+y1: 22
+y2: 22
+x1: 33
+x2: 55
+text: Min v“imsus
+link: lata http://www.kanalisatsioon.ee/vork/pump/min/
+
+[MuumiaOUT]
+fc: 15
+bc: 07
+y1: 20
+y2: 20
+x1: 03
+x2: 25
+text: LšLITA MUUMIA VŽLJA
+link: lata http://www.pyramiid.ee/muumia2.html/
+
+[MuumiaIN]
+fc: 15
+bc: 07
+y1: 20
+y2: 20
+x1: 03
+x2: 25
+text: LšLITA MUUMIA SISSE
+link: lata http://www.pyramiid.ee/muumia3.html/
+
+[KummitusedOUT]
+fc: 15
+bc: 07
+y1: 22
+y2: 22
+x1: 03
+x2: 30
+text: LšLITA KUMMITUSED VŽLJA
+link: lata http://www.pyramiid.ee/kummitused2.html/
+
+[KummitusedIN]
+fc: 15
+bc: 07
+y1: 22
+y2: 22
+x1: 03
+x2: 30
+text: LšLITA KUMMITUSED SISSE
+link: lata http://www.pyramiid.ee/kummitused3.html/
+
+[CheoppzyUKSED]
+fc: 15
+bc: 07
+y1: 20
+y2: 20
+x1: 40
+x2: 60
+text: AVA K“IK UKSED
+link: lata http://www.pyramiid.ee/avauksed.html/
+
+[CheoppzyELEKTER]
+fc: 15
+bc: 07
+y1: 10
+y2: 10
+x1: 02
+x2: 28
+text: LšLITA ELEKTRIJAAM VŽLJA
+link: lata http://www.pyramiid.ee/shutdown/
+
+[Smileytestament]
+fc: 15
+bc: 07
+y1: 24
+y2: 24
+x1: 28
+x2: 53
+text: Kinnita notariaalselt
+link: lata http://www.med.smiley.ee/kinnita.now/
+
+[Smileyankeet]
+fc: 15
+bc: 07
+y1: 24
+y2: 24
+x1: 28
+x2: 50
+text: Saagu nii
+link: lata http://www.med.smiley.ee/saagu.now/
+
+[BussPardaarvuti]
+fc: 15
+bc: 07
+y1: 21
+y2: 21
+x1: 02
+x2: 20
+text: Pardakompuuter
+link: lata BUSSpardaarvuti
+
+[BUSSprogramm]
+fc: 15
+bc: 07
+y1: 18
+y2: 18
+x1: 32
+x2: 50
+text: Ühenda programm...
+link: lata BUSSpardaarvutiProgramm
+
+[BUSSmootor]
+fc: 15
+bc: 07
+y1: 20
+y2: 20
+x1: 32
+x2: 50
+text: Mootoriseaded >
+link: lata BUSSpardaarvuti3
+
+[BUSSback1]
+fc: 15
+bc: 07
+y1: 22
+y2: 22
+x1: 32
+x2: 50
+text: < Tagasi
+link: lata BUSSpardaarvuti
+
+[BUSSback2]
+fc: 15
+bc: 07
+y1: 23
+y2: 23
+x1: 25
+x2: 32
+text: < Tagasi
+link: lata BUSSpardaarvuti2
+
+[shopTELLI]
+fc: 15
+bc: 07
+x1: 03
+y1: 22
+x2: 09
+y2: 22
+text: TELLIN!
+link: lata http://www.shop.ee/tellitud/
+
+[shopTELLISEEP]
+fc: 15
+bc: 07
+x1: 03
+y1: 22
+x2: 09
+y2: 22
+text: TELLIN!
+link: lata DownloadSEEPMAKER
+
+[paharetKOODerror]
+fc: 15
+bc: 07
+x1: 09
+y1: 23
+x2: 18
+y2: 23
+text:  OK
+link: lata http://www.paharet.ee/error/
+
+[paharetKOODwrong]
+fc: 15
+bc: 07
+x1: 09
+y1: 23
+x2: 18
+y2: 23
+text:  OK
+link: lata http://www.paharet.ee/wrong/
+
+[paharetKOODok]
+fc: 15
+bc: 07
+x1: 09
+y1: 23
+x2: 18
+y2: 23
+text:  OK
+link: lata http://www.paharet.ee/winner/
+
+[SponsorCancel]
+fc: 15
+bc: 07
+x1: 40
+x2: 48
+y1: 20
+y2: 20
+text: Cancel
+link: lata http://www.vutt.ee/
+
+[SponsorNimiOk]
+fc: 15
+bc: 07
+x1: 32
+x2: 39
+y1: 20
+y2: 20
+text:  OK
+link: lata UusSponsorLisa
+
+[SponsorOk]
+fc: 15
+bc: 07
+x1: 32
+x2: 39
+y1: 20
+y2: 20
+text:  OK
+link: lata UusSponsorError
+
+[SponsorDelete]
+fc: 15
+bc: 07
+x1: 32
+x2: 39
+y1: 20
+y2: 20
+text: Delete
+link: lata UusSponsorDelete
+
+[SponsorOut]
+fc: 15
+bc: 07
+x1: 35
+x2: 35
+y1: 20
+y2: 20
+text: OK
+link: lata http://www.vutt.ee/
+
+[SponsorUltraCancel]
+fc: 15
+bc: 07
+x1: 30
+x2: 50
+y1: 17
+y2: 19
+text: Of course Not
+link: lata http://www.vutt.ee/
+
+[SponsorEnd]
+fc: 15
+bc: 07
+x1: 30
+x2: 50
+y1: 21
+y2: 23
+text: Yes
+link: lata SponsorEnd
+
+[VUTTGamema]
+fc: 15
+bc: 07
+x1: 30
+x2: 50
+y1: 21
+y2: 23
+text: Mängima!
+link: lata VUTTGame
+
+[VUTTOut]
+fc: 15
+bc: 07
+x1: 30
+x2: 39
+y1: 22
+y2: 22
+text: Out
+link: WOS
+
+[VUTTYes1]
+fc: 15
+bc: 07
+x1: 41
+x2: 50
+y1: 22
+y2: 22
+text: Yes
+link: lata VUTTTeam
+
+[VUTTScream]
+fc: 15
+bc: 07
+x1: 50
+x2: 70
+y1: 07
+y2: 07
+text: Scream!
+link: lata VUTTScream
+
+[VUTTEncourage]
+fc: 15
+bc: 07
+x1: 50
+x2: 70
+y1: 09
+y2: 09
+text: Encourage!
+link: lata VUTTEncourage
+
+[VUTTSilence]
+fc: 15
+bc: 07
+x1: 50
+x2: 70
+y1: 11
+y2: 11
+text: Keep Silence!
+link: lata VUTTSilence
+
+[VUTTSing]
+fc: 15
+bc: 07
+x1: 50
+x2: 70
+y1: 13
+y2: 13
+text: Start singing!
+link: lata VUTTSing
+
+[VUTTStopSing]
+fc: 15
+bc: 07
+x1: 50
+x2: 70
+y1: 13
+y2: 13
+text: Stop singing!
+link: lata VUTTStopSing
+
+[VUTTExit]
+fc: 00
+bc: 13
+x1: 50
+x2: 70
+y1: 16
+y2: 16
+text: Exit game
+link: WOS

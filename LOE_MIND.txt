@@ -1,0 +1,160 @@
+*********************************************************************
+*                          HACKERS WORLD II                         *
+*                          "ALEA IACTA EST"                         *
+*                            versioon 1.0                           *
+*-------------------------------------------------------------------*
+*                          Made in Estonia                          *
+*                           © august 2000                           *
+*                                                                   *
+*    Autorid ja programmeerijad: Sulev Reisberg ja Urmas Reisberg   *
+*********************************************************************
+
+Kordaks esmalt veelkord kõik Teie ja autorite õigused üle:
+
+Kõik mängijad peavad nõustuma järgnevaga:
+
+"Olen teadlik, et Hackers World II on 100% väljamõeldis ja selles ei
+ole kujutatud ühtki reaalselt tegutsevat isikut ega ettevõtet. Mitte
+ühtki mängus leiduvat sõna ega lauset ei tule võtta tõena,
+solvamise ega pahatahtliku mahategemisena. Luban, et ei esita
+mängu autoritele mingeid pretensioone ega kaebusi. Juhul kui
+mäng mulle ei meeldi, on mul võimalus seda mitte mängida.
+
+Hackers World II on ARVUTIMÄNG, mille kõik komponendid on
+ükshaaval ja koos levitatavad täiesti tasuta. Mängu eest tasu
+küsimine ja võtmine on ebaseaduslik ja kriminaalkorras karistatav."
+
+Juhul, kui lugupeetud mängija mõne punktiga siin nõus ei ole, tuleb
+tal igaks juhuks mäng ruttu kustutada ja seda mitte iial mängida.
+
+----------------------------------------------------------------------
+
+======================================================================
+LÜHIKE ÕPETUS
+======================================================================
+Mängu mõte on lahendada etteantavad probleemid. Kasutada on lubatud
+Netti, paari programmi, paberit, pastakat, ajusid ja loomulikult
+arvuti protsessorit. Ülesannete täitmist aga ei tuleks võtta ainukese
+eesmärgina, sest mängu tõeline mõte seisneb siiski just MEELELAHUTUSES
+ja huumoris. Tähtsusetudki tekstid peaks pakkuma lugemisainet ja
+mõtteainet ning seepärast pole mõtet ka Netis liikudes suvaliselt
+ainult NEXT või BACK nuppe taguda. :)
+
+Mängu käivitamisel küsitakse Teilt Teie nime. Targem oleks seda mitte
+harilikul kombel huupi sisestada, vaid kirjutada ikka päris Enda 
+nimi, sest hiljem seda enam muuta ei saa! Ja üldse on parem, kui
+see Teil ka hiljem meeles oleks.
+
+Leides ennast Peamenüüst, oleks kõige targem vajutada "Jätka"-nupule.
+Nüüd ilmub meie ette vastava Missiooni (probleemid on jagatud Mis-
+sioonideks) pealkiri ja järjekorranumber. 
+
+Süsteem, milles töötama peab, on WOS, kust vastavad nupud lehekülje
+paremas nurgas viivad meid tagasi mängu peamenüüsse ja programmidesse
+Mailbox ja Netscaabakas.
+
+Netscaabakas on lihtne veebi-brauser, mille tutvustamiseks ei näe
+me mingeid põhjusi.
+
+Mailbox sisaldab kõiki saabunud meile, kuid sellega saab ka ise meile
+saata. Üldjuhul tulebki Missiooni alguses Mailbox avada ja lugeda
+värskeid sõnumeid, milles ongi kirjas Missiooni kirjeldus. Iga kord,
+kui teile saabub uus meil, kuulete te vaikset signatuuri (Mida teeb
+PC-speaker). Nii et kui teil muusika kõrval liiga valjusti mängib,
+siis te ilmselt seda ei kuule ja targem oleks aeg-ajalt vaatamas käia,
+kas on juba midagi tulnud. Seda enam, et sõnumid Missiooni täitmisest
+saabuvad üldjuhul samuti meilidega.
+
+Ülejäänud avastamisrõõmu jätame mängijale endale.
+
+======================================================================
+KÜSIMUSED JA VASTUSED
+======================================================================
+
+MIS ON.
+Hackers World II on ARVUTIMÄNG.
+
+KES TEGID.
+Sulev ja Urmas Reisberg. Vastavalt cooler@hot.ee ja nimetu@hot.ee
+
+MIKS TEGID.
+Et mängijal hea tuju tekiks! :) Tegelikult ehk selle pärast ka,
+et Hackers Worldi esimese osa fännid nõudsid.
+
+AGA TEGELIKULT.
+Niisama. Et midagi teha lihtsalt ja QBasicust sotti saada.
+
+KUIDAS ON.
+Kui mänguga on mingeidki probleeme, siis võiksite meile sellest
+kohe kirjutada: cooler@hot.ee. Üritame vead kohe parandada!
+Kõigepealt vaadake muidugi sellesama faili lõppu - seal on
+mõnede probleemide lihtsad lahendused kirjas. Teine koht, kuhu
+oma pilk enne kirjutamist pöörata, on HACKERS WORLDi kodu-
+lehekülg Internetis: http://www.hot.ee/cooler/hacker/
+
+KUI EI OSKA.
+Uurige esmalt meie fännide punast raamatut leheküljel
+http://www.hot.ee/cooler/hacker/
+Kui sealt abi ei leia, võite meile ka loomulikult kirjutada
+aadressile cooler@hot.ee. Meile eriti küll ei meeldi päris
+otseseid vastuseid anda, sest ehk peaksite Te hoopis mõne
+lihtsama mängu valima. Ok, see oli nali. Aitame ikka.
+
+KUI MEELDIB.
+Ideaalne! Siis oleme oma eesmärgi saavutanud! Tänusõnad saada
+autorite aadressil! :)
+
+KUI EI MEELDI.
+Nuuks. Kuid siis on meil pakkuda sulle ometigi üks meeldiv tegevus -
+sa saad kustutada selle mängu igaveseks oma arvuti kõvakettalt! :)
+
+TÄNU VÕLGNEME.
+Emale, isale ja kõikidele tuttavatele.
+SUURED TÄNUSÕNAD lähevad kõikidele meie sõpradele, kes
+meid suuremal või vähemal määral on toetanud või kes lihtsalt
+oma olemasolemisega on ellu palju päikest toonud:
+Ziggy, Hillar, Coldcat, Keiser, Reimo, Marion, Teele, 
+Tanel, Andres, Joosep ja teised filmiinimesed, räppar Mart,
+...
+
+KÕIGE SUUREMAD TÄNUD LÄHEVAD LOOMULIKULT KÕIKIDELE MEIE
+FÄNNIDELE, TÄNU KELLELE SEE MÄNG ÜLDSE VALMIS SAI!
+
+MEIE SOOV.
+Tegelikult on nii, et mängu tegemiseks kulutasime me üsna palju
+telefoniarvet (et leida õpetusi või soovitusi ja vastata fännide
+küsimustele), nii et kui kellelegi mäng väga meeldib ja tal on
+raha ka, siis meie ei tee mingisuguseid takistusi raha meile
+kinkimiseks.
+
+=======================================================================
+PROBLEEMID
+=======================================================================
+1. KLAVIATUURI MITTETÖÖTAMINE (SUURTE TÄHTEDE ASEMEL ON VÄIKESED TÄHED,
+NUMBRIKLAHVID EI TÖÖTA VMS).
+
+Klõpsige nuppe <Caps Lock> või <NumLock>. Kui probleem ei lahene, võib viga
+olla selles, et programm ei ühildu sinu klaviatuuriga. Osta uus klaviatuur!
+
+2. PUNKTITABELIS JÄTAB NIMEKOHA TÜHJAKS.
+
+Väga imelik probleem, meil seda ei esinenud, küll aga kurtis selle üle üks
+fänn. Kui kellegi see viga kordub, siis saatke meile e-mail aadresile
+cooler@hot.ee
+
+3. PUNKTISUMMA LÄHEB VÄGA SUUREKS, MILLE PEALE PROGRAMM ANNAB VEATEATE
+"OVERFLOW".
+
+Meie jaoks arusaamatu, kuidas selline asi sai juhtuda. Uurime asja. Kui
+teil siuke asi kordub, saatke meile e-mail aadressile cooler@hot.ee
+
+-------
+KUI SUL ON MÕNI JÄRGNEVATEST PROBLEEMIDEST, SIIS DOWNLOADI ENDALE UUESTI
+HACKERS WORLD II VIIMANE VERSIOON aadressilt:
+http://www.hot.ee/cooler/hacker/hacker2.exe
+
+* ESC-nupuga viskab kohe paugupealt mängust välja.
+* Ükskõik mis missioonis oled, näitab alguses ikka missioon nr 1 teksti.
+* Seebi-masina käivitamisel hilisemates missioonides ütleb, et "missioon
+täidetud", kuigi tegelikult ei ole.
+* Kolmanda missiooni MISSIOON-tekstis on vale Interneti-aadress.

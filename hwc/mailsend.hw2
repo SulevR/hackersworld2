@@ -1,0 +1,90 @@
+[MAILI AADRESS]
+text: BLABLABLA		-tekst, mis kasutaja tekstis peab sisalduma
+lata: BLABLABLA		-lata, mis selle teksti olemasolmisel loaditakse
+else: BLABLABLA		-lata, mis kuvatakse, kui kasutaja poolt kirjutatud
+			 tekst ei sisaldanud ühtki etteantud sõna... (pole vajalik)
+playernimi: BLABL
+
+[dire@ruudkool.ee]
+text: kool
+lata: DireKool
+else: DireTemplate
+
+
+[kala@kala2.hot]
+text: a
+lata: 8
+else: netscaabakas1
+
+[teodor@kadak.padi]
+text: toi
+lata: sendDAEMON1
+text: söö
+lata: sendDAEMON1
+text: valmis
+lata: sendDAEMON1
+text: ootavad
+lata: sendDAEMON1
+else: DAEMONmessage
+
+[paks@gc.ee]
+text: söö
+lata: sendDAEMON2
+text: toi
+lata: sendDAEMON2
+text: valmis
+lata: sendDAEMON2
+text: ootavad
+lata: sendDAEMON2
+else: DAEMONmessage
+
+[mailer@daemon.com]
+text: vesi
+lata: DAEMON1
+text: vee
+lata: DAEMON1
+text: leib
+lata: DAEMON2
+text: leiv
+lata: DAEMON2
+text: lootus
+lata: DAEMON3
+text: vang
+lata: DAEMON4
+text: kong
+lata: DAEMON4
+else: DAEMONvale
+
+[liina@antenn.padi]
+text: teodor
+lata: Liina2
+text: paks
+lata: Liina2
+else: Liina1
+
+[villu@padi.padi] 
+text: teodor
+lata: Villu2
+text: paks
+lata: Villu2
+text: mail
+lata: Villu1
+text: meil
+lata: Villu1
+
+[tekka@padi.padi]
+text: teodor
+lata: Tekka2
+text: paks
+lata: Tekka2
+else: Tekka1
+
+[a@k.padi]
+text: teodor
+lata: Aleks2
+text: paks
+lata: Aleks2
+text: kada
+lata: Aleks2
+else: Aleks1
+
