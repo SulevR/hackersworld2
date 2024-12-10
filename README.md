@@ -56,7 +56,7 @@ Hackers World 2 missioonide vihjed:
 
 ## Lähtekood
 
-Selles repositooriumis asub ka mängu lähtekood. Põhifaili lähtekood asub failis [hwc/LAHTEKOOD.BAS]() ja alam-mängu "Paharet" lähtekood failis [paharet/PAHARET_LAHTEKOOD.BAS](). Tegemist on QBasic programmidega, seega idee pooleks peaks neid saama QBasicust jooksutada, aga me pole seda ise enam pärast mängu avaldamist proovinud. Me ei ole päris 100% kindlad, et absoluutselt kogu vajalik kood on olemas.
+Selles repositooriumis asub ka mängu lähtekood. Põhifaili lähtekood asub failis [hwc/LAHTEKOOD.BAS](hwc/LAHTEKOOD.BAS) ja alam-mängu "Paharet" lähtekood failis [paharet/PAHARET_LAHTEKOOD.BAS](paharet/PAHARET_LAHTEKOOD.BAS). Tegemist on QBasic programmidega, seega idee pooleks peaks neid saama QBasicust jooksutada, aga me pole seda ise enam pärast mängu avaldamist proovinud. Me ei ole päris 100% kindlad, et absoluutselt kogu vajalik kood on olemas.
 
 ## Autorid
 
