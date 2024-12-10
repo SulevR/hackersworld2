@@ -39,6 +39,10 @@ Kolm piiksu tähendab seda, et sulle on saabunud kiri.
 * Protsessori emulaator ei tööta iga koha peal päris sama kiiresti kui peaks - siis saad kiirust juurde panna või vähemaks võtta, kasutades lühiklahve CTRL+F11 ja CTRL+F12 (Macis Fn+Control+F11 ja Fn+Control+F12)
 * Muid lühiklahve vaata [https://www.dosbox.com/wiki/Special_Keys](https://www.dosbox.com/wiki/Special_Keys)
 
+## Lähtekood
+
+Selles repositooriumis asub ka mängu lähtekood. Põhifaili lähtekood asub failis [hwc/LAHTEKOOD.BAS]() ja alam-mängu "Paharet" lähtekood failis [paharet/PAHARET_LAHTEKOOD.BAS](). Tegemist on QBasic programmidega, seega idee pooleks peaks neid saama QBasicust jooksutada, aga me pole seda ise enam pärast mängu avaldamist proovinud.
+
 ## Autorid
 
 Sulev Reisberg ja Urmas Reisberg
