@@ -1,0 +1,3 @@
+# Vihje Mission 4 läbimiseks (haigused)
+
+Jäta valvearsti nimi meelde ja lisa ta patsientide nimekirja. Varsti saad uue programmi. Vaata proceduuride menüüd. Proovi proseduurid kas või läbi paar korda. Ja siis peaksid sa nägema, et kui veel natuke edasi mängida/oodata, siis peaks midagi juhtuma. Keeruline jutt? Noh, loodame, et saad aru. Ega sealt Diagnozerist enne välja ei olegi võimalik saada, kui see asi on ära juhtunud.
