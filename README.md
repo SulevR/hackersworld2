@@ -72,7 +72,9 @@ Eks fännid aeg-ajalt meile ikka kirjutasid ja palusid vihjeid, kuidas mängus e
 Hackers World 2 missioonide vihjed:
 
 * [Missioon 1](vihjed/abi_hw2_1.md)
+* [Missioon 3](vihjed/abi_hw2_3.md)
 * [Missioon 4](vihjed/abi_hw2_4.md)
+* [Missioon 5](vihjed/abi_hw2_5.md)
 * [Missioon 6](vihjed/abi_hw2_6.md)
 * [Missioon 7](vihjed/abi_hw2_7.md)
 * [Missioon 9](vihjed/abi_hw2_9.md)
